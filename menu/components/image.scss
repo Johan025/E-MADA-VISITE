@@ -1,0 +1,55 @@
+.c img{
+    width:100.02%;
+    height: 38rem;
+    position:absolute;
+    top: 2.1cm;
+    left:0;
+}
+
+.c_responsive{
+    display: none;
+}
+
+
+
+.visit{
+     font-size: 71px;
+     position: absolute;
+     top: -21rem;
+     z-index: 10;
+     left: -10vw;
+     width: 90vw;
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-weight: 900;
+}
+
+.Anakao{
+    text-align: center;
+    font-family: 'Memphis-Bold';
+    font-weight: 400;
+    font-size: 43px;
+    position: absolute;
+    justify-content: center;
+    left: 0rem;
+    top: -12rem;
+    text-align: center;
+}
+
+.explore{
+       position: absolute;
+       top: -5rem;
+       left: 27vw;
+       background-color: rgb(255, 255, 255);
+       border: 0 solid;
+       color:rgb(88, 81, 7);
+       border-radius: 9px;
+       font-size: 35px;
+       padding: 5px;
+       z-index: 50;
+       text-align: center;
+
+         &:hover{
+            background-color: rgb(244, 191, 17);
+         }
+}
+

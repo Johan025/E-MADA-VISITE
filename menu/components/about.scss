@@ -1,0 +1,63 @@
+.contain {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50rem;
+    left: 0cm;
+    color: black;
+}
+
+
+.int {
+    position: absolute;
+    left: 13.73cm;
+    top: 0.78cm;
+    padding-top: 4cm;
+    padding-left: 1.5cm;
+    height: 80vh;
+    width: 56vw;
+}
+
+.contenu {
+    background-color: #7babcd;
+    width: 50vw;
+    height: 14cm;
+    position: absolute;
+    right: 0vw;
+    top: 0.14cm;
+    padding-top: 70px;
+
+    span {
+        position: absolute;
+        top: 6cm;
+        left: 4cm;
+        font-size: 20px;
+        width: 9cm;
+       
+    }
+}
+
+.contain {
+    position: absolute;
+    top: 16.7cm;
+
+    img {
+        width: 17cm;
+        height: 11.6cm;
+        position: absolute;
+        box-shadow: 7px 4px 8px black;
+        top: 50.5px;
+        left: 4.9vw;
+    }
+    
+
+   
+}
+
+.titre-propos {
+    font-size: 32px;
+    margin-top: -2rem;
+    margin-left: 1.7cm;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 46px;
+}

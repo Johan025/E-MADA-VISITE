@@ -1,0 +1,95 @@
+@media screen and (min-width: 1024px) {
+    
+
+.Choiceofmada{
+    position: absolute;
+    top: 77rem;
+    left: 27rem;
+    width: 40rem;
+  text-align: center;
+
+  .border2{
+    @include border(1.6cm, 9px, $color_1, 10rem, 10rem);
+    text-align: center;
+    }
+
+}
+
+.choice_item1{
+    position: absolute;
+    top: 5rem;
+      font-size: 43px;
+    }
+
+    .galerie{
+      position: absolute;
+      top: 12rem;
+
+
+        .item_1 img{
+            @include image(8cm, 11.86cm, 0, 85rem,1px);
+        }
+
+        .p1{
+            @include p_left(16.5rem, 48.9em, 30px);
+            width: 50rem;
+        }
+
+        
+        .item_3 img{
+            @include image(8cm, 11.86cm,  56.3rem, 85rem,1px);
+        }
+
+
+
+    }
+
+    .galerie2{
+        position: absolute;
+        top: 12rem;
+  
+        .item_4{
+            @include p_left(-11rem, 62.9em, 28px);
+            width: 50rem;
+        }
+
+          .item_5 img{
+            @include image(8cm, 12.05cm, 27.9rem, 103.8rem,1px);
+          }
+
+        .item_6{
+            @include p_left(55rem, 63.9em, 28px);
+            width: 28rem;
+            z-index: 4;
+        } 
+  
+       
+  
+  
+  
+      }
+
+      .galerie3{
+        position: absolute;
+        top: 49.6rem;
+  
+  
+          .item_7 img{
+              @include image(8cm, 11.86cm, 0, 85rem,1px);
+          }
+
+          .item_8 img{
+            @include image(8cm, 11.98cm, 28rem, 85rem,1px);
+        }
+  
+          
+          .item_9 img{
+              @include image(8cm, 11.86cm,  56.3rem, 85rem,1px);
+          }
+  
+  
+  
+      }
+
+
+}

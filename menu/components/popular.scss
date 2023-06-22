@@ -1,0 +1,55 @@
+.Popular{
+     
+      position: absolute;
+      top: 153.4rem;
+      left: 0vw;
+      height: 30rem;
+      width: 100%;
+      background-color: rgb(171, 104, 16);
+
+      h1{
+          font-size:35px;
+          position: absolute;
+          top: 13rem;
+          left: 2rem;
+          width: 16rem;
+      }
+
+      .contain{
+           position: absolute;
+           left: 20rem;
+           display: flex;
+           top: 0;
+
+           div{
+            margin-left: 4rem;
+            margin-top: 3rem;
+            background-color: aqua;
+            width: 24vw;
+            height: 25rem;
+            border-radius: 8px;
+         }
+
+         .item_1{
+          background-size: cover;
+         background-image: url(./../../ape-3721436_1280.jpg);
+       }
+ 
+       .item_2{
+         background-size: cover;
+        background-image: url(./../../b.jpg);
+      }
+      .item_3{
+         background-size: cover;
+        background-image: url(./../../BG.jpg);
+      }
+      .item_4{
+         background-size: cover;
+        background-image: url('./../../allée\ des\ baobab\ responsive.jpg');
+      }
+      }
+     
+
+      
+
+    }

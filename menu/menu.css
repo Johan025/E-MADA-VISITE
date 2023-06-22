@@ -1,0 +1,673 @@
+@charset "UTF-8";
+@font-face {
+  font-family: font1;
+  src: url(./menu/assets/Lora-Bold.ttf);
+}
+* {
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  font-family: font1;
+}
+
+.hide_ {
+  transform: translateX(-28rem);
+}
+
+.show_ {
+  transform: translateX(0);
+  transition: 1.6s;
+}
+
+.hide_1 {
+  transform: translateY(6rem);
+  opacity: 0;
+}
+
+.show_1 {
+  transform: translateY(0);
+  transition: 1.6s;
+  opacity: 1;
+}
+
+.header {
+  background-color: #f2f2f2;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  left: 0;
+  height: 2.2cm;
+  margin: 0;
+  padding: 0;
+  top: 0vh;
+  right: 0cm;
+  transition: 1s;
+  z-index: 20;
+}
+
+ul {
+  display: flex;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  float: right;
+  right: 5vw;
+  top: 0.5cm;
+}
+
+.header_contain {
+  width: 100%;
+  height: 10vh;
+  position: absolute;
+  right: -32rem;
+  top: 0.46cm;
+  transition: 0.5s;
+}
+.header_contain ul li a {
+  position: relative;
+  right: 30rem;
+  top: -20px;
+  text-decoration: none;
+  color: #254E7A;
+  font-size: 19.6px;
+  padding: 8.5px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.header_contain ul li a:hover {
+  background-color: rgb(244, 191, 17);
+  color: black;
+  border-radius: 8px;
+}
+.header_contain ul li a #search {
+  color: #254E7A;
+}
+.header_contain ul li a #search:hover {
+  color: black;
+}
+
+li {
+  margin: 8.5px;
+}
+
+#search {
+  color: rgb(0, 0, 0);
+}
+
+header ul li .a1 {
+  border: 0px solid;
+  background-color: #27749e;
+  color: black;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+#search:hover {
+  color: black;
+}
+
+.logo {
+  position: absolute;
+  left: 1cm;
+  font-size: 42px;
+  top: 0.2cm;
+  color: #113f70;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.logo span {
+  color: #072b51;
+}
+
+.icone_menu i {
+  color: rgb(3, 19, 84);
+  font-size: 33px;
+  display: none;
+  cursor: pointer;
+  border: 2px solid rgb(4, 7, 108);
+  padding: 7px;
+  border-radius: 50%;
+}
+.icone_menu i:hover {
+  background-color: rgb(138, 117, 0);
+  color: black;
+}
+
+.contact {
+  border: 1.5px solid #113f70;
+  border-radius: 8px;
+  padding: 6px;
+  font-size: 42px;
+  margin-left: 5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .Choiceofmada {
+    position: absolute;
+    top: 77rem;
+    left: 27rem;
+    width: 40rem;
+    text-align: center;
+  }
+  .Choiceofmada .border2 {
+    width: 1.6cm;
+    height: 9px;
+    position: absolute;
+    left: 10rem;
+    top: 10rem;
+    background-color: rgb(4, 82, 137);
+    text-align: center;
+  }
+  .choice_item1 {
+    position: absolute;
+    top: 5rem;
+    font-size: 43px;
+  }
+  .galerie {
+    position: absolute;
+    top: 12rem;
+  }
+  .galerie .item_1 img {
+    width: 11.86cm;
+    height: 8cm;
+    position: absolute;
+    left: 0;
+    top: 85rem;
+    border-radius: 1px;
+  }
+  .galerie .p1 {
+    position: absolute;
+    left: 16.5rem;
+    top: 48.9em;
+    font-size: 30px;
+    text-align: center;
+    width: 50rem;
+  }
+  .galerie .item_3 img {
+    width: 11.86cm;
+    height: 8cm;
+    position: absolute;
+    left: 56.3rem;
+    top: 85rem;
+    border-radius: 1px;
+  }
+  .galerie2 {
+    position: absolute;
+    top: 12rem;
+  }
+  .galerie2 .item_4 {
+    position: absolute;
+    left: -11rem;
+    top: 62.9em;
+    font-size: 28px;
+    text-align: center;
+    width: 50rem;
+  }
+  .galerie2 .item_5 img {
+    width: 12.05cm;
+    height: 8cm;
+    position: absolute;
+    left: 27.9rem;
+    top: 103.8rem;
+    border-radius: 1px;
+  }
+  .galerie2 .item_6 {
+    position: absolute;
+    left: 55rem;
+    top: 63.9em;
+    font-size: 28px;
+    text-align: center;
+    width: 28rem;
+    z-index: 4;
+  }
+  .galerie3 {
+    position: absolute;
+    top: 49.6rem;
+  }
+  .galerie3 .item_7 img {
+    width: 11.86cm;
+    height: 8cm;
+    position: absolute;
+    left: 0;
+    top: 85rem;
+    border-radius: 1px;
+  }
+  .galerie3 .item_8 img {
+    width: 11.98cm;
+    height: 8cm;
+    position: absolute;
+    left: 28rem;
+    top: 85rem;
+    border-radius: 1px;
+  }
+  .galerie3 .item_9 img {
+    width: 11.86cm;
+    height: 8cm;
+    position: absolute;
+    left: 56.3rem;
+    top: 85rem;
+    border-radius: 1px;
+  }
+}
+.contain {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50rem;
+  left: 0cm;
+  color: black;
+}
+
+.int {
+  position: absolute;
+  left: 13.73cm;
+  top: 0.78cm;
+  padding-top: 4cm;
+  padding-left: 1.5cm;
+  height: 80vh;
+  width: 56vw;
+}
+
+.contenu {
+  background-color: #7babcd;
+  width: 50vw;
+  height: 14cm;
+  position: absolute;
+  right: 0vw;
+  top: 0.14cm;
+  padding-top: 70px;
+}
+.contenu span {
+  position: absolute;
+  top: 6cm;
+  left: 4cm;
+  font-size: 20px;
+  width: 9cm;
+}
+
+.contain {
+  position: absolute;
+  top: 16.7cm;
+}
+.contain img {
+  width: 17cm;
+  height: 11.6cm;
+  position: absolute;
+  box-shadow: 7px 4px 8px black;
+  top: 50.5px;
+  left: 4.9vw;
+}
+
+.titre-propos {
+  font-size: 32px;
+  margin-top: -2rem;
+  margin-left: 1.7cm;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 46px;
+}
+
+.c img {
+  width: 100.02%;
+  height: 38rem;
+  position: absolute;
+  top: 2.1cm;
+  left: 0;
+}
+
+.c_responsive {
+  display: none;
+}
+
+.visit {
+  font-size: 71px;
+  position: absolute;
+  top: -21rem;
+  z-index: 10;
+  left: -10vw;
+  width: 90vw;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: 900;
+}
+
+.Anakao {
+  text-align: center;
+  font-family: "Memphis-Bold";
+  font-weight: 400;
+  font-size: 43px;
+  position: absolute;
+  justify-content: center;
+  left: 0rem;
+  top: -12rem;
+  text-align: center;
+}
+
+.explore {
+  position: absolute;
+  top: -5rem;
+  left: 27vw;
+  background-color: rgb(255, 255, 255);
+  border: 0 solid;
+  color: rgb(88, 81, 7);
+  border-radius: 9px;
+  font-size: 35px;
+  padding: 5px;
+  z-index: 50;
+  text-align: center;
+}
+.explore:hover {
+  background-color: rgb(244, 191, 17);
+}
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  .header {
+    position: absolute;
+  }
+  .logo {
+    font-size: 34px;
+    left: 1rem;
+    top: 0.4cm;
+    color: #113f70;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .logo span {
+    color: #072b51;
+  }
+  .header_contain {
+    width: 100%;
+    height: 26rem;
+    position: absolute;
+    left: 0rem;
+    top: 5.2rem;
+    background-color: rgb(22, 98, 211);
+    transform: translateY(-100rem);
+    transition: 0.3s;
+  }
+  .header_contain ul {
+    display: block;
+    position: absolute;
+    right: 0rem;
+    top: 4rem;
+  }
+  .header_contain ul li {
+    margin-top: 22px;
+  }
+  .header_contain ul li a {
+    color: #000;
+    font-size: 22px;
+    padding: -25px;
+    width: -5rem;
+    position: relative;
+    right: 5rem;
+  }
+  .header_contain ul li .a1 {
+    background-color: antiquewhite;
+  }
+  .icone_menu i {
+    position: relative;
+    float: right;
+    display: flex;
+    top: 1rem;
+    right: 2rem;
+    z-index: 6;
+  }
+  .hideshow {
+    transform: translateY(0rem);
+  }
+  .zIndex {
+    z-index: 6;
+  }
+  .c {
+    display: none;
+  }
+  .c_responsive {
+    display: block;
+    width: 100.02%;
+    height: 71.3rem;
+    position: absolute;
+    top: 2.1cm;
+    left: 0;
+  }
+  .c_responsive img {
+    width: 100.02%;
+    height: 30.3rem;
+  }
+  .c_responsive #prev, .c_responsive #next {
+    position: absolute;
+    top: 13rem;
+  }
+  .c_responsive #indicators {
+    position: absolute;
+    top: 26rem;
+    font-size: 15px;
+  }
+  .contenu {
+    padding-top: 70px;
+    width: 100%;
+    height: 18cm;
+    position: absolute;
+    left: 0;
+    top: -5.3rem;
+    background-color: #7babcd;
+  }
+  .contenu span {
+    width: 90%;
+    position: absolute;
+    left: 0.5cm;
+    top: 3.5cm;
+    font-size: 18px;
+    text-align: center;
+  }
+  .int {
+    position: absolute;
+    left: 1.73cm;
+    top: 0.78cm;
+    padding-top: 4cm;
+    padding-left: 1.5cm;
+    height: 80vh;
+    width: 40vw;
+  }
+  .titre-propos {
+    font-size: 32px;
+    margin-top: -13rem;
+    margin-left: -1.2cm;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .contain {
+    position: absolute;
+    top: 16.9cm;
+  }
+  .contain img {
+    box-shadow: 7px 4px 8px black;
+    width: 86vw;
+    height: 7.4cm;
+    position: absolute;
+    left: 0.5cm;
+    top: 6.5cm;
+    border-radius: 4px;
+  }
+  .Choiceofmada {
+    position: absolute;
+    top: 77rem;
+    left: 20rem;
+    text-align: center;
+  }
+  .Choiceofmada .border2 {
+    width: 1.6cm;
+    height: 7px;
+    position: absolute;
+    left: -9.5rem;
+    top: 8.5rem;
+    background-color: rgb(4, 82, 137);
+    text-align: center;
+  }
+  .choice_item1 {
+    position: absolute;
+    top: 5rem;
+    left: -17rem;
+    font-size: 27px;
+    width: 18rem;
+  }
+  .galerie {
+    position: absolute;
+    top: 8rem;
+  }
+  .galerie .item_1 img {
+    width: 100vw;
+    height: 7cm;
+    position: absolute;
+    left: 0;
+    top: 85rem;
+    border-radius: 1px;
+  }
+  .galerie .p1 {
+    position: absolute;
+    left: 4.5rem;
+    top: 68.6em;
+    font-size: 25px;
+    text-align: center;
+    width: 60vw;
+  }
+  .galerie .item_3 img {
+    width: 100vw;
+    height: 7cm;
+    position: absolute;
+    left: 0;
+    top: 117rem;
+    border-radius: 1px;
+  }
+  .galerie2 {
+    position: absolute;
+    top: 45rem;
+  }
+  .galerie2 .item_4 {
+    position: absolute;
+    left: 1rem;
+    top: 68em;
+    font-size: 24px;
+    text-align: center;
+    width: 90vw;
+  }
+  .galerie2 .item_5 img {
+    width: 100vw;
+    height: 7cm;
+    position: absolute;
+    left: 0;
+    top: 113.8rem;
+    border-radius: 1px;
+  }
+  .galerie2 .item_6 {
+    position: absolute;
+    left: 2rem;
+    top: 84em;
+    font-size: 26px;
+    text-align: center;
+    width: 78vw;
+    z-index: 4;
+  }
+  .galerie3 {
+    position: absolute;
+    top: 107rem;
+  }
+  .galerie3 .item_7 img {
+    width: 100vw;
+    height: 7cm;
+    position: absolute;
+    left: 0;
+    top: 85rem;
+    border-radius: 1px;
+  }
+  .galerie3 .item_8 img {
+    width: 100vw;
+    height: 7cm;
+    position: absolute;
+    left: 0;
+    top: 101rem;
+    border-radius: 1px;
+  }
+  .galerie3 .item_9 img {
+    width: 100vw;
+    height: 7cm;
+    position: absolute;
+    left: 0;
+    top: 115rem;
+    border-radius: 1px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 340px) {
+  .contenu {
+    padding-top: 70px;
+    width: 100%;
+    height: 18cm;
+    position: absolute;
+    left: 0;
+    top: -5.3rem;
+    background-color: #7babcd;
+  }
+  .contenu span {
+    width: 90%;
+    position: absolute;
+    left: 0.5cm;
+    top: 3.5cm;
+    font-size: 18px;
+    text-align: center;
+  }
+  .Choiceofmada {
+    top: 82rem;
+    left: 7rem;
+    width: 40rem;
+  }
+  .Choiceofmada .border2 {
+    width: 1.6cm;
+    height: 9px;
+    position: absolute;
+    left: 10rem;
+    top: 10rem;
+    background-color: rgb(4, 82, 137);
+    text-align: center;
+  }
+}
+.Popular {
+  position: absolute;
+  top: 153.4rem;
+  left: 0vw;
+  height: 30rem;
+  width: 100%;
+  background-color: rgb(171, 104, 16);
+}
+.Popular h1 {
+  font-size: 35px;
+  position: absolute;
+  top: 13rem;
+  left: 2rem;
+  width: 16rem;
+}
+.Popular .contain {
+  position: absolute;
+  left: 20rem;
+  display: flex;
+  top: 0;
+}
+.Popular .contain div {
+  margin-left: 4rem;
+  margin-top: 3rem;
+  background-color: aqua;
+  width: 24vw;
+  height: 25rem;
+  border-radius: 8px;
+}
+.Popular .contain .item_1 {
+  background-size: cover;
+  background-image: url(./../../ape-3721436_1280.jpg);
+}
+.Popular .contain .item_2 {
+  background-size: cover;
+  background-image: url(./../../b.jpg);
+}
+.Popular .contain .item_3 {
+  background-size: cover;
+  background-image: url(./../../BG.jpg);
+}
+.Popular .contain .item_4 {
+  background-size: cover;
+  background-image: url("./../../allée des baobab responsive.jpg");
+}
+
+/*# sourceMappingURL=menu.css.map */

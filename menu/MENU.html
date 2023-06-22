@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css" />
+  <title>E-MADA VISITE</title>
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+<!-- <?php
+$bdPDO= new PDO('mysql:host=localhost;dbname=gestionlistehotel','root','');
+
+$bdPDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+if (isset($_GET['rechercher'])){//déclenchement des boutons
+
+    $nomVille=$_GET['ville'];
+   
+    if (!empty($nomVille)){
+$requete=$bdPDO->prepare("SELECT * FROM listehotel WHERE localisation='$nomVille'");
+
+// $requete->bindvalue(":localisation",$nomVille);
+$requete-> execute();
+$BDexist=$requete ->rowCount();
+
+
+
+if ($BDexist!=0){
+
+    $requete1=$bdPDO ->prepare("SELECT nom_hotel FROM listehotel WHERE localisation=? ");
+    $requete1-> execute(array ($nomVille));
+     $hotelTana = $requete1->fetchAll();
+}
+
+else{
+    echo("erreur nous n' avons pas trouvé la ville");
+}
+}
+
+else{
+    echo"case vide";
+}
+}
+
+if (isset($_GET['submit'])){//déclenchement des boutons
+
+    $depart=$_GET['depart'];
+    $arrivee=$_GET['arrivee'];
+   
+    if (!empty($depart) && !empty($arrivee)){
+$requete2=$bdPDO->prepare ("SELECT * FROM listecooperative WHERE depart='$depart' AND arrivee='$arrivee' ");
+$requete2-> execute();
+
+if ($requete2->rowCount()>0){
+   $requetex=$bdPDO->prepare("SELECT nom_cooperative FROM listecooperative WHERE (depart='$depart' AND arrivee='$arrivee') ");
+ $requetex-> execute();
+$cooperative= $requetex->fetchAll();
+}
+
+else{
+    echo("erreur nous n' avons pas trouvé la ville");
+}
+}
+
+else{
+    echo"case vide";
+}
+}
+?>  -->
+
+  <div class="c"> 
+
+          <img src="../nosy-be.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="visit hide_">Explorez l 'île de MADAGASCAR</h1>
+            <h1 class="Anakao"></h1>
+            <button class="explore">Découvrir</button>
+          </div>
+      
+</div>
+
+    
+  
+          
+  <!-- <a class="lien_explorer" href="#pm">Explorer</a> -->
+
+  <div class="contain" id="propos">
+    <p class="contenu">
+      <span class="hide_1">Ce site web est un moyen de référence pour des étrangers ou des locaux qui veulent visiter
+        les sites touristiques de Madagascar.
+        Mais aussi ,un moyen pour contempler les merveilles de Madagascar en ligne.
+      </span>
+    </p>
+    <div class="int">
+      <p class="titre-propos hide_">A propos</p>
+    </div>
+
+   <img src="../istockphoto-916802736-612x612.jpg" alt="" />
+
+  </div>
+
+  <!-- <div class="image" id="c">
+    <a href="circuit nord/nord.html" target="_self">
+      <div class="i1 hide">
+        <div class="ii1">NORD</div>
+      </div>
+    </a>
+    <a href="Circuit est/est.html" target="_self">
+      <div class="i2 hide">
+        <div class="ii2">EST</div>
+      </div>
+    </a>
+    <a href="circuit ouest/ouest.html" target="_self">
+      <div class="i3 hide">
+        <div class="ii3">OUEST</div>
+      </div>
+    </a>
+    <a href="circuit sud/sud.html" target="_self">
+      <div class="i4 hide">
+        <div class="ii4">SUD</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="desc">
+    <h1>Madagascar</h1>
+    <p class="texte1">Explorer nos destinations</p>
+    <p class="texte2">Découvrez les sites touristiques de Madagascar</p>
+    <div class="border"></div>
+  </div> -->
+
+  
+  
+  <div class="Choiceofmada">
+
+   <div class="choice_item1 hide_" id="pm">Pourquoi Madagascar ?</div>
+   <div class="border2 hide_1"></div>
+  
+  </div>
+  </div>
+   <div class="galerie">
+    <div class="item_1"><img src="../SLIDE1.jpg"></div>
+  <p class="p1 hide">Une île paradisiaque</p>
+  <div class=" item_3"><img src="../allée des baobab.png" alt=""></div>
+  </div>
+
+  <div class="galerie2">
+    <!-- <div class="item_4"><img src="Circuit est/photo/image2.jpg" alt=""></div> -->
+    <p class="item_4 hide">Une île où l' on trouve des éspèces<br> endémique uniques</p>
+    <div class="item_5"><img src="./../circuit sud/photo/RANOMAFANA/bird.jpg" alt=""></div>
+     <p class="item_6 hide">Des paysages merveilleuses</p>
+    <!-- <div class="item_6"><img src="Circuit ouest/Tsriribihina/fleuve1.jpg"></div> -->
+  </div>
+
+  <div class="galerie3">
+     <div class="item_7"><img src="../Circuit est/photo/image2.jpg" alt=""></div>
+    <div class="item_8"><img src="../Circuit ouest/Tsriribihina/fleuve2.jpg" alt=""></div>
+     <div class="item_9"><img src="../Circuit ouest/Tsriribihina/fleuve1.jpg"></div>
+  </div>
+
+
+  <div class="Popular">
+
+    <h1>Nos meilleurs destinations</h1>
+      <div class="contain">
+       <div class="item_1"></div>
+       <div class="item_2"></div>
+       <div class="item_3"></div>
+       <div class="item_4"></div>
+      </div>
+      </div>
+ <!-- <div class="learnAbout">
+   <h1 class="hide">En savoir plus sur nous</h1>
+   <div class="borderLearn hide"></div>
+
+   <div class="gestionHotel">
+       <div class="imgH"><img src="image_hotel/sakamanga.jpg" alt=""></div>
+       <div class="imgH1"><img src="image_hotel/hotel-colbert-exterieur.jpg" alt=""></div>
+       <div class="imgH2"> <img src="image_hotel/hotel-du-louvre.jpg" alt=""></div>
+      <p class="description hide">Vous pouvez rechercher un hotel d' où vous êtes qui est à proximité de votre position</p>
+       <div class="borderVertical hide"></div>
+       <div class="searchButton"><a href="#hotel">Rechercher</a></div>
+   </div>
+
+   <div class="gestionItineraire">
+          <div class="imageI"><img src="image_itineraire/Caravane-de-Taxi-brousse-en-direction-du-Sud.webp" alt=""></div> 
+          <p class="description_Itineraire hide">Nous pouvons également vous proposer une meilleure coopérative selon votre choix de l' itineraire partant d ' Antananarivo ou l' inverse</p>
+        <div class="searchButton2"><a href="#coop">Rechercher</a></div>
+        <div class="borderVertical2 hide"></div>
+        </div>
+   
+ </div>
+
+  <div class="services">
+    <div class="recherche_hotel">
+        <img src="image_hotel/icone de recherche.png" class="hide" alt="">
+        <p class="hide">Rechercher un hotel</p>
+    </div>
+    <div class="recherche_cooperative">
+        <img src="image_itineraire/itineraire.png" class="hide" alt="">
+        <p class="hide">Rechercher un cooperative</p>
+    </div>
+    <div class="destinations">
+        <img src="image_itineraire/itineraire.png" class="hide" alt="">
+        <p class="hide">Explorez nos destinations</p>
+    </div>
+    <div class="coutumes">
+        <img src="savika2.jpg" class="hide" alt="">
+        <p class="hide">US ET COUTUMES</p>
+    </div>
+  </div>
+
+  <div class="searchHotel" id="hotel">
+    <h1 class="hide">RECHERCHE D' HOTEL</h1>
+    <div class="bordure hide"></div>
+
+    <form action="#hotel" method="GET" id="form">
+
+      <p class="nomville hide">Nom de la ville où vous vous trouvez: </p>
+
+   <input type="text" class="localisation hide" placeholder="entrez nom de la région  " name="ville">
+
+    <button class="button_hotel hide" name="rechercher">Rechercher</button>
+
+    <textarea name="affichage " id="affichage" cols="59" rows="13" placeholder="  liste des hotels correspondants à proximité">
+     <?php
+    if (isset($hotelTana)){
+    foreach($hotelTana as $value): ?>
+    
+              <?= $value["nom_hotel"]; ?>
+
+    <?php endforeach;}?>  -->
+    <!-- </textarea> 
+    </form>
+  </div>
+
+  <div class="searchCoop" id="coop">
+     <h1 class="hide">RECHERCHER UN COOPERATIVE</h1>
+     <div class="bordure1 hide"></div>
+
+     <form action="#coop" method="GET">
+      <p class="titreDepart hide">point de départ: </p>
+       <input type="text" class="depart hide" name="depart" placeholder="point de départ">
+      <p class="titreArrivee hide">point d' arrivée: </p>
+       <input type="text" class="arrivee hide" name="arrivee" placeholder="point d' arrivée">
+         <input class="button_coop" name="submit" type="submit" value="rechercher">  -->
+        <!-- <button class="button_coop" name="submit" type="submit">rechercher</button>
+      <textarea name="submit" id="affichage_coop" cols="57" rows="10" placeholder="  liste des cooperatives correspondants à votre itinéraire">
+      <?php
+  
+    if (isset($cooperative)){
+    foreach($cooperative as $value): ?>
+             
+              <?= $value["nom_cooperative"]; ?>
+
+    <?php endforeach;}?>  - -->
+    <!-- </textarea>
+   
+     </form>
+  </div>
+
+  <div class="destinationsPopular">
+    <p class="titre hide">Nos destinations le plus<span> populaires</span></p>
+    <div class="borderdest hide"></div>
+    <div class="carousel">
+        <div class="item"><img src="allée des baobab.png" alt=""></div>
+        <div class="item"><img src="b.jpg" alt=""></div>
+        <div class="item"><img src="G.jpg" alt=""></div>
+        <div class="item"><img src="SLIDE.jpg" alt=""></div>
+        <div class="item"><img src="C (2).jpg" alt=""></div>
+        <div class="item6"><img src="images .jpeg" alt=""></div>
+
+    </div>
+  </div>
+
+  <div class="avis">
+   <p class="titre_avis hide">Avis de quelques visiteurs <span>sur MADAGASCAR</span></p>
+   <div class="border_avis"></div>
+
+   <div class="avis_item">
+      <div class="avis_item1">
+          <h1 class="hide">Lol&Oliv</h1>
+          <p  class="hide"><span>"</span>Madagascar, n'était pas une destination à laquelle nous avions
+            pensé, puis finalement on s'est dit pourquoi pas, il y a de belles
+            plages et de beaux fonds marins. On a essayé de faire abstraction
+            de nos préjugés sur la prostitution, la délinquance et la misère. Nous avons été mis en contact avec Mbola de l'agence. Elle a
+            été très patiente et pertinente, elle a su cerner nos besoins. Elle a
+            été très bonne conseillère et très professionnelle</p>
+      </div>
+      <div class="avis_item2">
+        <h1  class="hide">Philine & Jérémy</h1>
+        <p  class="hide"><span>"</span>Nous avons passé 15 jours à Mada, séjour inoubliable !. l'agence
+          locale **** 'à largement été à la hauteur de la prestation :
+          disponibilité et réactivité de **** , gentillesse des chauffeurs/guides
+          . Le programme à répondu à nos attentes de découvertes du nord
+          de la grande Ile. c'est vraiment à découvrir, je dirais même passer
+          un peu plus de temps sur la grande Ile tant les richesses à voir y
+          sont nombreuses et 1 ou 2 journée de moins à Nose-Be.</p>
+      </div>
+      <div class="avis_item3">
+        <h1 class="hide">Katia et Paul Henri</h1>
+        <p class="hide"><span>"</span>Anita a été à notre écoute pour construire au mieux notre séjour
+          de 3 semaines. Nous avons vu de magnifiques paysages et parc
+          nationaux. Sur place, Dera nous a accompagné et nous a expliqué
+          leur façon de vivre, leurs coutumes. Nous avons vraiment l'impression d'avoir partagé des moments
+          uniques. Merci encore à toutes l'équipe à l'agence ainsi qu'à tous les guides
+          locaux qui nous ont tant partagé !
+          </p>
+      </div>
+   </div>
+  </div>
+
+  <div class="blog">
+    <h1 class="hide">Blog</h1>
+    <div class="border_blog hide"></div>
+    <div class="contain hide">
+      <p class="hide"><span> Connaitre un peu plus les coutumes<br> et les mythes de Madagascar</span></p>
+      
+    </div>
+    <p class="enSavoir"><a href="">En savoir plus</a></p>
+  </div> --> 
+
+  <header id="header" class="header">
+    <div class="header_contain">
+    <ul>
+      <li><a href="#" class="a1" target="_self"><i class="fa fa-home"></i> ACCUEIL</a></li>
+      <!-- <li><a href="#c" target="_self" id="circuit">Nos services</a></li> -->
+        <li><a href="#c" target="_self" id="circuit">NOS DESTINATIONS</a></li>
+      <li><a href="#blog" target="_self" id="circuit">BLOG</a></li>
+      <li><a href="#propos" target="_self"><i class="fa fa-info">  A PROPOS</i></a></li>
+      <li><a  target="_self"><i class="fa fa-search" id="search"> Rechercher</i></a></li>
+      <li><a href="#"  class="contact"> Contact</a></li>
+    </ul>
+    </div>
+    <div class="icone_menu"><i class="fa fa-bars"></i></div>
+    <div class="logo">E-MADA <span>VISITE</span></div>
+  </header>
+  <script src="./../javascript/TypeWriter.js"></script>
+  <script src="./../javascript/scrollingEffect2.js"></script>
+  <script src="./../javascript/ScrollingEffect.js"></script>
+  <script src="../javascript/menuEffect.js"></script>
+  <script src="javascript/withouyActualisation.js"></script>
+  <script src="../bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+  <script src="../bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<!-- <footer>
+  <div class="footer_up">
+    <div>
+      <input type="text" name="coms"  class="input_coms" placeholder="laissez un commentaire"/>
+      <input type="submit" name="envoyer_coms" class="submit_coms" value="envoyer"/>
+    </div> 
+  </div>
+ 
+  <div class="sommaire">
+     <div class="titre">lien</div>
+         <a href="#">Accueil</a>
+         <a href="#propos">a propos</a>
+         <a href="">services</a>
+         <a href="">destinations</a>
+         <a href="">blog</a>
+         <a href="">Us et coûtumes</a>
+         <a href="">rechercher</a>
+  </div>
+
+    <div class="sommaire_circuit">
+     <div class="titre">destinations</div>
+         <a href="">NORD</a>
+         <a href="">SUD</a>
+         <a href="">EST</a>
+         <a href="">OUEST</a>
+         <a href="">CENTRE</a>
+  </div>
+
+    <div class="suivre">Nous suivre</div>
+    <div class="follow">
+    <div class="facebook"><i class="fa fa-facebook"></i></div>
+    <div class="twitter"><i class="fa fa-twitter"></i></div>
+    <div class="instagram"><i class="fa fa-instagram"></i></div>
+    <div class="youtube"><i class="fa fa-youtube"></i></div>
+    
+
+  </div>
+  <div class="contact">Nous contacter</div>
+  <div class="contact_1">Adresse: LOT III A 40 D TER AMBOHIDROA <br>Email: Loickemadesemadisson@gmail.com<br>Numéro de
+    téléphone: 0381958004</div>
+  <div class="product">
+    PRODUCT by JOHAN
+  </div>
+</footer> -->
+
+
+</html>
