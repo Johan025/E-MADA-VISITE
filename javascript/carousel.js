@@ -1,45 +1,31 @@
-class carousel{
+var myIndex = 0;
+carousel();
 
-    /**
- * @param element
- * @param {Object} options
-* @param {Object} options.slidesToScroll 
-* @param {Object} options.slidesVisible
- */
-    constructor(element, options={}){
-this.element=element;
-this.options=Object.assign({},{
-slidesToScroll: 1,
-slidesVisible:1,
-}, options) 
-this.children=[].slice(element.children)
-let root = this.createDivWithClass('carousel')
-let container=this.createDivWithClass('carousel__container')
-root.appendChild(container)
-this.element.appendChild(root)
-this.children.forEach(function (child){
-  container.appendChild(child)
-})
+function carousel() {
+  var i;
+  let prev=document.querySelector('.prev');
+  let next=document.querySelector('.next');
+  let item = document.getElementsByClassName("mySlides");
+      
+         prev.addEventListener("click", ()=>{
+          console.log("ok")
+          for (i = 0; i < item.length; i++) {
+            item[i].style.transform="translateX(00%)";  
+          }
+          myIndex++;
+         });
+        
+         next.addEventListener("click", ()=>{
+          console.log("ok")
+          for (i = 0; i < item.length; i++) {
+            item[i].style.transform="translateX(-120%)";   
+          }
+          myIndex++;
+         });
+
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+ 
 }
-
-/**
- * 
- * @param {string} className 
- * @returns {HTMLElement}
- */
-createDivWithClass (className){
-let div=document.createElement('div')
-div.setAttribute('class',className)
-return div
-}
-    }
-
-
-
-document.addEventListener('DOMContentLoaded', function(){
-    new carousel(document.querySelector('.carousel'),{
-        slidesToScroll:6,
-        slidesVisible: 4,
-   
-   })
-})
