@@ -736,7 +736,7 @@ header ul li .a1 {
   }
   .Popular .contain .item_1 {
     background-size: cover;
-    background-image: url(./assets/image/COUVERTURE.jpg);
+    background-image: url(assets/image/COUVERTURE.jpg);
     cursor: pointer;
     transition: 0.3s;
   }
@@ -787,7 +787,7 @@ header ul li .a1 {
   }
   .Popular .contain .item_2 {
     background-size: cover;
-    background-image: url(assets/image/c.jpg);
+    background-image: url(./assets/image/c.jpg);
     cursor: pointer;
   }
   .Popular .contain .item_2:hover {
@@ -798,7 +798,7 @@ header ul li .a1 {
   }
   .Popular .contain .item_3 {
     background-size: cover;
-    background-image: url(menu/assets/image//BG.jpg);
+    background-image: url(assets/image//BG.jpg);
     cursor: pointer;
   }
   .Popular .contain .item_3:hover {
@@ -808,7 +808,7 @@ header ul li .a1 {
   }
   .Popular .contain .item_4 {
     background-size: cover;
-    background-image: url("./../allée des baobab responsive.jpg");
+    background-image: url("./../../allée des baobab responsive.jpg");
     cursor: pointer;
   }
   .Popular .contain .item_4:hover {
@@ -964,7 +964,7 @@ header ul li .a1 {
     box-shadow: 0px 7px 12px black;
   }
   .suggestion .contain2 .item_1 {
-    background-image: url(menu/assets/image/airport-2373727_1280.jpg);
+    background-image: url(./assets/image/airport-2373727_1280.jpg);
     background-size: cover;
   }
   .suggestion .contain2 .item_1 h1 {
@@ -980,7 +980,7 @@ header ul li .a1 {
     font-family: Georgia, "Times New Roman", Times, serif;
   }
   .suggestion .contain2 .item_2 {
-    background-image: url(menu/assets/image/plane.jpg);
+    background-image: url(./assets/image/plane.jpg);
     background-size: cover;
   }
   .suggestion .contain2 .item_2 h1 {
@@ -996,7 +996,7 @@ header ul li .a1 {
     font-family: Georgia, "Times New Roman", Times, serif;
   }
   .suggestion .contain2 .item_3 {
-    background-image: url(menu/assets/image/ivato.jpg);
+    background-image: url(./assets/image/ivato.jpg);
     background-size: cover;
   }
   .suggestion .contain2 .item_3 h1 {
@@ -1786,7 +1786,7 @@ header ul li .a1 {
   }
   .Popular .contain .item_1 {
     background-size: cover;
-    background-image: url(menu/assets/image/COUVERTURE.jpg);
+    background-image: url(assets/image/COUVERTURE.jpg);
     cursor: pointer;
     transition: 0.3s;
   }
@@ -1837,7 +1837,7 @@ header ul li .a1 {
   }
   .Popular .contain .item_2 {
     background-size: cover;
-    background-image: url(./menu/assets/image/c.jpg);
+    background-image: url(./assets/image/c.jpg);
     cursor: pointer;
   }
   .Popular .contain .item_2:hover {
@@ -1848,7 +1848,7 @@ header ul li .a1 {
   }
   .Popular .contain .item_3 {
     background-size: cover;
-    background-image: url(menu/assets/image//BG.jpg);
+    background-image: url(assets/image//BG.jpg);
     cursor: pointer;
   }
   .Popular .contain .item_3:hover {
@@ -1858,7 +1858,7 @@ header ul li .a1 {
   }
   .Popular .contain .item_4 {
     background-size: cover;
-    background-image: url("./../allée des baobab responsive.jpg");
+    background-image: url("./../../allée des baobab responsive.jpg");
     cursor: pointer;
   }
   .Popular .contain .item_4:hover {
@@ -2047,7 +2047,7 @@ header ul li .a1 {
     box-shadow: 0px 7px 12px black;
   }
   .suggestion .contain2 .item_1 {
-    background-image: url(./menu/assets/image/airport-2373727_1280.jpg);
+    background-image: url(./assets/image/airport-2373727_1280.jpg);
     background-size: cover;
   }
   .suggestion .contain2 .item_1 h1 {
@@ -2062,7 +2062,7 @@ header ul li .a1 {
     font-family: Georgia, "Times New Roman", Times, serif;
   }
   .suggestion .contain2 .item_2 {
-    background-image: url(./menu/assets/image/plane.jpg);
+    background-image: url(./assets/image/plane.jpg);
     background-size: cover;
   }
   .suggestion .contain2 .item_2 h1 {
@@ -2077,7 +2077,7 @@ header ul li .a1 {
     font-family: Georgia, "Times New Roman", Times, serif;
   }
   .suggestion .contain2 .item_3 {
-    background-image: url(./menu/assets/image/ivato.jpg);
+    background-image: url(./assets/image/ivato.jpg);
     background-size: cover;
   }
   .suggestion .contain2 .item_3 h1 {
