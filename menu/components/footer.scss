@@ -1,0 +1,151 @@
+@media screen and (min-width: 1024px) {
+
+footer{
+    @include div(32rem, 100%, 0, 510rem, rgb(222, 216, 216));
+
+           
+          .logo{
+               width: 200px;
+               height: 90px;
+               position: absolute;
+               top: 3rem;
+               left: 40vw;
+          }
+
+          .info{
+              position: absolute;
+              top: 15rem;
+              left: 5rem;
+                  
+              h1{
+                @include h(28px, -4rem,-9rem,  500, 35vw);
+                color: $color-1;
+         }
+
+              .phone{
+                    position: absolute;
+                    top: 0rem;
+                    left: 0;
+                       img{
+                        width: 20px;
+                        height: 20px;
+                        position: absolute; 
+                        left: 1rem;
+                       }
+
+                       p{
+                         font-size: 18px;
+                         position: relative;
+                         left: -9rem;
+                         top: 0;
+                         width: 35vw;
+                       }
+              }
+            }
+
+              .email{
+                position: absolute;
+                top: 1.9rem;
+                left: 0;
+                   img{
+                    width: 20px;
+                    height: 20px;
+                    position: absolute; 
+                    left: 1rem;
+                    
+                   }
+
+                   p{
+                     font-size: 18px;
+                     position: relative;
+                     left: -4rem;
+                     top: 0;
+                     width: 35vw;
+                   }
+          }
+
+          .circ{
+                 position: absolute;
+                 left: 32rem;
+                 top: 14.8rem;
+                 display: block;
+                     h1{
+                        @include h(28px, -4rem,-9rem,  500, 35vw);
+                        color: $color-1;  
+                     }
+                      h3{
+                        font-size: 19px;
+                        position: relative;
+                     top: -0.4rem;
+                        left: 4.4rem;
+                      }
+          }
+
+          .raccourci{
+            position: absolute;
+            left: 50rem;
+            top: 14.8rem;
+            display: block;
+                h1{
+                   @include h(28px, -4rem,-9rem,  500, 35vw);
+                   color: $color-1;  
+                }
+                 h3{
+                   font-size: 19px;
+                   position: relative;
+                top: -0.6rem;
+                   left: 2.4rem;
+                 }
+     }
+
+     .reference{
+        position: absolute;
+        left: 71rem;
+        top: 14.8rem;
+        h1{
+            @include h(27px, -4rem,-9rem,  500, 25vw);
+            color: $color-1;  
+         }
+
+         p{
+             width: 19vw;
+             font-size: 18px;
+             position: absolute;
+             left: -6rem;
+         }
+
+     }
+
+     .border_{
+ @include border(74%, 2px, $color-1, 24rem, 11rem);
+     }
+
+     .icones{
+            position: absolute;
+            top:28rem;
+               display: flex;
+               left: 33%;
+               text-align: center;
+
+               img{
+                   width: 48px;
+                   height: 48px;
+                   border-radius: 50%;
+                   margin-left: 2rem;
+               }
+     }
+
+     .copright{
+          font-size: 21px;
+          position: absolute;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-weight: 800;
+          top: 25rem;
+          left: 32%;
+     }
+
+      
+     
+          
+}
+}

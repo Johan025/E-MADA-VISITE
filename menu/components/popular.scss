@@ -1,51 +1,124 @@
+@media screen and (min-width: 1024px) {
+   
+
 .Popular{
-     
-      position: absolute;
-      top: 153.4rem;
-      left: 0vw;
-      height: 30rem;
-      width: 100%;
-      background-color: rgb(171, 104, 16);
+      overflow: hidden;
+      @include div(30rem, 100%, 0, 153.4rem, rgb(233, 230, 230));
 
       h1{
-          font-size:35px;
-          position: absolute;
-          top: 13rem;
-          left: 2rem;
-          width: 16rem;
+        color: $color-2;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          @include h(38px, 10rem, -1rem, 800, 25vw);
+      }
+
+      p{
+         width: 25vw;
+     color: rgb(22, 21, 21);
+         @include p_left(0, 17rem, 22px);
       }
 
       .contain{
            position: absolute;
            left: 20rem;
+           overflow: hidden;
            display: flex;
            top: 0;
 
            div{
             margin-left: 4rem;
             margin-top: 3rem;
-            background-color: aqua;
+            box-shadow: 2px 8px 15px black;
             width: 24vw;
             height: 25rem;
             border-radius: 8px;
+            overflow: hidden;
          }
 
          .item_1{
           background-size: cover;
-         background-image: url(./../../ape-3721436_1280.jpg);
-       }
+         background-image: url(assets/image/COUVERTURE.jpg);
+         cursor: pointer;
+         transition: 0.3s;
+         // filter: brightness(50%);
+
+         &:hover{
+            width: 31vw;
+            height: 26rem;
+            transition: 0.3s;
+            transform: translateY(-25px);
+         }
+        }
+
+        .i1{
+         color: white;
+         width: 30vw;
+         @include p_left(1rem, 10rem, 28px);
+         display: none;
+    
+        
+        }
+
+        .i2{
+         color: rgb(81, 58, 4);
+         width: 30vw;
+         @include p_left(25vw, 10rem, 28px);
+         display: none;
+         
+        }
+
+        .St2{
+         border: 0 solid;
+         color:rgb(222, 215, 215);
+         border-radius: 9px;
+         text-align: center;
+         display: none;
+         @include button(rgb(175, 101, 17), 5px, 36vw, 15rem, 22px);
+               &:hover{
+                  position: absolute;
+                
+                  top: 15rem;
+                  left: 36vw;
+                  background-color: rgb(215, 215, 12);
+               }
+
+
+         }
  
        .item_2{
          background-size: cover;
-        background-image: url(./../../b.jpg);
+        background-image: url(./assets/image/c.jpg);
+        cursor: pointer;
+        &:hover{
+           width: 31vw;
+           height: 26rem;
+           transform: translateY(-25px);
+           transition: 0.4s;
+        }
       }
+
+     
+          
       .item_3{
          background-size: cover;
-        background-image: url(./../../BG.jpg);
+        background-image: url(assets/image//BG.jpg);
+
+        cursor: pointer;
+        &:hover{
+           width: 31vw;
+           height: 26rem;
+           transform: translateY(-25px);
+        }
       }
       .item_4{
          background-size: cover;
         background-image: url('./../../allée\ des\ baobab\ responsive.jpg');
+
+        cursor: pointer;
+        &:hover{
+           width: 31vw;
+           transform: translateY(-25px);
+           height: 26rem;
+        }
       }
       }
      
@@ -53,3 +126,57 @@
       
 
     }
+
+    .St1{
+      border: 0 solid;
+      color:rgb(88, 81, 7);
+      border-radius: 9px;
+      display:none;
+      text-align: center;
+      @include button(rgb(255, 255, 255), 5px, 13vw, 15rem, 22px);
+
+        &:hover{
+           background-color: rgb(244, 191, 17);
+        }
+}
+
+.button{
+     position: relative;
+     top: 14rem;
+     left: -18rem;
+      .next{
+      font-size: 33px;
+      border: 0 solid;
+      border-radius: 50%;
+      padding: 8px;
+      width: 50px;
+      background-color: rgb(255, 254, 253);
+      position: relative;
+      right: -97rem;
+      top: -4.4rem;
+      cursor: pointer;
+
+      &:hover{
+         background-color: rgb(13, 18, 59);
+         color: white;
+      }
+}
+        
+      .prev{
+            font-size: 33px;
+            border: 0 solid;
+            border-radius: 50%;
+            padding: 8px;
+            width: 50px;
+            background-color: rgb(255, 255, 255);
+            position: relative;
+            right: -41rem;
+            cursor: pointer;
+
+               &:hover{
+                  background-color: rgb(13, 18, 59);
+                  color: azure;
+               }
+      }
+}
+}

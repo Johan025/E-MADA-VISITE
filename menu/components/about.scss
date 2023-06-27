@@ -20,12 +20,8 @@
 
 .contenu {
     background-color: #7babcd;
-    width: 50vw;
-    height: 14cm;
-    position: absolute;
-    right: 0vw;
-    top: 0.14cm;
     padding-top: 70px;
+    @include div-droite(14cm, 50vw,0, 0.14cm );
 
     span {
         position: absolute;
@@ -33,6 +29,7 @@
         left: 4cm;
         font-size: 20px;
         width: 9cm;
+        color: rgb(22, 21, 21);
        
     }
 }
@@ -42,12 +39,8 @@
     top: 16.7cm;
 
     img {
-        width: 17cm;
-        height: 11.6cm;
-        position: absolute;
         box-shadow: 7px 4px 8px black;
-        top: 50.5px;
-        left: 4.9vw;
+        @include image(11.6cm, 45vw, 4.9vw, 50.5px, 2px);
     }
     
 
@@ -55,9 +48,10 @@
 }
 
 .titre-propos {
-    font-size: 32px;
-    margin-top: -2rem;
+    margin-top: -4rem;
     margin-left: 1.7cm;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 46px;
+    font-family: 'yeseva_oneregular';
+    font-size: 60px;
+    font-weight: bold;
+    color: #29353e;
 }

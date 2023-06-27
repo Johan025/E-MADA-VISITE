@@ -22,7 +22,7 @@ ul {
     margin: 0;
     padding: 0;
     float: right;
-    right: 5vw;
+    right: 4vw;
     top: 0.5cm;
 }
 
@@ -82,14 +82,20 @@ color:black;
 
 .logo {
     position: absolute;
-    left: 1cm;
-    font-size: 42px;
+    left: 0.5cm;
+    font-size: 34px;
     top: 0.2cm;
     color: #113f70;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'yeseva_oneregular' ;
 
       span {
         color: #072b51;
+        font-family:'yeseva_oneregular' ;
+      }
+
+      img{
+          width: 70px;
+          height: 70px;
       }
 }
 
@@ -117,4 +123,12 @@ color:black;
     padding: 6px;
     font-size: 42px;
     margin-left: 5rem;
+}
+
+.up-{
+      width: 70px;
+      height: 40px;
+      position: fixed;
+      top: 350em;
+      right: -325em;
 }

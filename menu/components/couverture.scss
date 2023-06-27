@@ -1,0 +1,61 @@
+
+  
+
+.c img{
+    width:100.02%;
+    height: 38rem;
+    position:absolute;
+    top: 2.1cm;
+    left:0;
+}
+
+.c_responsive{
+    display: none;
+}
+
+
+
+.visit{
+     font-size: 81px;
+     position: absolute;
+     top: 17rem;
+     z-index: 10;
+     color: white;
+     left: 4vw;
+     width: 90vw;
+   font-family: 'abril_fatfaceregular';
+     font-weight: 500;
+}
+
+.Anakao{
+    text-align: center;
+    font-family: 'Memphis-Bold';
+    font-weight: 400;
+    font-size: 43px;
+    position: absolute;
+    justify-content: center;
+    left: 14vw;
+    color: white;
+    top: 25rem;
+    text-align: center;
+ 
+}
+
+.explore{
+       position: absolute;
+       top: -5rem;
+       left: 27vw;
+       background-color: rgb(255, 255, 255);
+       border: 0 solid;
+       color:rgb(88, 81, 7);
+       border-radius: 9px;
+       font-size: 35px;
+       padding: 5px;
+       text-align: center;
+
+         &:hover{
+            background-color: rgb(244, 191, 17);
+         }
+}
+
+
