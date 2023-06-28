@@ -196,7 +196,7 @@ header ul li .a1 {
   right: -325em;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .Choiceofmada {
     position: absolute;
     top: 77rem;
@@ -422,7 +422,7 @@ header ul li .a1 {
   background-color: rgb(244, 191, 17);
 }
 
-@media screen and (min-width: 280px) and (max-width: 1064px) {
+@media screen and (min-width: 280px) and (max-width: 763px) {
   .header {
     position: absolute;
   }
@@ -437,7 +437,7 @@ header ul li .a1 {
   }
   .header_contain {
     width: 100%;
-    height: 26rem;
+    height: 24.5rem;
     position: absolute;
     left: 0rem;
     top: 5.2rem;
@@ -448,15 +448,16 @@ header ul li .a1 {
   .header_contain ul {
     display: block;
     position: absolute;
-    right: 0rem;
-    top: 4rem;
+    left: 42vw;
+    top: 2.6rem;
+    width: 58vw;
   }
   .header_contain ul li {
     margin-top: 22px;
   }
   .header_contain ul li a {
     color: #000;
-    font-size: 22px;
+    font-size: 19px;
     padding: -25px;
     width: -5rem;
     position: relative;
@@ -464,6 +465,16 @@ header ul li .a1 {
   }
   .header_contain ul li .a1 {
     background-color: antiquewhite;
+  }
+  .header_contain ul .contact {
+    border: 1.5px solid #113f70;
+    border-radius: 8px;
+    padding: 7px;
+    font-size: 20.4px;
+    margin-left: 0rem;
+  }
+  .header_contain ul i {
+    color: rgb(0, 0, 0);
   }
   .icone_menu i {
     position: relative;
@@ -706,7 +717,7 @@ header ul li .a1 {
     font-size: 26px;
     position: absolute;
     top: 3rem;
-    left: -2vw;
+    left: 0vw;
     font-weight: 800;
     width: 100vw;
   }
@@ -714,9 +725,9 @@ header ul li .a1 {
     width: 95vw;
     color: rgb(23, 21, 21);
     position: absolute;
-    left: 0;
+    left: 2vw;
     top: 6rem;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
   }
   .Popular .contain {
@@ -886,8 +897,8 @@ header ul li .a1 {
   .suggestion p {
     position: absolute;
     left: 8vw;
-    top: 12rem;
-    font-size: 22px;
+    top: 10rem;
+    font-size: 19px;
     text-align: center;
     text-align: center;
     width: 80vw;
@@ -953,7 +964,7 @@ header ul li .a1 {
   .suggestion .contain2 {
     position: absolute;
     top: 20rem;
-    left: 15vw;
+    left: 13vw;
     display: block;
   }
   .suggestion .contain2 div {
@@ -1014,7 +1025,7 @@ header ul li .a1 {
     position: absolute;
     top: 288rem;
     width: 100%;
-    height: 95rem;
+    height: 85rem;
     background-color: #6a98ca;
   }
   .learnAbout h1 {
@@ -1041,7 +1052,7 @@ header ul li .a1 {
     width: 80vw;
     height: 20rem;
     position: absolute;
-    left: 7vw;
+    left: 10.3vw;
     top: 10rem;
     border-radius: 5px;
   }
@@ -1049,7 +1060,7 @@ header ul li .a1 {
     position: absolute;
     right: 8vw;
     top: 32rem;
-    font-size: 25px;
+    font-size: 21px;
     font-weight: 600;
     width: 75vw;
     color: rgb(50, 50, 50);
@@ -1061,17 +1072,17 @@ header ul li .a1 {
     color: black;
     position: absolute;
     left: 42vw;
-    top: 42.5rem;
+    top: 39.3rem;
     padding: 6px;
     background-color: rgb(220, 174, 22);
-    font-size: 25px;
+    font-size: 22px;
   }
   .learnAbout .searchButton a:hover {
     background-color: rgb(191, 113, 5);
   }
   .learnAbout .anim_2 {
-    width: 38px;
-    height: 42px;
+    width: 32px;
+    height: 32px;
     position: absolute;
     left: 4vw;
     top: 32.5rem;
@@ -1100,21 +1111,21 @@ header ul li .a1 {
   }
   .learnAbout .gestionItineraire {
     position: absolute;
-    top: 44rem;
+    top: 39rem;
   }
   .learnAbout .gestionItineraire .imageI img {
     width: 80vw;
     height: 20rem;
     position: absolute;
-    left: 8.5vw;
+    left: 10.5vw;
     top: 6rem;
     border-radius: 5px;
   }
   .learnAbout .gestionItineraire .description_Itineraire {
     position: absolute;
     left: 16.5vw;
-    top: 30rem;
-    font-size: 23px;
+    top: 28.6rem;
+    font-size: 21px;
     text-align: center;
     font-weight: 600;
     width: 83vw;
@@ -1122,8 +1133,8 @@ header ul li .a1 {
     font-family: "Times New Roman", Times, serif;
   }
   .learnAbout .gestionItineraire .anim_2 {
-    width: 38px;
-    height: 42px;
+    width: 32px;
+    height: 32px;
     position: absolute;
     left: 2.6vw;
     top: 30.5rem;
@@ -1156,17 +1167,17 @@ header ul li .a1 {
     color: black;
     position: absolute;
     left: 45vw;
-    top: 42.4rem;
+    top: 40.4rem;
     padding: 6px;
     background-color: rgb(220, 174, 22);
-    font-size: 23px;
+    font-size: 20px;
   }
   .learnAbout .searchButton2 a:hover {
     background-color: rgb(191, 113, 5);
   }
   .circuits {
     position: absolute;
-    top: 382rem;
+    top: 372rem;
     width: 100%;
     height: 161rem;
     background-color: rgb(233, 230, 230);
@@ -1237,7 +1248,7 @@ header ul li .a1 {
   .circuits .contain-1 .contain_1 button {
     position: absolute;
     left: 25vw;
-    top: 30.1rem;
+    top: 29.4rem;
     padding: 4px;
     background-color: #697278;
     font-size: 19px;
@@ -1379,7 +1390,7 @@ header ul li .a1 {
   }
   .avis {
     position: absolute;
-    top: 540rem;
+    top: 528rem;
     width: 100%;
     height: 62rem;
     overflow: hidden;
@@ -1559,7 +1570,7 @@ header ul li .a1 {
     height: 65rem;
     position: absolute;
     left: 0;
-    top: 750rem;
+    top: 747rem;
     background-color: rgb(222, 216, 216);
   }
   footer .logo {
@@ -1622,7 +1633,7 @@ header ul li .a1 {
   footer .circ {
     position: absolute;
     left: 3vw;
-    top: 27.3rem;
+    top: 27.1rem;
     display: block;
   }
   footer .circ h1 {
@@ -1631,7 +1642,7 @@ header ul li .a1 {
     top: -4rem;
     left: -9rem;
     font-weight: 500;
-    width: 125vw;
+    width: 105vw;
     color: rgb(4, 82, 137);
   }
   footer .circ h3 {
@@ -1650,9 +1661,9 @@ header ul li .a1 {
     font-size: 28px;
     position: absolute;
     top: -4rem;
-    left: 2vw;
+    left: 6vw;
     font-weight: 500;
-    width: 51vw;
+    width: 41vw;
     color: rgb(4, 82, 137);
   }
   footer .raccourci h3 {
@@ -1693,7 +1704,7 @@ header ul li .a1 {
     position: absolute;
     top: 61rem;
     display: flex;
-    left: 3%;
+    left: 7.3%;
     text-align: center;
   }
   footer .icones img {
@@ -1712,7 +1723,7 @@ header ul li .a1 {
     width: 90vw;
   }
 }
-@media screen and (min-width: 280px) and (max-width: 1064px) and (min-width: 450px) and (max-width: 764px) {
+@media screen and (min-width: 280px) and (max-width: 763px) and (min-width: 450px) and (max-width: 764px) {
   .contain img {
     box-shadow: 7px 4px 8px black;
     width: 86vw;
@@ -1739,7 +1750,1342 @@ header ul li .a1 {
     top: 125rem;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 764px) and (max-width: 1024px) {
+  .header {
+    position: absolute;
+    background-color: #f2f2f2;
+  }
+  .logo {
+    font-size: 27px;
+    left: 0.3rem;
+    top: 0.6cm;
+  }
+  .logo img {
+    width: 48px;
+    height: 48px;
+  }
+  .header_contain {
+    width: 100%;
+    height: 24.5rem;
+    position: absolute;
+    left: 0rem;
+    top: 5.2rem;
+    background-color: rgb(22, 98, 211);
+    transform: translateY(-100rem);
+    transition: 0.3s;
+  }
+  .header_contain ul {
+    display: block;
+    position: absolute;
+    left: 32vw;
+    top: 2.6rem;
+    width: 58vw;
+  }
+  .header_contain ul li {
+    margin-top: 22px;
+  }
+  .header_contain ul li a {
+    color: #000;
+    font-size: 19px;
+    padding: -25px;
+    width: -5rem;
+    position: relative;
+    right: 5rem;
+  }
+  .header_contain ul li .a1 {
+    background-color: antiquewhite;
+  }
+  .header_contain ul .contact {
+    border: 1.5px solid #113f70;
+    border-radius: 8px;
+    padding: 7px;
+    font-size: 20.4px;
+    margin-left: 0rem;
+  }
+  .header_contain ul i {
+    color: rgb(0, 0, 0);
+  }
+  .icone_menu i {
+    position: relative;
+    float: right;
+    display: flex;
+    top: 1rem;
+    right: 4vw;
+    z-index: 6;
+    font-size: 25px;
+    border-radius: 30%;
+  }
+  .hideshow {
+    transform: translateY(0rem);
+  }
+  .zIndex {
+    z-index: 6;
+  }
+  .c {
+    display: none;
+  }
+  .visit {
+    z-index: 4;
+    width: 98vw;
+    position: absolute;
+    left: 1vw;
+    top: 18rem;
+    font-size: 36.2px;
+    text-align: center;
+  }
+  .Anakao {
+    width: 98vw;
+    position: absolute;
+    left: 1vw;
+    top: 22rem;
+    font-size: 23.2px;
+    text-align: center;
+  }
+  .title {
+    font-size: 25px;
+    position: absolute;
+    top: 14rem;
+    left: 15vw;
+    font-weight: 800;
+    width: 66vw;
+  }
+  .explore {
+    border: 0 solid;
+    color: rgb(88, 81, 7);
+    border-radius: 9px;
+    position: absolute;
+    left: 39.5vw;
+    top: 27rem;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    font-size: 22px;
+  }
+  .explore:hover {
+    background-color: rgb(244, 191, 17);
+  }
+  .c_responsive {
+    display: block;
+  }
+  .c_responsive img {
+    width: 100%;
+    height: 34.6rem;
+  }
+  .contenu {
+    padding-top: 70px;
+    width: 100%;
+    height: 18cm;
+    position: absolute;
+    left: 0;
+    top: -5.3rem;
+    background-color: #7babcd;
+  }
+  .contenu span {
+    width: 90%;
+    position: absolute;
+    left: 0.5cm;
+    top: 3.5cm;
+    font-size: 18px;
+    text-align: center;
+  }
+  .int {
+    position: absolute;
+    left: 10vw;
+    top: 0.78cm;
+    padding-top: 4cm;
+    height: 80vh;
+    width: 40vw;
+  }
+  .titre-propos {
+    font-size: 30px;
+    margin-top: -13rem;
+    margin-left: 12vw;
+    width: 40vw;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .contain {
+    position: absolute;
+    top: 16.9cm;
+  }
+  .contain img {
+    box-shadow: 7px 4px 8px black;
+    width: 60vw;
+    height: 10.4cm;
+    position: absolute;
+    left: 20vw;
+    top: 4.5cm;
+    border-radius: 4px;
+  }
+  .Choiceofmada {
+    position: absolute;
+    top: 73rem;
+    left: 0vw;
+    text-align: center;
+  }
+  .Choiceofmada .border2 {
+    width: 1.6cm;
+    height: 7px;
+    position: absolute;
+    left: 45vw;
+    top: 11.5rem;
+    background-color: rgb(4, 82, 137);
+    text-align: center;
+  }
+  .choice_item1 {
+    position: absolute;
+    top: 8rem;
+    right: -96vw;
+    font-size: 30px;
+    width: 90vw;
+    font-weight: bold;
+    color: #29353e;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .galerie {
+    position: absolute;
+    top: 8rem;
+  }
+  .galerie .item_1 img {
+    width: 34vw;
+    height: 5.5cm;
+    position: absolute;
+    left: 0;
+    top: 85rem;
+    border-radius: 1px;
+  }
+  .galerie .p1 {
+    position: absolute;
+    left: 20.4vw;
+    top: 72.6em;
+    font-size: 20px;
+    text-align: center;
+    width: 60vw;
+  }
+  .galerie .item_3 img {
+    width: 34vw;
+    height: 5.5cm;
+    position: absolute;
+    left: 66vw;
+    top: 85rem;
+    border-radius: 1px;
+  }
+  .galerie2 {
+    position: absolute;
+    top: 25rem;
+  }
+  .galerie2 .item_4 {
+    position: absolute;
+    left: 1vw;
+    top: 71.9em;
+    font-size: 19px;
+    text-align: center;
+    width: 30vw;
+  }
+  .galerie2 .item_5 img {
+    width: 32vw;
+    height: 5.5cm;
+    position: absolute;
+    left: 34vw;
+    top: 81.05rem;
+    border-radius: 1px;
+  }
+  .galerie2 .item_6 {
+    position: absolute;
+    left: 68vw;
+    top: 72.9em;
+    font-size: 19px;
+    text-align: center;
+    width: 30vw;
+    z-index: 4;
+  }
+  .galerie3 {
+    position: absolute;
+    top: 34.05rem;
+  }
+  .galerie3 .item_7 img {
+    width: 34vw;
+    height: 5.5cm;
+    position: absolute;
+    left: 0;
+    top: 85rem;
+    border-radius: 1px;
+  }
+  .galerie3 .item_8 img {
+    width: 32.4vw;
+    height: 5.5cm;
+    position: absolute;
+    left: 33.8vw;
+    top: 85rem;
+    border-radius: 1px;
+  }
+  .galerie3 .item_9 img {
+    width: 34vw;
+    height: 5.5cm;
+    position: absolute;
+    left: 66vw;
+    top: 85rem;
+    border-radius: 1px;
+  }
+  .Popular {
+    position: absolute;
+    margin-top: 20rem;
+    overflow: hidden;
+    width: 100%;
+    height: 40rem;
+    position: absolute;
+    left: 0;
+    top: 112.4rem;
+    background-color: rgb(233, 230, 230);
+  }
+  .Popular h1 {
+    color: #29353e;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top: 3rem;
+    left: 0vw;
+    font-weight: 800;
+    width: 100vw;
+  }
+  .Popular p {
+    width: 95vw;
+    color: rgb(23, 21, 21);
+    position: absolute;
+    left: 2vw;
+    top: 6rem;
+    font-size: 20px;
+    text-align: center;
+  }
+  .Popular .contain {
+    position: absolute;
+    left: -5vw;
+    overflow: hidden;
+    display: flex;
+    top: 12rem;
+    width: 500%;
+  }
+  .Popular .contain div {
+    margin-left: 4rem;
+    margin-top: 3rem;
+    width: 15rem;
+    height: 19.4rem;
+    border-radius: 8px;
+  }
+  .Popular .contain .item_1 {
+    background-size: cover;
+    background-image: url(assets/image/COUVERTURE.jpg);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .Popular .contain .item_1:hover {
+    width: 31vw;
+    height: 26rem;
+    transition: 0.3s;
+    transform: translateY(-25px);
+  }
+  .Popular .contain .i1 {
+    color: white;
+    width: 30vw;
+    position: absolute;
+    left: 1rem;
+    top: 10rem;
+    font-size: 28px;
+    text-align: center;
+    display: none;
+  }
+  .Popular .contain .i2 {
+    color: rgb(81, 58, 4);
+    width: 30vw;
+    position: absolute;
+    left: 25vw;
+    top: 10rem;
+    font-size: 28px;
+    text-align: center;
+    display: none;
+  }
+  .Popular .contain .St2 {
+    border: 0 solid;
+    display: none;
+    color: rgb(222, 215, 215);
+    border-radius: 9px;
+    text-align: center;
+    position: absolute;
+    left: 36vw;
+    top: 15rem;
+    padding: 5px;
+    background-color: rgb(175, 101, 17);
+    font-size: 22px;
+  }
+  .Popular .contain .St2:hover {
+    position: absolute;
+    top: 15rem;
+    left: 36vw;
+    background-color: rgb(215, 215, 12);
+  }
+  .Popular .contain .item_2 {
+    background-size: cover;
+    background-image: url(./assets/image/c.jpg);
+    cursor: pointer;
+  }
+  .Popular .contain .item_2:hover {
+    width: 31vw;
+    height: 26rem;
+    transform: translateY(-25px);
+    transition: 0.4s;
+  }
+  .Popular .contain .item_3 {
+    background-size: cover;
+    background-image: url(assets/image//BG.jpg);
+    cursor: pointer;
+  }
+  .Popular .contain .item_3:hover {
+    width: 31vw;
+    height: 26rem;
+    transform: translateY(-25px);
+  }
+  .Popular .contain .item_4 {
+    background-size: cover;
+    background-image: url("./../../allée des baobab responsive.jpg");
+    cursor: pointer;
+  }
+  .Popular .contain .item_4:hover {
+    width: 31vw;
+    transform: translateY(-25px);
+    height: 26rem;
+  }
+  .St1 {
+    border: 0 solid;
+    color: rgb(88, 81, 7);
+    border-radius: 9px;
+    display: none;
+    text-align: center;
+    position: absolute;
+    left: 13vw;
+    top: 15rem;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    font-size: 22px;
+  }
+  .St1:hover {
+    background-color: rgb(244, 191, 17);
+  }
+  .button {
+    position: relative;
+    top: 23rem;
+    left: -106vw;
+  }
+  .button .next {
+    font-size: 28px;
+    border: 0 solid;
+    border-radius: 50%;
+    padding: 8px;
+    width: 50px;
+    background-color: rgb(255, 254, 253);
+    position: relative;
+    right: -184vw;
+    top: -3.6rem;
+    cursor: pointer;
+  }
+  .button .next:hover {
+    background-color: rgb(13, 18, 59);
+    color: white;
+  }
+  .button .prev {
+    font-size: 28px;
+    border: 0 solid;
+    border-radius: 50%;
+    padding: 8px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    left: 56vh;
+    cursor: pointer;
+  }
+  .button .prev:hover {
+    background-color: rgb(13, 18, 59);
+    color: azure;
+  }
+  .suggestion {
+    position: absolute;
+    top: 173rem;
+  }
+  .suggestion h1 {
+    font-size: 30px;
+    position: absolute;
+    top: 4rem;
+    left: 18vw;
+    font-weight: 500;
+    width: 65vw;
+    font-family: "abril_fatfaceregular";
+    font-weight: bold;
+    color: #29353e;
+  }
+  .suggestion p {
+    position: absolute;
+    left: 8vw;
+    top: 10rem;
+    font-size: 19px;
+    text-align: center;
+    text-align: center;
+    width: 80vw;
+  }
+  .suggestion .border5 {
+    border-radius: 5px;
+    width: 1.6cm;
+    height: 9px;
+    position: absolute;
+    left: 46.2vw;
+    top: 7.7rem;
+    background-color: rgb(4, 82, 137);
+    text-align: center;
+  }
+  .suggestion .contain1 {
+    display: block;
+    position: absolute;
+    top: -8rem;
+    left: 6.2vw;
+  }
+  .suggestion .contain1 .i1, .suggestion .contain1 .i2, .suggestion .contain1 .i3 {
+    margin-top: 32.4rem;
+    border: 0px solid black;
+    padding-top: 5px;
+    padding-bottom: 13px;
+    padding-left: 19px;
+    padding-right: 19px;
+    font-size: 28px;
+    border-radius: 80%;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(172, 136, 7);
+    animation: rotate_ 5s infinite linear;
+  }
+  @keyframes rotate_ {
+    0% {
+      transform: rotate(350deg);
+    }
+    20% {
+      transform: rotate(450deg);
+    }
+    40% {
+      transform: rotate(550deg);
+    }
+    60% {
+      transform: rotate(650deg);
+    }
+    80% {
+      transform: rotate(750deg);
+    }
+    100% {
+      transform: rotate(850deg);
+    }
+  }
+  .suggestion .border_um {
+    width: 6px;
+    height: 104rem;
+    position: absolute;
+    left: 9.6vw;
+    top: 26rem;
+    background-color: rgb(172, 136, 7);
+  }
+  .suggestion .contain2 {
+    position: absolute;
+    top: 20rem;
+    left: 13vw;
+    display: block;
+  }
+  .suggestion .contain2 div {
+    height: 25rem;
+    width: 75vw;
+    margin-top: 11rem;
+    border-radius: 5px;
+    box-shadow: 0px 7px 12px black;
+  }
+  .suggestion .contain2 .item_1 {
+    background-image: url(./assets/image/airport-2373727_1280.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .suggestion .contain2 .item_1 h1 {
+    font-size: 19px;
+    position: absolute;
+    top: 38rem;
+    left: -5vw;
+    font-weight: bold;
+    width: 84vw;
+    color: rgb(148, 127, 8);
+    z-index: 30;
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .suggestion .contain2 .item_2 {
+    background-image: url(./assets/image/plane.jpg);
+    background-size: cover;
+  }
+  .suggestion .contain2 .item_2 h1 {
+    font-size: 19px;
+    position: absolute;
+    top: 74rem;
+    left: -5vw;
+    font-weight: bold;
+    width: 84vw;
+    color: rgb(148, 127, 8);
+    z-index: 50;
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .suggestion .contain2 .item_3 {
+    background-image: url(./assets/image/ivato.jpg);
+    background-size: cover;
+  }
+  .suggestion .contain2 .item_3 h1 {
+    font-size: 19px;
+    position: absolute;
+    top: 111rem;
+    left: -5vw;
+    font-weight: bold;
+    width: 84vw;
+    color: rgb(148, 127, 8);
+    font-style: italic;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .learnAbout {
+    position: absolute;
+    top: 315rem;
+    width: 100%;
+    height: 85rem;
+    background-color: #6a98ca;
+  }
+  .learnAbout h1 {
+    font-size: 30px;
+    position: absolute;
+    top: 2rem;
+    left: -1vw;
+    font-weight: 800;
+    width: 100vw;
+    font-family: "yeseva_oneregular";
+    color: #29353e;
+  }
+  .learnAbout .borderLearn {
+    border-radius: 5px;
+    width: 1.6cm;
+    height: 9px;
+    position: absolute;
+    left: 42vw;
+    top: 6rem;
+    background-color: rgb(220, 174, 22);
+  }
+  .learnAbout .imgH2 img {
+    position: absolute;
+    width: 60vw;
+    height: 20rem;
+    position: absolute;
+    left: 19.3vw;
+    top: 10rem;
+    border-radius: 5px;
+  }
+  .learnAbout .description {
+    position: absolute;
+    right: 12vw;
+    top: 33rem;
+    font-size: 23px;
+    font-weight: 600;
+    width: 75vw;
+    color: rgb(50, 50, 50);
+    font-family: "Times New Roman", Times, serif;
+  }
+  .learnAbout .searchButton a {
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    left: 42vw;
+    top: 39.3rem;
+    padding: 6px;
+    background-color: rgb(220, 174, 22);
+    font-size: 22px;
+  }
+  .learnAbout .searchButton a:hover {
+    background-color: rgb(191, 113, 5);
+  }
+  .learnAbout .anim_2 {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 4vw;
+    top: 32.5rem;
+    background-color: rgb(220, 174, 22);
+    animation: rotate2 5s infinite linear;
+  }
+  @keyframes rotate2 {
+    0% {
+      transform: rotate(350deg);
+    }
+    20% {
+      transform: rotate(450deg);
+    }
+    40% {
+      transform: rotate(550deg);
+    }
+    60% {
+      transform: rotate(650deg);
+    }
+    80% {
+      transform: rotate(750deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  .learnAbout .gestionItineraire {
+    position: absolute;
+    top: 39rem;
+  }
+  .learnAbout .gestionItineraire .imageI img {
+    width: 60vw;
+    height: 20rem;
+    position: absolute;
+    left: 19.5vw;
+    top: 6rem;
+    border-radius: 5px;
+  }
+  .learnAbout .gestionItineraire .description_Itineraire {
+    position: absolute;
+    left: 8.5vw;
+    top: 29.6rem;
+    font-size: 23px;
+    text-align: center;
+    font-weight: 600;
+    width: 83vw;
+    color: rgb(50, 50, 50);
+    font-family: "Times New Roman", Times, serif;
+  }
+  .learnAbout .gestionItineraire .anim_2 {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 2.6vw;
+    top: 30.5rem;
+    background-color: rgb(220, 174, 22);
+    animation: rotate2 5s infinite linear;
+  }
+  @keyframes rotate2 {
+    0% {
+      transform: rotate(350deg);
+    }
+    20% {
+      transform: rotate(450deg);
+    }
+    40% {
+      transform: rotate(550deg);
+    }
+    60% {
+      transform: rotate(650deg);
+    }
+    80% {
+      transform: rotate(750deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  .learnAbout .searchButton2 a {
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    left: 45vw;
+    top: 37.4rem;
+    padding: 6px;
+    background-color: rgb(220, 174, 22);
+    font-size: 20px;
+  }
+  .learnAbout .searchButton2 a:hover {
+    background-color: rgb(191, 113, 5);
+  }
+  .circuits {
+    position: absolute;
+    top: 397rem;
+    width: 100%;
+    height: 85rem;
+    background-color: rgb(233, 230, 230);
+  }
+  .circuits h1 {
+    font-size: 34px;
+    position: absolute;
+    top: 8rem;
+    left: 13vw;
+    font-weight: 500;
+    width: 75vw;
+    font-family: "abril_fatfaceregular";
+    font-weight: -150;
+    color: #29353e;
+  }
+  .circuits .border6 {
+    border-radius: 5px;
+    width: 1.6cm;
+    height: 9px;
+    position: absolute;
+    left: 48vw;
+    top: 12.5rem;
+    background-color: rgb(4, 82, 137);
+    text-align: center;
+  }
+  .circuits .contain-1 {
+    display: flex;
+    position: absolute;
+    top: 18rem;
+    left: -6.3vw;
+    text-align: center;
+  }
+  .circuits .contain-1 div {
+    height: 29rem;
+    width: 42vw;
+    background-color: rgb(255, 255, 255);
+    margin-left: 5rem;
+    border-radius: 9px;
+    box-shadow: 3px 3px 15px rgba(114, 111, 111, 0.878);
+  }
+  .circuits .contain-1 img {
+    height: 15rem;
+    width: 42vw;
+    border-radius: 9px;
+  }
+  .circuits .contain-1 .contain_1 {
+    background-size: cover;
+  }
+  .circuits .contain-1 .contain_1 h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 19px;
+    position: absolute;
+    top: 16.4rem;
+    left: 10vw;
+    font-weight: 600;
+    width: 38vw;
+  }
+  .circuits .contain-1 .contain_1 p {
+    position: absolute;
+    left: 14vw;
+    top: 19.5rem;
+    font-size: 18px;
+    text-align: center;
+    width: 32vw;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .circuits .contain-1 .contain_1 button {
+    position: absolute;
+    left: 12rem;
+    top: 24.8rem;
+    padding: 4px;
+    background-color: #697278;
+    font-size: 19px;
+    border-radius: 6px;
+    border: 0 solid;
+  }
+  .circuits .contain-1 .contain_1:hover {
+    box-shadow: 5px 8px 35px black;
+  }
+  .circuits .contain-1 .contain_2 {
+    background-size: 100%;
+  }
+  .circuits .contain-1 .contain_2 img {
+    height: 15rem;
+    width: 42vw;
+    border-radius: 9px;
+  }
+  .circuits .contain-1 .contain_2 h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 19px;
+    position: absolute;
+    top: 17.4rem;
+    left: 59vw;
+    font-weight: 600;
+    width: 45vw;
+    text-align: center;
+  }
+  .circuits .contain-1 .contain_2 p {
+    position: absolute;
+    left: 67vw;
+    top: 19.5rem;
+    font-size: 18px;
+    text-align: center;
+    width: 32vw;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    text-align: center;
+  }
+  .circuits .contain-1 .contain_2 button {
+    position: absolute;
+    left: 77.4vw;
+    top: 25.4rem;
+    padding: 4px;
+    background-color: #697278;
+    font-size: 19px;
+    border-radius: 6px;
+    border: 0 solid;
+    text-align: center;
+  }
+  .circuits .contain-1 .contain_2:hover {
+    box-shadow: 5px 8px 35px black;
+  }
+  .circuits .contain-1 .c3 {
+    height: 15rem;
+    width: 42vw;
+    border-radius: 9px;
+  }
+  .circuits .contain-1 .contain_3 {
+    background-size: cover;
+    position: absolute;
+    top: 33rem;
+  }
+  .circuits .contain-1 .contain_3 h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 19px;
+    position: absolute;
+    top: 16.5rem;
+    left: 2vw;
+    font-weight: 600;
+    width: 32vw;
+  }
+  .circuits .contain-1 .contain_3 p {
+    position: absolute;
+    left: 3vw;
+    top: 19.6rem;
+    font-size: 18px;
+    text-align: center;
+    width: 32vw;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .circuits .contain-1 .contain_3 button {
+    position: absolute;
+    left: 7.5rem;
+    top: 25.5rem;
+    padding: 4px;
+    background-color: #697278;
+    font-size: 19px;
+    border-radius: 6px;
+    border: 0 solid;
+  }
+  .circuits .contain-1 .contain_3:hover {
+    box-shadow: 5px 8px 35px black;
+  }
+  .circuits .contain-2 {
+    display: flex;
+    position: absolute;
+    top: 51rem;
+    left: 44.4vw;
+  }
+  .circuits .contain-2 div {
+    height: 29rem;
+    width: 42vw;
+    background-color: rgb(255, 255, 255);
+    margin-left: 4rem;
+    border-radius: 9px;
+    box-shadow: 3px 3px 15px rgba(114, 111, 111, 0.878);
+  }
+  .circuits .contain-2 .contain_1 {
+    background-size: cover;
+    margin-left: 5.5rem;
+  }
+  .circuits .contain-2 .contain_1 img {
+    width: 42vw;
+    height: 6.4cm;
+    border-radius: 9px;
+  }
+  .circuits .contain-2 .contain_1 h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 19px;
+    position: absolute;
+    top: 16.5rem;
+    left: 15vw;
+    font-weight: 600;
+    width: 33.5vw;
+  }
+  .circuits .contain-2 .contain_1 p {
+    position: absolute;
+    left: 7.7rem;
+    top: 19.5rem;
+    font-size: 18px;
+    text-align: center;
+    width: 33vw;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .circuits .contain-2 .contain_1 button {
+    position: absolute;
+    left: 13.4rem;
+    top: 25.4rem;
+    padding: 4px;
+    background-color: #697278;
+    font-size: 19px;
+    border-radius: 6px;
+    border: 0 solid;
+  }
+  .circuits .contain-2 .contain_1:hover {
+    box-shadow: 5px 8px 35px black;
+  }
+  .avis {
+    position: absolute;
+    top: 478rem;
+    width: 100%;
+    height: 62rem;
+    overflow: hidden;
+    z-index: 50;
+  }
+  .avis h1 {
+    font-size: 30px;
+    position: absolute;
+    top: 8rem;
+    left: 12vw;
+    font-weight: 500;
+    width: 75vw;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 550;
+    color: #29353e;
+  }
+  .avis .border7 {
+    border-radius: 5px;
+    width: 1.6cm;
+    height: 9px;
+    position: absolute;
+    left: 44vw;
+    top: 11.5rem;
+    background-color: rgb(4, 82, 137);
+    text-align: center;
+  }
+  .avis .button_avis {
+    position: relative;
+    top: 19rem;
+    left: -132vw;
+    z-index: 20;
+  }
+  .avis .button_avis .next1 {
+    font-size: 33px;
+    border: 0 solid;
+    border-radius: 50%;
+    padding: 8px;
+    width: 50px;
+    background-color: rgba(255, 254, 253, 0.437);
+    position: relative;
+    right: -210vw;
+    top: -4.1rem;
+    cursor: pointer;
+  }
+  .avis .button_avis .next1:hover {
+    background-color: rgb(13, 18, 59);
+    color: white;
+  }
+  .avis .button_avis .prev1 {
+    font-size: 33px;
+    border: 0 solid;
+    border-radius: 50%;
+    padding: 8px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.439);
+    position: relative;
+    right: -134vw;
+    cursor: pointer;
+  }
+  .avis .button_avis .prev1:hover {
+    background-color: rgb(13, 18, 59);
+    color: azure;
+  }
+  .avis .slider {
+    border-radius: 7px;
+    width: 1200vw;
+    height: 150vh;
+    position: absolute;
+    left: 2rem;
+    top: 8rem;
+  }
+  .avis .slider .slides {
+    width: 89vw;
+    height: 25rem;
+    display: flex;
+    border-radius: 15px;
+    background-color: rgb(202, 206, 206);
+    box-shadow: -2px 6px 25px rgba(0, 0, 0, 0.79);
+  }
+  .avis .slider .slides .quote {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 13.8rem;
+    left: 9vw;
+  }
+  .avis .slider .slides .quote_d {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 28.7rem;
+    left: 74vw;
+  }
+  .avis .slider .slides .item {
+    display: none;
+    padding: 80px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10%;
+    margin-left: 85vw;
+  }
+  .avis .slider .slides .item h1 {
+    position: absolute;
+    left: 8vw;
+    top: 12rem;
+    font-size: 30px;
+    color: #000;
+    font-family: "coneria_script_demoregular";
+    font-weight: 1000;
+  }
+  .avis .slider .slides .item p {
+    margin-left: -85vw;
+    width: 70vw;
+    margin-top: 2rem;
+  }
+  .galeriePhoto {
+    position: absolute;
+    top: 517.5rem;
+  }
+  .galeriePhoto h1 {
+    font-size: 26px;
+    position: absolute;
+    top: 8rem;
+    left: 12vw;
+    font-weight: 500;
+    width: 75vw;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 550;
+    color: #29353e;
+  }
+  .galeriePhoto .border8 {
+    border-radius: 5px;
+    width: 1.6cm;
+    height: 9px;
+    position: absolute;
+    left: 42vw;
+    top: 11.4rem;
+    background-color: rgb(4, 82, 137);
+    text-align: center;
+  }
+  .galeriePhoto .lign1 {
+    position: absolute;
+    top: 17rem;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+  }
+  .galeriePhoto .lign1 img {
+    width: 24.65vw;
+    height: 15rem;
+  }
+  .galeriePhoto .lign2 {
+    position: absolute;
+    top: 32rem;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+  }
+  .galeriePhoto .lign2 img {
+    width: 24.65vw;
+    height: 15rem;
+  }
+  .galeriePhoto .all {
+    border: 0 solid;
+    width: 12rem;
+    height: 15rem;
+    background-color: rgb(187, 187, 187);
+    font-size: 35px;
+    padding-top: 6rem;
+    padding-left: -8rem;
+    position: absolute;
+    top: 47rem;
+  }
+  footer {
+    width: 100%;
+    height: 65rem;
+    position: absolute;
+    left: 0;
+    top: 590rem;
+    background-color: rgb(222, 216, 216);
+  }
+  footer .logo {
+    width: 180px;
+    height: 80px;
+    position: absolute;
+    top: 3rem;
+    left: 38vw;
+  }
+  footer .info {
+    position: absolute;
+    top: 15rem;
+    left: 54vw;
+  }
+  footer .info h1 {
+    font-size: 29px;
+    position: absolute;
+    top: -4rem;
+    left: -9rem;
+    font-weight: 500;
+    width: 28vw;
+    color: rgb(4, 82, 137);
+  }
+  footer .info .phone {
+    position: absolute;
+    top: 0rem;
+    left: 10vw;
+  }
+  footer .info .phone img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -32vw;
+  }
+  footer .info .phone p {
+    font-size: 18px;
+    position: relative;
+    left: -38vw;
+    top: 0;
+    width: 35vw;
+  }
+  footer .email {
+    position: absolute;
+    top: 3.6rem;
+    left: 23vw;
+  }
+  footer .email img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -45vw;
+  }
+  footer .email p {
+    font-size: 18px;
+    position: relative;
+    left: -41vw;
+    top: -0.2rem;
+    width: 20vw;
+  }
+  footer .circ {
+    position: absolute;
+    left: 3vw;
+    top: 27.3rem;
+    display: block;
+  }
+  footer .circ h1 {
+    font-size: 25px;
+    position: absolute;
+    top: -4rem;
+    left: -9rem;
+    font-weight: 500;
+    width: 75vw;
+    color: rgb(4, 82, 137);
+  }
+  footer .circ h3 {
+    font-size: 19px;
+    position: relative;
+    top: -0.4rem;
+    left: 15vw;
+  }
+  footer .raccourci {
+    position: absolute;
+    left: 47vw;
+    top: 26.8rem;
+    display: block;
+  }
+  footer .raccourci h1 {
+    font-size: 28px;
+    position: absolute;
+    top: -4rem;
+    left: 2vw;
+    font-weight: 500;
+    width: 34vw;
+    color: rgb(4, 82, 137);
+  }
+  footer .raccourci h3 {
+    font-size: 19px;
+    position: relative;
+    top: -0.6rem;
+    left: 5rem;
+  }
+  footer .reference {
+    position: absolute;
+    left: 18vw;
+    top: 44.8rem;
+  }
+  footer .reference h1 {
+    font-size: 28px;
+    position: absolute;
+    top: -4rem;
+    left: -16vw;
+    font-weight: 500;
+    width: 95vw;
+    color: rgb(4, 82, 137);
+  }
+  footer .reference p {
+    width: 69vw;
+    font-size: 18px;
+    position: absolute;
+    left: -4vw;
+  }
+  footer .border_ {
+    width: 45%;
+    height: 2px;
+    position: absolute;
+    left: 29vw;
+    top: 53rem;
+    background-color: rgb(4, 82, 137);
+  }
+  footer .icones {
+    position: absolute;
+    top: 58.4rem;
+    display: flex;
+    left: 27%;
+    text-align: center;
+  }
+  footer .icones img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin-left: 1rem;
+  }
+  footer .copright {
+    font-size: 21px;
+    position: absolute;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: 800;
+    top: 55rem;
+    left: 5%;
+    width: 90vw;
+  }
+}
+@media screen and (min-width: 764px) and (max-width: 1024px) and (min-width: 450px) and (max-width: 764px) {
+  .contain img {
+    box-shadow: 7px 4px 8px black;
+    width: 86vw;
+    height: 9.4cm;
+    position: absolute;
+    left: vw;
+    top: 4.9cm;
+    border-radius: 4px;
+  }
+  .contain .galerie {
+    position: absolute;
+    top: 8rem;
+  }
+  .contain .galerie .item_1 img {
+    width: 100vw;
+    height: 15cm;
+    position: absolute;
+    left: 0;
+    top: 85rem;
+    border-radius: 1px;
+  }
+  .Popular {
+    position: absolute;
+    top: 125rem;
+  }
+}
+@media screen and (min-width: 1025px) {
   .Popular {
     overflow: hidden;
     width: 100%;
@@ -1919,7 +3265,7 @@ header ul li .a1 {
     color: azure;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .anim_1 {
     width: 21px;
     height: 21px;
@@ -2092,7 +3438,7 @@ header ul li .a1 {
     font-family: Georgia, "Times New Roman", Times, serif;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .learnAbout {
     position: absolute;
     top: 250rem;
@@ -2254,7 +3600,7 @@ header ul li .a1 {
     background-color: rgb(191, 113, 5);
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .circuits {
     position: absolute;
     top: 320rem;
@@ -2476,7 +3822,7 @@ header ul li .a1 {
   left: 0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .avis {
     position: absolute;
     top: 400rem;
@@ -2594,7 +3940,7 @@ header ul li .a1 {
     margin-left: -35rem;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .galeriePhoto {
     position: absolute;
     top: 441.5rem;
@@ -2654,7 +4000,7 @@ header ul li .a1 {
     top: 47rem;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   footer {
     width: 100%;
     height: 32rem;
