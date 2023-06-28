@@ -1,4 +1,4 @@
-@media screen and (min-width: 280px) and (max-width: 1064px) {
+@media screen and (min-width: 280px) and (max-width: 763px) {
 .header{
     position: absolute;
      
@@ -17,29 +17,30 @@
 }
 
 .header_contain{
-    @include div(26rem, 100%, 0rem, 5.2rem, rgb(22, 98, 211));
+    @include div(24.5rem, 100%, 0rem, 5.2rem, rgb(22, 98, 211));
     transform: translateY(-100rem);
     transition: 0.3s;
-    // display: none;
+    
 
 
     ul{
     display: block;
     position:absolute;
-    right:0rem;
-    top: 4rem;
-    
+    left: 42vw;
+    top: 2.6rem;
+    width: 58vw;
+  
 
           li{
             margin-top: 22px;
              a{
                   color: #000;
-                
-                  font-size: 22px;
+                  font-size: 19px;
                   padding: -25px;
                   width: -5rem;
                   position: relative;
                   right: 5rem;
+                
                 
              }
 
@@ -48,6 +49,16 @@
                            }
 
           }
+          .contact{
+            border: 1.5px solid #113f70;
+            border-radius: 8px;
+            padding: 7px;
+            font-size: 20.4px;
+            margin-left: 0rem;
+        }
+        i{
+          color: rgb(0, 0, 0);
+      }
 }
 }
 
@@ -265,13 +276,13 @@ transform: translateY(0rem);
         h1{
           color: $color-2;
            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            @include h(26px, 3rem, -2vw, 800, 100vw);
+            @include h(26px, 3rem, 0vw, 800, 100vw);
         }
   
         p{
            width: 95vw;
        color: rgb(23, 21, 21);
-           @include p_left(0, 6rem, 22px);
+           @include p_left(2vw, 6rem, 20px);
         }
   
         .contain{
@@ -451,7 +462,7 @@ transform: translateY(0rem);
               }
        
               p{
-                 @include p_left(8vw, 12rem, 22px);
+                 @include p_left(8vw, 10rem, 19px);
                  text-align: center;
                  width: 80vw;
                 
@@ -515,7 +526,7 @@ transform: translateY(0rem);
                .contain2{
                     position: absolute;
                     top: 20rem;
-                    left: 15vw;
+                    left: 13vw;
                     display: block;
                      
                      div{
@@ -576,7 +587,7 @@ transform: translateY(0rem);
       position: absolute;
       top: 288rem;
       width: 100%;
-      height: 95rem;
+      height: 85rem;
       background-color: #6a98ca;
 
        h1{
@@ -592,11 +603,11 @@ transform: translateY(0rem);
 
        .imgH2 img{
           position: absolute;
-          @include image(20rem, 80vw,7vw, 10rem,5px );
+          @include image(20rem, 80vw,10.3vw, 10rem,5px );
        }
 
        .description{
-           @include p_right(8vw, 32rem, 25px);
+           @include p_right(8vw, 32rem, 21px);
            font-weight: 600;
            width: 75vw;
            color: rgb(50, 50, 50);
@@ -607,7 +618,7 @@ transform: translateY(0rem);
            border-radius: 6px;
            text-decoration: none;
            color: black;
-         @include button(rgb(220, 174, 22), 6px, 42vw, 42.5rem, 25px);
+         @include button(rgb(220, 174, 22), 6px, 42vw, 39.3rem, 22px);
 
            &:hover{
               background-color:rgb(191, 113, 5) ;
@@ -615,7 +626,7 @@ transform: translateY(0rem);
        }
 
        .anim_2{
-         @include div(42px, 38px, 4vw , 32.5rem,rgb(220, 174, 22) );
+         @include div(32px, 32px, 4vw , 32.5rem,rgb(220, 174, 22) );
          animation: rotate2 5s infinite linear;
     }
     
@@ -644,14 +655,14 @@ transform: translateY(0rem);
 
     .gestionItineraire{
         position: absolute;
-        top: 44rem;
+        top: 39rem;
 
              .imageI img{
-               @include image(20rem, 80vw,8.5vw, 6rem,5px );
+               @include image(20rem, 80vw,10.5vw, 6rem,5px );
              }
 
              .description_Itineraire{
-               @include p_left(16.5vw, 30rem, 23px);
+               @include p_left(16.5vw, 28.6rem, 21px);
                font-weight: 600;
                width: 83vw;
                color: rgb(50, 50, 50);
@@ -659,7 +670,7 @@ transform: translateY(0rem);
              }
 
              .anim_2{
-               @include div(42px, 38px, 2.6vw , 30.5rem,rgb(220, 174, 22) );
+               @include div(32px, 32px, 2.6vw , 30.5rem,rgb(220, 174, 22) );
                animation: rotate2 5s infinite linear;
           }
           
@@ -691,7 +702,7 @@ transform: translateY(0rem);
       border-radius: 6px;
       text-decoration: none;
       color: black;
-    @include button(rgb(220, 174, 22), 6px, 45vw, 42.4rem, 23px);
+    @include button(rgb(220, 174, 22), 6px, 45vw, 40.4rem, 20px);
 
       &:hover{
          background-color:rgb(191, 113, 5) ;
@@ -703,7 +714,7 @@ transform: translateY(0rem);
 
     .circuits{
       position: absolute;
-      top: 382rem;
+      top: 372rem;
       width: 100%;
       height: 161rem;
       background-color: rgb(233, 230, 230);
@@ -759,7 +770,7 @@ transform: translateY(0rem);
                 }
  
                 button{
-                    @include button($color-3, 4px, 25vw, 30.1rem, 19px);
+                    @include button($color-3, 4px, 25vw, 29.4rem, 19px);
                  border-radius: 6px;
                  border: 0 solid;
              
@@ -893,7 +904,7 @@ transform: translateY(0rem);
 
     .avis{
       position: absolute;
-      top: 540rem;
+      top: 528rem;
       width: 100%;
       height: 62rem;
      overflow: hidden;
@@ -1083,7 +1094,7 @@ transform: translateY(0rem);
 
 
     footer{
-      @include div(65rem, 100%, 0, 750rem, rgb(222, 216, 216));
+      @include div(65rem, 100%, 0, 747rem, rgb(222, 216, 216));
 
            
       .logo{
@@ -1150,11 +1161,11 @@ transform: translateY(0rem);
       .circ{
              position: absolute;
              left: 3vw;
-             top: 27.3rem;
+             top: 27.1rem;
              display: block;
         
                  h1{
-                    @include h(25px, -4rem,-9rem,  500, 125vw);
+                    @include h(25px, -4rem,-9rem,  500, 105vw);
                     color: $color-1;  
                  }
                   h3{
@@ -1171,7 +1182,7 @@ transform: translateY(0rem);
         top: 26.8rem;
         display: block;
             h1{
-               @include h(28px, -4rem,2vw,  500, 51vw);
+               @include h(28px, -4rem,6vw,  500, 41vw);
                color: $color-1;  
             }
              h3{
@@ -1209,7 +1220,7 @@ transform: translateY(0rem);
         position: absolute;
         top:61rem;
            display: flex;
-           left: 3%;
+           left: 7.3%;
            text-align: center;
 
            img{
@@ -1257,12 +1268,6 @@ transform: translateY(0rem);
             top: 125rem;
         }
     }
-    
-    
-    
-    
-    
-
 
 }
 
