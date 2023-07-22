@@ -1,45 +1,61 @@
 @media screen and (min-width: 280px) and (max-width: 763px) {
-.header{
-    position: absolute;
-     
+  @font-face {
+    font-family: 'yeseva_oneregular';
+    src: url('../../assets/yesevaone-regular-webfont.woff2') format('woff2'),
+         url('../../assets/yesevaone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+  // barre de navigation
+  .header{
+    position:fixed;
+     top: 0;
+     width: 99.82vw;
+     left:0;
 
 }
 
 .logo {
-    font-size: 27px;
-    left: 0.3rem;
-    top: 0.6cm;
+  font-size: 27px;
+  left: 17vw;
+  top: 0.8cm;
 
-       img{
-         width: 48px;
-         height: 48px;
-       }
+     img{
+       width: 48px;
+       height: 48px;
+       position: absolute;
+       top: -0.5rem;
+       margin-left: -3.5rem;
+     }
 }
 
 .header_contain{
-    @include div(24.5rem, 100%, 0rem, 5.2rem, rgb(22, 98, 211));
-    transform: translateY(-100rem);
+    @include div(0rem, 100vw, 0rem, 5.2rem, rgb(22, 98, 211));
     transition: 0.3s;
     
 
 
     ul{
+   
     display: block;
     position:absolute;
-    left: 42vw;
-    top: 2.6rem;
-    width: 58vw;
+    left: 35vw;
+    top: -25rem;
+    width: 65vw;
   
 
           li{
             margin-top: 22px;
              a{
-                  color: #000;
+                  color: #241b1b;
                   font-size: 19px;
                   padding: -25px;
                   width: -5rem;
                   position: relative;
-                  right: 5rem;
+                  right: 19vw;
+                  width: 70vw;
                 
                 
              }
@@ -57,7 +73,7 @@
             margin-left: 0rem;
         }
         i{
-          color: rgb(0, 0, 0);
+          color: #000000;
       }
 }
 }
@@ -66,7 +82,7 @@
     position: relative;
     float: right;
     display: flex;
-    top:1rem;
+    top:1.3rem;
     right: 4vw;
     z-index: 6;
     font-size: 25px;
@@ -74,669 +90,527 @@
 }
 
 .hideshow{
-transform: translateY(0rem);
+  height: 24.5rem;
 }
 
-.zIndex{
-    z-index: 6;
+.h2{
+     transform: translateY(28rem);
+     position: absolute;
+     top: 2.6rem;
+     transition: 0.06s;
 }
+// fin barre de navigation
 
-.c{
-    display: none;
 
+// couverture
+
+.pictures_home{
+  position: absolute;
+  right: 2vw;
+  top: 7.7rem;
+  display: block;
+  
+
+  
+img{
+//  @include image(23rem, 14.4rem, 0, 2.1cm, 15px);
+    width: 91vw;
+    height: 21.8rem;
+    border-radius: 7px;
+    margin-top: 16rem;
+    cursor: pointer;
+
+
+&:hover{
+  transform: translateY(-36px);
+   transition: 0.8s;
 }
-
-.visit{
-    z-index: 4;
-    width: 98vw;
-    @include p_left(1vw, 18rem, 24.2px);
-}
-
-.Anakao{
-    width: 98vw;
-   @include p_left(1vw, 22rem,19.2px);
-}
-
-.title{
    
-    @include h(25px, 14rem, 15vw, 800, 66vw);
+ &:nth-child(2){
+       position: relative;
+       top: -13.6rem;
+ }
+
+ &:nth-child(3){
+   margin-top: -10.8rem;
 }
 
-.explore{
-      border: 0 solid;
-      color:rgb(88, 81, 7);
-      border-radius: 9px;
-      @include button(rgb(255, 255, 255), 5px, 39.5vw, 27rem, 22px);
+}
 
-        &:hover{
-           background-color: rgb(244, 191, 17);
-        }
 }
 
 .c_responsive{
-     display: block;
-        img{
-              width: 100%;
-              height: 34.6rem;
-        }
+ display: none;
+}
+
+.t{
+position: relative;
+left: -6vw;
 }
 
 
-.contenu{
-    padding-top: 70px;
-    @include div(18cm, 100%, 0, -5.3rem, #7babcd );
-    
+.visit{
+  z-index: 10;
+  color: rgb(8, 8, 8);
+  width: 95vw;
+font-family: 'abril_fatfaceregular';
+  font-weight: 500;
+  @include p_left(6.6vw, 10.3rem, 22px);
+}
+
+.Anakao{
+ text-align: center;
+ font-family: 'Memphis-Bold';
+ font-weight: 400;
+ justify-content: center;
+ color: rgb(27, 26, 26);
+ @include p_left(19vw, 13.5rem, 18px);
+
+}
+
+.explore{
+    background-color: $color_1;
+    border: 0 solid;
+    color:rgb(255, 255, 255);
+    border-radius: 9px;
+    padding: 6px;
+    text-align: center;
+    @include p_left(40vw, 17rem, 21px);
+    box-shadow: 0px 4px 8px black;
+    cursor: pointer;
+      &:hover{
+         box-shadow: 5px 4px 8px black;
+      }
+}
+
+.title{
+  position: absolute;
+  left: 35.5vw;
+  top: 8rem;
+  text-align: center;
+  font-size: 18px;
+  color: $color_1;
+ font-family: 'coneria_script_demoregular';
+  font-style: italic;
+  font-weight: 800;
+}
+// fin couverture
 
 
-    span {
-        width: 90%;
-        @include p_left(.5cm, 3.5cm, 18px);
-       
+//a propos 
+.contain {
+  width: 100%;
+  height: 30rem;
+  background-color: #f3f0f0bd;
+  margin-top: 64rem;
+  left: 0cm;
+  color: black;
+     h1{
+        margin-top: -3rem;
+     }
+}
+
+
+.int {
+  position: absolute;
+  left: 0vw;
+  top: 0.78cm;
+  padding-top: 4cm;
+  padding-left: 1.5cm;
+  height: 80vh;
+  width: 56vw;
+  
+      
+    .title{
+         position: absolute;
+         top: 2.9rem;
     }
 }
 
-.int {
-    position: absolute;
-    left: 10vw;
-    top: 0.78cm;
-    padding-top: 4cm;
-    height: 80vh;
-    width: 40vw;
-}
+.contenu {
 
+  padding-top: 70px;
+  @include div-droite(6rem, 25vw,55vw, 0.14cm );
 
-.titre-propos {
-    font-size: 28px;
-    margin-top: -13rem;
-    margin-left: 5vw;
-    width: 40vw;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
+  span {
+      position: absolute;
+      top: 6.9rem;
+      left: -13vw;
+      font-size: 18px;
+      width: 86vw;
+      color: rgb(22, 21, 21);
+     
+  }
 }
 
 .contain {
-    position: absolute;
-    top: 16.9cm;
+  position: absolute;
+  top: 16.7cm;
 
-    img {
-        box-shadow: 7px 4px 8px black;
-        @include image(7.4cm, 86vw, vw, 6.5cm, 4px);
-        
-    }
+  img {
+      box-shadow: 0px 4px 8px black;
+      @include image(9.6cm, 89.7vw, 4.9vw, 18rem, 2px);
+  }
+  
+
  
 }
 
+.titre-propos {
+  margin-top: -7rem;
+  margin-left: -5vw;
+  font-family: 'yeseva_oneregular';
+  font-size: 22px;
+  font-weight: bold;
+  color: #29353e;
+  width: 80vw;
+}
+// fin a propos
+
+
+// debut choix
 .Choiceofmada{
     position: absolute;
-    top: 77rem;
+    top: 147rem;
     left: 0vw;
   text-align: center;
-  
-
-  .border2{
-    @include border(1.6cm, 7px, $color_1, 11.5rem, 40vw);
-    text-align: center;
+      
+    .title{
+        margin-top: -5rem;
+        width: 40vw;
+        margin-left: -5vw;
     }
-
 }
 
 .choice_item1{
     position: absolute;
-    top: 8rem;
-    right: -93vw;
-    font-size: 28px;
+    top: 5.7rem;
+    right: -92.5vw;
+    font-size: 23px;
     width: 90vw;
     font-weight: bold;
     color: #29353e;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'yeseva_oneregular';
     }
 
-    .galerie{
+    .choice_contain{
       position: absolute;
-      top: 8rem;
+      top: 159rem;
+      width: 97vw;
 
+        .imag{
+            display: block;
+            overflow: hidden;
 
-        .item_1 img{
-            @include image(8.5cm, 100vw, 0, 85rem,1px);
-        }
+              div{
+                width: 81.5vw;
+                height: 19.6rem;
+                margin-top:6rem;  
+                z-index: 20;
+                overflow: hidden;
 
-        .p1{
-            @include p_left(4.5rem, 68.6em, 25px);
-            width: 60vw;
-            display: none;
-        }
+                     img{
+                         width: 92.5vw;
+                         height: 19.6rem;
+                         border-radius: 5px;
+                         overflow: hidden;
+                     }
 
-        
-        .item_3 img{
-            @include image(7cm, 100vw,  0, 117rem,1px);
-            display: none;
-        }
+                     div{
+                        width: 92.5vw;
+                        height: 11rem;
+                        margin-top: -10.1rem;
+                        margin-left: -6.4vw;
+                        background-color: rgba(10, 7, 7, 0.767);  
+                     }
 
+                     h1{
+                      font-size: 23px;
+                      margin-left: -10vw;
+                     }
 
+                     .in_1, .in_2, .in_3{
+                      font-size: 18px;
+                      color: #fff;
+              
+                       
+                          p{
+                            width: 79vw;
+                            margin-left: 1vw;
+                          }    
+                    }
+                      &:nth-child(1){  
+                            position: relative;
+                            left: 6.5vw;
+                            top: -0.5rem;
+                          }
 
-    }
+                          &:nth-child(2){
+                           
+                            position: relative;
+                            left:6.5vw;
+                            top: 0em;
+                          }
+                          
 
-    .galerie2{
-        position: absolute;
-        top: 45rem;
-        display: none;
-  
-        .item_4{
-            @include p_left(1rem, 68em, 24px);
-            width: 90vw;
-        }
+                          
+                          &:nth-child(3){
+                            position: relative;
+                            left: 6.5vw;
+                            top: 0.5rem;
+                            // top: -0.5rem;
+                          }
+                    }
 
-          .item_5 img{
-            @include image(7cm, 100vw, 0, 113.8rem,1px);
-          }
+            }
 
-        .item_6{
-            @include p_left(2rem, 84em, 26px);
-            width: 78vw;
-            z-index: 4;
-        } 
-  
-       
-  
-  
-  
-      }
-
-      .galerie3{
-        position: absolute;
-        top: 107rem;
-        display: none;
-  
-  
-          .item_7 img{
-              @include image(7cm, 100vw, 0, 85rem,1px);
-          }
-
-          .item_8 img{
-            @include image(7cm, 100vw, 0, 101rem,1px);
-        }
-  
+        .ligne{
+            
+            @include border (4px, 85rem, rgb(172, 136, 7), 0rem, 50vw);
           
-          .item_9 img{
-              @include image(7cm, 100vw,  0, 115rem,1px);
+  
+            }
+
+        .lign1{
+           display: none;
+        }
+
+        .lign2{
+          display: none;
+            }
+
+        .lign3{
+          display: none;
           }
-  
-  
-  
-      }
+
+          #radio{
+            position: absolute;
+            top: -1.6rem;
+            left: 46vw;
+            width: 24px;
+            height: 24px;
+            border: 5px solid;
+            background-color: aqua;
+            }
+
+        #radio2{
+             position: absolute;
+              top: 84.7rem;
+              left: 46vw;
+              width: 24px;
+              height: 24px;
+              border: 5px solid;
+              background-color: aqua;
+          }
+    }
+// fin choix
+    
 
     
+//destinations populaire
 
     .Popular{
-        position: absolute;
-        top: 100rem;
-        overflow: hidden;
-        @include div(40rem, 100%, 0, 112.4rem, rgb(233, 230, 230));
-  
-        h1{
-          color: $color-2;
-           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            @include h(26px, 3rem, 0vw, 800, 100vw);
-        }
-  
-        p{
-           width: 95vw;
-       color: rgb(23, 21, 21);
-           @include p_left(2vw, 6rem, 20px);
-        }
-  
-        .contain{
-             position: absolute;
-             left: -5vw;
-             overflow: hidden;
-             display: flex;
-             top: 12rem;
-             width: 500%;
-  
-             div{
-              margin-left: 4rem;
-              margin-top: 3rem;
-              width: 15rem;
-              height: 19.4rem;
-              border-radius: 8px;
-           }
-  
-           .item_1{
-            background-size: cover;
-           background-image: url(assets/image/COUVERTURE.jpg);
-           cursor: pointer;
-           transition: 0.3s;
-           // filter: brightness(50%);
-  
-           &:hover{
-              width: 31vw;
-              height: 26rem;
-              transition: 0.3s;
-              transform: translateY(-25px);
-           }
-          }
-  
-          .i1{
-           color: white;
-           width: 30vw;
-           @include p_left(1rem, 10rem, 28px);
-           display: none;
-      
-          
-          }
-  
-          .i2{
-           color: rgb(81, 58, 4);
-           width: 30vw;
-           @include p_left(25vw, 10rem, 28px);
-           display: none;
-           
-          }
-  
-          .St2{
-           border: 0 solid;
-           color:rgb(222, 215, 215);
-           border-radius: 9px;
-           text-align: center;
-           display: none;
-           @include button(rgb(175, 101, 17), 5px, 36vw, 15rem, 22px);
-                 &:hover{
-                    position: absolute;
-                  
-                    top: 15rem;
-                    left: 36vw;
-                    background-color: rgb(215, 215, 12);
-                 }
-  
-  
-           }
-   
-         .item_2{
-           background-size: cover;
-          background-image: url(./assets/image/c.jpg);
-          cursor: pointer;
-          &:hover{
-             width: 31vw;
-             height: 26rem;
-             transform: translateY(-25px);
-             transition: 0.4s;
-          }
-        }
-  
-       
-            
-        .item_3{
-           background-size: cover;
-          background-image: url(assets/image//BG.jpg);
-  
-          cursor: pointer;
-          &:hover{
-             width: 31vw;
-             height: 26rem;
-             transform: translateY(-25px);
-          }
-        }
-        .item_4{
-           background-size: cover;
-          background-image: url('./../../allée\ des\ baobab\ responsive.jpg');
-  
-          cursor: pointer;
-          &:hover{
-             width: 31vw;
-             transform: translateY(-25px);
-             height: 26rem;
-          }
-        }
-        }
-       
-  
-        
-  
-      }
-  
-      .St1{
-        border: 0 solid;
-        color:rgb(88, 81, 7);
-        border-radius: 9px;
-        display:none;
-        text-align: center;
-        @include button(rgb(255, 255, 255), 5px, 13vw, 15rem, 22px);
-  
-          &:hover{
-             background-color: rgb(244, 191, 17);
-          }
-  }
-  
-  .button{
-       position: relative;
-       top: 23rem;
-       left: -106vw;
+      overflow: hidden;
+      @include div(188rem, 100%, 0, 250.4rem,    #f3f0f0bd);
 
-        .next{
-        font-size: 28px;
-        border: 0 solid;
-        border-radius: 50%;
-        padding: 8px;
-        width: 50px;
-        background-color: rgb(255, 254, 253);
-        position: relative;
-        right: -184vw;
-        top: -3.6rem;
-        cursor: pointer;
-  
-        &:hover{
-           background-color: rgb(13, 18, 59);
-           color: white;
-        }
-  }
-          
-        .prev{
-              font-size: 28px;
-              border: 0 solid;
-              border-radius: 50%;
-              padding: 8px;
-              width: 50px;
-              background-color: rgb(255, 255, 255);
-              position: relative;
-              left:56vh;
-              cursor: pointer;
-  
-                 &:hover{
-                    background-color: rgb(13, 18, 59);
-                    color: azure;
-                 }
-        }
-  }
-    
-
-    .suggestion{
-         position: absolute;
-         top: 156rem;
-        
-                
-              h1{
-                 @include h(28px, 4rem, 13vw, 500, 65vw);
-                 font-family: 'abril_fatfaceregular';    
-                 font-weight: bold;
-                 color: $color-2;
-              }
-       
-              p{
-                 @include p_left(8vw, 10rem, 19px);
-                 text-align: center;
-                 width: 80vw;
-                
-              }
-       
-              .border5{
-               border-radius: 5px;
-               @include border(1.6cm, 9px, $color_1, 7.7rem, 40vw);
-               text-align: center;
-               }
-       
-               .contain1{
-                     display: block;
-                    position: absolute;
-                    top: -8rem;
-                    left: 49.2vw;
-       
-                       .i1, .i2, .i3{
-                            margin-top: 32.4rem;
-                            border: 0px solid black;
-                            padding-top: 5px;
-                            padding-bottom: 13px;
-                            padding-left: 19px;
-                            padding-right: 19px;
-                            font-size: 28px;
-                            border-radius: 80%;
-                            color:#ffff;
-                            font-weight: bold;
-                            background-color: rgb(172, 136, 7);
-                            animation: rotate_ 5s infinite linear;
-                           }
-               }
-       
-               @keyframes rotate_ {
-                 0%{
-                   transform: rotate(350deg);
-                 }
-                 20%{
-                  transform: rotate(450deg);
-                }
-                40%{
-                  transform: rotate(550deg);
-                }
-                60%{
-                  transform: rotate(650deg);
-                }
-            
-                80%{
-                  transform: rotate(750deg);
-                }
-            
-                100%{
-                  transform: rotate(850deg);
-                }
+            h1{
+              color: $color-2;
+              font-family:'yeseva_oneregular';
+              @include h(23px, 4rem, 11vw,  800, 80vw);
             }
-            
-               .border_um{
-                     @include border (6px, 94rem, rgb(172, 136, 7), 26rem, 53.6vw);
-               }
-       
-               .contain2{
-                    position: absolute;
-                    top: 20rem;
-                    left: 13vw;
-                    display: block;
-                     
-                     div{
-                         height: 19rem;
+
+            h3{
+              margin-top: -5.3rem;
+              margin-left: 7vw;
+            }
+
+            p{
+              width: 25vw;
+          color: rgb(22, 21, 21);
+              @include p_left(0, 17rem, 22px);
+            }
+
+            .contain_1{
+               display: block;
+               position: absolute;
+               top: 7rem;
+               left: 10.2vw;
+
+                    div{
                          width: 75vw;
-                         margin-top: 15rem;
-                         border-radius: 5px;
-                         box-shadow: 0px 7px 12px black;
-                     }
-       
-                      .item_1{
-                       background-image: url(./assets/image/airport-2373727_1280.jpg);
-                       background-size: cover;
-       
-                          h1{
-                             @include h(19px, 36rem, -5vw, bold, 84vw);
-                             color: rgb(148, 127, 8);
-                             z-index: 30;
-                             font-style: italic;
-                             font-family:Georgia, 'Times New Roman', Times, serif;
-                          }
-                      }
-       
-                      .item_2{
-                       background-image: url(./assets/image/plane.jpg);
-                       background-size: cover;
-       
-                       h1{
-                             @include h(19px, 71rem, -5vw, bold, 84vw);
-                           color: rgb(148, 127, 8);
-                           z-index: 50;
-                           font-style: italic;
-                           font-family:Georgia, 'Times New Roman', Times, serif;
+                         margin-top: 5rem;
+                         border-radius: 5.5px;
+                         height: 17rem;
+                         background-color: rgb(248, 250, 249);
+                         margin-left: 2vw;
+                        box-shadow: 0px 2px 7px rgb(32, 30, 30);
+
+                        p{
+                           font-size: 19px;
+                           margin-top: -6rem;
                         }
-                      }
-       
-                      .item_3{
-                       background-image: url(./assets/image/ivato.jpg);
-                       background-size: cover;
-       
-                       h1{
-                              @include h(19px, 105rem, -5vw, bold, 84vw);
-                           color: rgb(148, 127, 8);
-                           font-style: italic;
-                           font-family:Georgia, 'Times New Roman', Times, serif;
+
+                         img{
+                           width: 75vw;
+                           border-radius: 5.5px;
+                           height: 10.1rem;
+                        
                         }
-                      }
-               }
-       
-       
-       
-           
-       }
-    
+
+                        button{
+                              padding: 4px;
+                              margin-top: 0.6rem;
+                              font-size: 19px;
+                              background-color: rgb(199, 153, 3);
+                              border-radius: 5px;
+                              border: 0;
+                        }
+
+                        h2{
+                           font-size: 19px;
+                           margin-top: 1rem;
+                        }
+                    }
+                 }
+
+          .contain_2{
+            display: block;
+            position: absolute;
+            top: 95rem;
+            left: 10.2vw;
+
+                  div{
+                      width: 75vw;
+                      border-radius: 5.5px;
+                      height: 17rem;
+                      background-color: aquamarine;
+                      margin-left: 2vw;
+                      margin-top: 5rem;
+
+                        
+                  }
+
+                
+    }
+
+      
+   }  
+
+   //fin destinations populaire
 
 
-    .learnAbout{   
-      position: absolute;
-      top: 288rem;
-      width: 100%;
-      height: 85rem;
-      background-color: #6a98ca;
-
+   //suggestion
+.suggestion{
+  position: relative;
+  top: 445rem;
+  left: 0;
+         
        h1{
-          @include h(28px, 2rem, -1vw, 800, 100vw);
-          font-family: 'yeseva_oneregular';
+          @include h(23px, -1.35rem, 16vw, 500, 65vw);
+          font-family:'yeseva_oneregular';
+          font-weight: bold;
           color: $color-2;
        }
 
-       .borderLearn{
-         border-radius: 5px;
-         @include border(1.6cm, 9px, rgb(220, 174, 22), 6rem, 42vw);
-       }
+        h3{
+           margin-top: -11rem;
+           margin-left: -6vw;
+           width: 40vw;
+        }
 
-       .imgH2 img{
+       .contain_suggestion{
+          display: flexbox;
+          flex-direction: column-reverse;
           position: absolute;
-          @include image(20rem, 80vw,10.3vw, 10rem,5px );
+          left: 4.6vw;
+          top: 2rem;
+
+              div{
+                  width: 85vw;
+                  height: 23.6rem;
+                  background-color: beige;
+                  margin-top: 5rem;
+                  border-radius: 15px;
+
+                     img{
+                           width: 91px;
+                           height: 98px;
+                           margin-left: 0vw;
+                           margin-top: 1rem;
+                           border-radius: 19px;
+                     }
+
+                     h2{
+                        color: #181717;
+                           font-size: 20px;
+                           margin-top: 1rem;
+                           margin-left:3.5vw;
+                          font-family: 'alegreyaregular' ;
+
+                                 &:nth-child(3){
+                                    margin-left: -15vw;
+                                 }
+                     }
+
+                     p{
+                          font-size: 19px;
+                          width: 70vw;
+                          margin-left: 9vw;
+                          margin-top: -0.5rem;
+
+                             
+                     }
+
+                     button{
+                         padding: 5px;
+                         border: 0;
+                         border-radius: 5px;
+                         font-size: 18px;
+                         margin-left: 6vw;
+                         background-color: rgb(226, 155, 2);
+                     }
+              }
+            
        }
 
-       .description{
-           @include p_right(8vw, 32rem, 21px);
-           font-weight: 600;
-           width: 75vw;
-           color: rgb(50, 50, 50);
-        font-family: 'Times New Roman', Times, serif;
-       }
+           
+}
+   //fin suggestion
 
-       .searchButton a{
-           border-radius: 6px;
-           text-decoration: none;
-           color: black;
-         @include button(rgb(220, 174, 22), 6px, 42vw, 39.3rem, 22px);
-
-           &:hover{
-              background-color:rgb(191, 113, 5) ;
-           }
-       }
-
-       .anim_2{
-         @include div(32px, 32px, 4vw , 32.5rem,rgb(220, 174, 22) );
-         animation: rotate2 5s infinite linear;
-    }
-    
-    @keyframes rotate2 {
-         0%{
-           transform: rotate(350deg);
-         }
-         20%{
-          transform: rotate(450deg);
-        }
-        40%{
-          transform: rotate(550deg);
-        }
-        60%{
-          transform: rotate(650deg);
-        }
-    
-        80%{
-          transform: rotate(750deg);
-        }
-    
-        100%{
-          transform: rotate(0deg);
-        }
-    }
-
-    .gestionItineraire{
-        position: absolute;
-        top: 39rem;
-
-             .imageI img{
-               @include image(20rem, 80vw,10.5vw, 6rem,5px );
-             }
-
-             .description_Itineraire{
-               @include p_left(16.5vw, 28.6rem, 21px);
-               font-weight: 600;
-               width: 83vw;
-               color: rgb(50, 50, 50);
-              font-family: 'Times New Roman', Times, serif;
-             }
-
-             .anim_2{
-               @include div(32px, 32px, 2.6vw , 30.5rem,rgb(220, 174, 22) );
-               animation: rotate2 5s infinite linear;
-          }
-          
-          @keyframes rotate2 {
-               0%{
-                 transform: rotate(350deg);
-               }
-               20%{
-                transform: rotate(450deg);
-              }
-              40%{
-                transform: rotate(550deg);
-              }
-              60%{
-                transform: rotate(650deg);
-              }
-          
-              80%{
-                transform: rotate(750deg);
-              }
-          
-              100%{
-                transform: rotate(0deg);
-              }
-          }
-    }
-
-    .searchButton2 a{
-      border-radius: 6px;
-      text-decoration: none;
-      color: black;
-    @include button(rgb(220, 174, 22), 6px, 45vw, 40.4rem, 20px);
-
-      &:hover{
-         background-color:rgb(191, 113, 5) ;
-      }
-    }
-    }
-
-
-
+   //debut tour
     .circuits{
       position: absolute;
-      top: 372rem;
-      width: 100%;
-      height: 161rem;
+      top: 94rem;
+      width: 99.99vw;
+      height: 152rem;
+      left: -2.5vw;
       background-color: rgb(233, 230, 230);
  
       h1{
-         @include h(34px, 8rem, 8vw, 500, 75vw);
-         font-family: 'abril_fatfaceregular';
+         @include h(28px, 4rem, 12vw, 500, 75vw);
+         font-family:'yeseva_oneregular';
          font-weight: -150;
          color: $color-2;
       }
  
-      .border6{
-         border-radius: 5px;
-         @include border(1.6cm, 9px, $color_1, 12.5rem, 42vw);
-         text-align: center;
-      }
- 
+      h3{
+        position: absolute;
+        left: 39vw;
+        top: 13.6rem;
+        text-align: center;
+        font-size: 21px;
+        color: $color_1;
+        font-family: 'coneria_script_demoregular';
+        font-style: italic;
+        font-weight: 800;
+     }
+
+
       .contain-1{
  
          display: block;
           position: absolute;
-          top: 18rem;
+          top: 8rem;
           left: 11vw;
          text-align: center;
           div{
@@ -758,9 +632,9 @@ transform: translateY(0rem);
            
  
                 h1{
-                     font-family: Verdana, Geneva, Tahoma, sans-serif;
+                
                      text-align: center;
-                     @include h(19px, 20.5rem, 4.5vw, 600, 65vw);
+                     @include h(24px, 20rem, 8.5vw, 650, 65vw);
                 }
  
                 p{
@@ -770,7 +644,7 @@ transform: translateY(0rem);
                 }
  
                 button{
-                    @include button($color-3, 4px, 25vw, 29.4rem, 19px);
+                    @include button($color-3, 4px, 27.8vw, 30.4rem, 20.5px);
                  border-radius: 6px;
                  border: 0 solid;
              
@@ -785,19 +659,19 @@ transform: translateY(0rem);
              background-size: 100%;
  
              h1{
-              font-family: Verdana, Geneva, Tahoma, sans-serif;
+
               text-align: center;
-              @include h(19px, 54.5rem, 4.5vw, 600, 65vw);
+              @include h(24px, 54.7rem, 4.5vw, 600, 70vw);
          }
 
          p{
-            @include p_left(7vw, 57.8rem, 18px);
+            @include p_left(8vw, 58.6rem, 18px);
             width: 62vw;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
          }
 
          button{
-             @include button($color-3, 4px, 25vw, 66.1rem, 19px);
+             @include button($color-3, 4px, 28.8vw, 66.1rem, 20.3px);
           border-radius: 6px;
           border: 0 solid;
       
@@ -820,9 +694,9 @@ transform: translateY(0rem);
              background-size: cover;
  
              h1{
-              font-family: Verdana, Geneva, Tahoma, sans-serif;
+           
               text-align: center;
-              @include h(19px, 90.5rem, 4.5vw, 600, 65vw);
+              @include h(24px, 90rem, 5.9vw, 600, 65vw);
          }
 
          p{
@@ -832,7 +706,7 @@ transform: translateY(0rem);
          }
 
          button{
-             @include button($color-3, 4px, 25vw, 101.1rem, 19px);
+             @include button($color-3, 4px, 27.6vw, 101.1rem, 20px);
           border-radius: 6px;
           border: 0 solid;
       
@@ -851,7 +725,7 @@ transform: translateY(0rem);
  
        display: flex;
         position: absolute;
-        top: 127rem;
+        top: 117.5rem;
         left: -13.5vw;
         
  
@@ -875,19 +749,19 @@ transform: translateY(0rem);
              }
  
              h1{
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
+             
                 text-align: center;
-                @include h(19px, 16.4rem, 31vw, 600, 65vw);
+                @include h(23px, 15.7rem, 31vw, 600, 65vw);
                 }
  
                 p{
-                   @include p_left(30vw, 19.2rem, 18px);
+                   @include p_left(34vw, 19.6rem, 18px);
                    width: 63vw;
                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                    }
       
                   button{
-                    @include button($color-3, 4px, 53vw, 26.1rem, 19px);
+                    @include button($color-3, 4px, 56.6vw, 25.8rem, 19px);
                    border-radius: 6px;
                    border: 0 solid;
                    }
@@ -904,14 +778,15 @@ transform: translateY(0rem);
 
     .avis{
       position: absolute;
-      top: 528rem;
+      top: 503rem;
       width: 100%;
       height: 62rem;
      overflow: hidden;
      z-index: 50;
+     display: none;
        h1{
          @include h(28px, 8rem, 12vw, 500, 75vw);
-         font-family: Georgia, 'Times New Roman', Times, serif;
+         font-family:'yeseva_oneregular';
          font-weight: 550;
          color: $color-2;
        
@@ -1036,65 +911,70 @@ transform: translateY(0rem);
 
     .galeriePhoto{ 
       position: absolute;
-      top: 591.5rem;
+      top: 242.5rem;
       
           
          h1{ 
            @include h(26px, 8rem, 12vw, 500, 75vw);
-           font-family: Georgia, 'Times New Roman', Times, serif;
+           font-family:'yeseva_oneregular';
            font-weight: 550;
            color: $color-2;
          }
 
-         .border8{
-           border-radius: 5px;
-           @include border(1.6cm, 9px, $color_1, 11.4rem, 42vw);
-           text-align: center;
-        }
+         h3{
+          width: 60vw;
+          margin-top: -2rem;
+          margin-left: -15vw;
+         }
+
 
         .lign1{
              position: absolute;
              top: 17rem;
-             width: 100%;
+             width: 100vw;
+             left: -2.5vw;
              height: 30rem;
              display: block;
 
               img{
                   width: 99.5vw;
+                  margin-top: -1rem;
                   height: 15rem;
               }
         }
 
         .lign2{
            position: absolute;
-           top: 76rem;
-           width: 100%;
+           top: 73.9rem;
+           width: 100vw;
            height: 30rem;
-           left: 0;
+           left: -2.7vw;
            display: block;
 
             img{
                 width: 100vw;
                 height: 15rem;
+                margin-top: -1rem;
             }
       }
 
       .all{
             border: 0 solid;
             width: 99.9vw;
-            height: 15rem;
+            height: 10rem;
             background-color: rgb(187, 187, 187);
             font-size: 35px;
             padding-top: 6rem;
             padding-left: -8rem;
             position: absolute;
-            top: 136rem;
+            top: 130.7rem;
+            left: -2.4vw;
       }
 }
 
 
     footer{
-      @include div(65rem, 100%, 0, 747rem, rgb(222, 216, 216));
+      @include div(65rem, 100vw, -2.2vw, 395rem, rgb(222, 216, 216));
 
            
       .logo{
@@ -1131,7 +1011,7 @@ transform: translateY(0rem);
                      font-size: 18px;
                      position: relative;
                      left: -38vw;
-                     top: 0;
+                     top: -1rem;
                      width: 35vw;
                    }
           }
@@ -1153,7 +1033,7 @@ transform: translateY(0rem);
                  font-size: 18px;
                  position: relative;
                  left: -36vw;
-                 top: -0.2rem;
+                 top: -1rem;
                  width: 35vw;
                }
       }
@@ -1165,14 +1045,15 @@ transform: translateY(0rem);
              display: block;
         
                  h1{
-                    @include h(25px, -4rem,-9rem,  500, 105vw);
+                    @include h(25px, -4rem,-9rem,  500, 114vw);
                     color: $color-1;  
                  }
                   h3{
                     font-size: 19px;
                     position: relative;
-                 top: -0.4rem;
-                    left: 15vw;
+                 top: -1.7rem;
+                 margin-top: 2rem;
+                    left: 3vw;
                   }
       }
 
@@ -1182,14 +1063,15 @@ transform: translateY(0rem);
         top: 26.8rem;
         display: block;
             h1{
-               @include h(28px, -4rem,6vw,  500, 41vw);
+               @include h(28px, -4rem,4vw,  500, 41vw);
                color: $color-1;  
             }
              h3{
                font-size: 19px;
                position: relative;
-            top: -0.6rem;
-               left: 2.4rem;
+               top: -1.7rem;
+                margin-top: 2rem;
+               left: 10vw;
              }
  }
 
@@ -1199,7 +1081,7 @@ transform: translateY(0rem);
     top: 44.8rem;
   
     h1{
-        @include h(27px, -4rem,-16vw,  500, 95vw);
+        @include h(27px, -4rem,-16vw,  500, 90vw);
         color: $color-1;  
      }
 
@@ -1242,32 +1124,31 @@ transform: translateY(0rem);
  }
     }
 
-    @media screen and (min-width: 450px) and (max-width: 764px) {
-        .contain {
-            img {
-                box-shadow: 7px 4px 8px black;
-                @include image(9.4cm, 86vw, vw, 4.9cm, 4px);
-                
-            }
-         
-        
+
+    .hide_{
+      transform: translateX(-8.5rem);
+  }
+  
+  .show_{
+      transform: translateX(0rem);
+      transition: 1.6s;
+  }
+  
+  .hide_1{
+      transform: translateY(8rem);
+      opacity: 0;
+  }
+  
+  .show_1{
+      transform: translateY(0);
+      transition: 1.6s;
+      opacity: 1;
+  }
+ 
+
+
+   
     
-        .galerie{
-            position: absolute;
-            top: 8rem;
-      
-      
-              .item_1 img{
-                  @include image(15cm, 100vw, 0, 85rem,1px);
-              }
-           }
-        }
-    
-        .Popular{
-            position: absolute;
-            top: 125rem;
-        }
-    }
 
 }
 

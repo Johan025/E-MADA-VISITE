@@ -4,15 +4,16 @@
 .Choiceofmada{
     position: absolute;
     top: 77rem;
-    left: 27rem;
+    left: 29vw;
     width: 40rem;
-  text-align: center;
-
-  .border2{
-    @include border(1.6cm, 9px, $color_1, 12rem, 13rem);
     text-align: center;
-    border-radius: 5px;
-    }
+
+     .title {
+         position: absolute;
+         top: 0.4rem;
+         left: 15.4vw;
+         font-size: 29px;
+     }
 
 }
 
@@ -20,82 +21,115 @@
 .choice_item1{
     position: absolute;
     top: 5rem;
-    font-family: 'yeseva_oneregular';
-    font-size: 50px;
+    font-family:'yeseva_oneregular';
+    font-size: 45px;
     font-weight: bold;
     color: #29353e;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
     }
 
-    .galerie{
+    .choice_contain{
       position: absolute;
-      top: 12rem;
+      top: 89rem;
+      width: 97vw;
 
+        .imag{
+            display: block;
+            overflow: hidden;
 
-        .item_1 img{
-            @include image(8cm, 11.86cm, 0, 85rem,1px);
-        }
+              div{
+                width: 22.5vw;
+                height: 19.6rem;
+                margin-top:5vw;  
+                z-index: 20;
+                overflow: hidden;
 
-        .p1{
-            @include p_left(16.5rem, 48.9em, 30px);
-            width: 50rem;
-        }
+                     img{
+                         width: 22.5vw;
+                         height: 19.6rem;
+                         border-radius: 5px;
+                         overflow: hidden;
+                     }
 
-        
-        .item_3 img{
-            @include image(8cm, 11.86cm,  56.3rem, 85rem,1px);
-        }
+                     div{
+                        width: 22.5vw;
+                        height: 11rem;
+                        margin-top: -4.1rem;
+                        margin-left: -10.4rem;
+                        background-color: rgba(10, 7, 7, 0.767);  
+                     }
 
+                     h1{
+                      font-size: 23px;
+                     }
 
+                     .in_1, .in_2, .in_3{
+                      font-size: 18px;
+                      color: #fff;
+                    }
+                      &:nth-child(1){  
+                            position: relative;
+                            left: 64.8vw;
+                            top: -0.5rem;
+                          }
 
-    }
+                          &:nth-child(2){
+                           
+                            position: relative;
+                            left:12.9vw;
+                            top: 0em;
+                          }
+                          
 
-    .galerie2{
-        position: absolute;
-        top: 12rem;
-  
-        .item_4{
-            @include p_left(-11rem, 62.9em, 28px);
-            width: 50rem;
-        }
+                          
+                          &:nth-child(3){
+                            position: relative;
+                            left: 64.8vw;
+                            top: -2.5rem;
+                            // top: -0.5rem;
+                          }
+                    }
 
-          .item_5 img{
-            @include image(8cm, 12.05cm, 27.9rem, 103.8rem,1px);
-          }
+            }
 
-        .item_6{
-            @include p_left(55rem, 63.9em, 28px);
-            width: 28rem;
-            z-index: 4;
-        } 
-  
-       
-  
-  
-  
-      }
-
-      .galerie3{
-        position: absolute;
-        top: 49.6rem;
-  
-  
-          .item_7 img{
-              @include image(8cm, 11.86cm, 0, 85rem,1px);
-          }
-
-          .item_8 img{
-            @include image(8cm, 11.98cm, 28rem, 85rem,1px);
-        }
-  
+        .ligne{
+            
+            @include border (4px, 75rem, rgb(172, 136, 7), 0rem, 50vw);
           
-          .item_9 img{
-              @include image(8cm, 11.86cm,  56.3rem, 85rem,1px);
-          }
   
-  
-  
-      }
+            }
 
+        .lign1{
+            @include border (12rem, 3.4px, rgb(172, 136, 7), 13rem, 50vw);
+          }
+
+        .lign2{
+            @include border (12rem, 3.4px, rgb(172, 136, 7), 37rem, 35.4vw);
+            }
+
+        .lign3{
+          @include border (12rem, 3.4px, rgb(172, 136, 7), 58rem, 50vw);
+          }
+
+          #radio{
+            position: absolute;
+            top: -1.6rem;
+            left: 48.8vw;
+            width: 24px;
+            height: 24px;
+            border: 5px solid;
+            background-color: aqua;
+            }
+
+        #radio2{
+             position: absolute;
+              top: 74.7rem;
+              left: 48.9vw;
+              width: 24px;
+              height: 24px;
+              border: 5px solid;
+              background-color: aqua;
+          }
+    }
 
 }

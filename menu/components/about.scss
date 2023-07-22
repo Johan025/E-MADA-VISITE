@@ -1,6 +1,10 @@
+@media screen and (min-width: 1024px) {
+    
+
 .contain {
     width: 100%;
-    height: 100%;
+    height: 30rem;
+    background-color: #f3f0f0bd;
     position: absolute;
     top: 50rem;
     left: 0cm;
@@ -10,22 +14,27 @@
 
 .int {
     position: absolute;
-    left: 13.73cm;
+    left: 24.5vw;
     top: 0.78cm;
     padding-top: 4cm;
     padding-left: 1.5cm;
     height: 80vh;
     width: 56vw;
+        
+      .title{
+           position: absolute;
+           top: 2.9rem;
+      }
 }
 
 .contenu {
-    background-color: #7babcd;
+  
     padding-top: 70px;
-    @include div-droite(14cm, 50vw,0, 0.14cm );
+    @include div-droite(13cm, 55vw,0, 0.14cm );
 
     span {
         position: absolute;
-        top: 6cm;
+        top: 5cm;
         left: 4cm;
         font-size: 20px;
         width: 9cm;
@@ -39,8 +48,8 @@
     top: 16.7cm;
 
     img {
-        box-shadow: 7px 4px 8px black;
-        @include image(11.6cm, 45vw, 4.9vw, 50.5px, 2px);
+        box-shadow: 0px 4px 8px black;
+        @include image(9.6cm, 37vw, 4.9vw, 50.5px, 2px);
     }
     
 
@@ -48,10 +57,11 @@
 }
 
 .titre-propos {
-    margin-top: -4rem;
-    margin-left: 1.7cm;
+    margin-top: -2.5rem;
+    margin-left: 8.5cm;
     font-family: 'yeseva_oneregular';
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
     color: #29353e;
+}
 }

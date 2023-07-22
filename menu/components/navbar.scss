@@ -1,5 +1,7 @@
 
-
+@media screen and (max-wid) {
+    
+}
 .header {
     background-color: #f2f2f2;
     position: fixed;
@@ -36,12 +38,12 @@ ul {
 
     ul li a {
         position: relative;
-        right:30rem;
-        top: -20px;
+        right:38vw;
+        top: -13px;
         text-decoration: none;
         color: #254E7A;
-        font-size: 19.6px;
-        padding: 8.5px;
+        font-size: 18.6px;
+        padding: 9px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
         &:hover{
@@ -62,7 +64,7 @@ ul {
 }
 
 li {
-    margin: 8.5px;
+    margin: 4.5px;
 }
 
 #search{
@@ -74,7 +76,7 @@ header ul li .a1{
     background-color:#27749e;
     color:black;
     border-radius: 8px;
-    padding:10px;
+    padding:7px;
 }
 #search:hover{
 color:black;
@@ -82,9 +84,9 @@ color:black;
 
 .logo {
     position: absolute;
-    left: 0.5cm;
-    font-size: 34px;
-    top: 0.2cm;
+    left: 8vw;
+    font-size: 31px;
+    top: 1.5rem;
     color: #113f70;
     font-family:'yeseva_oneregular' ;
 
@@ -96,6 +98,10 @@ color:black;
       img{
           width: 70px;
           height: 70px;
+          position: absolute;
+          top: -1.2rem;
+          margin-left: -5rem;
+
       }
 }
 
@@ -122,7 +128,7 @@ color:black;
     border-radius: 8px;
     padding: 6px;
     font-size: 42px;
-    margin-left: 5rem;
+    margin-left: 2rem;
 }
 
 .up-{
