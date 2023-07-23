@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "coneria_script_demoregular";
   src: url("assets/demo_coneriascript-webfont.woff2") format("woff2"), url("assets/demo_coneriascript-webfont.woff") format("woff");
@@ -44,36 +43,34 @@
 
 .title {
   position: absolute;
-  left: 35vw;
+  left: 39vw;
   top: 14rem;
   text-align: center;
-  font-size: 34px;
+  font-size: 26px;
   color: rgb(4, 82, 137);
   font-family: "coneria_script_demoregular";
   font-style: italic;
   font-weight: 800;
 }
 
-.hide_ {
-  transform: translateX(-28rem);
+@media screen and (min-width: 1025px) {
+  .hide_ {
+    transform: translateX(-28rem);
+  }
+  .show_ {
+    transform: translateX(0rem);
+    transition: 1.6s;
+  }
+  .hide_1 {
+    transform: translateY(6rem);
+    opacity: 0;
+  }
+  .show_1 {
+    transform: translateY(0);
+    transition: 1.6s;
+    opacity: 1;
+  }
 }
-
-.show_ {
-  transform: translateX(0);
-  transition: 1.6s;
-}
-
-.hide_1 {
-  transform: translateY(6rem);
-  opacity: 0;
-}
-
-.show_1 {
-  transform: translateY(0);
-  transition: 1.6s;
-  opacity: 1;
-}
-
 .header {
   background-color: #f2f2f2;
   position: fixed;
@@ -109,12 +106,12 @@ ul {
 }
 .header_contain ul li a {
   position: relative;
-  right: 30rem;
-  top: -20px;
+  right: 38vw;
+  top: -13px;
   text-decoration: none;
   color: #254E7A;
-  font-size: 19.6px;
-  padding: 8.5px;
+  font-size: 18.6px;
+  padding: 9px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .header_contain ul li a:hover {
@@ -130,7 +127,7 @@ ul {
 }
 
 li {
-  margin: 8.5px;
+  margin: 4.5px;
 }
 
 #search {
@@ -142,7 +139,7 @@ header ul li .a1 {
   background-color: #27749e;
   color: black;
   border-radius: 8px;
-  padding: 10px;
+  padding: 7px;
 }
 
 #search:hover {
@@ -151,9 +148,9 @@ header ul li .a1 {
 
 .logo {
   position: absolute;
-  left: 0.5cm;
-  font-size: 34px;
-  top: 0.2cm;
+  left: 8vw;
+  font-size: 31px;
+  top: 1.5rem;
   color: #113f70;
   font-family: "yeseva_oneregular";
 }
@@ -164,6 +161,9 @@ header ul li .a1 {
 .logo img {
   width: 70px;
   height: 70px;
+  position: absolute;
+  top: -1.2rem;
+  margin-left: -5rem;
 }
 
 .icone_menu i {
@@ -185,7 +185,7 @@ header ul li .a1 {
   border-radius: 8px;
   padding: 6px;
   font-size: 42px;
-  margin-left: 5rem;
+  margin-left: 2rem;
 }
 
 .up- {
@@ -200,240 +200,1476 @@ header ul li .a1 {
   .Choiceofmada {
     position: absolute;
     top: 77rem;
-    left: 27rem;
+    left: 29vw;
     width: 40rem;
     text-align: center;
   }
-  .Choiceofmada .border2 {
-    width: 1.6cm;
-    height: 9px;
+  .Choiceofmada .title {
     position: absolute;
-    left: 13rem;
-    top: 12rem;
-    background-color: rgb(4, 82, 137);
-    text-align: center;
-    border-radius: 5px;
+    top: 0.4rem;
+    left: 15.4vw;
+    font-size: 29px;
   }
   .choice_item1 {
     position: absolute;
     top: 5rem;
     font-family: "yeseva_oneregular";
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
     color: #29353e;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
-  .galerie {
+  .choice_contain {
     position: absolute;
-    top: 12rem;
+    top: 89rem;
+    width: 97vw;
   }
-  .galerie .item_1 img {
-    width: 11.86cm;
-    height: 8cm;
-    position: absolute;
-    left: 0;
-    top: 85rem;
-    border-radius: 1px;
+  .choice_contain .imag {
+    display: block;
+    overflow: hidden;
   }
-  .galerie .p1 {
+  .choice_contain .imag div {
+    width: 22.5vw;
+    height: 19.6rem;
+    margin-top: 5vw;
+    z-index: 20;
+    overflow: hidden;
+  }
+  .choice_contain .imag div img {
+    width: 22.5vw;
+    height: 19.6rem;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .choice_contain .imag div div {
+    width: 22.5vw;
+    height: 11rem;
+    margin-top: -4.1rem;
+    margin-left: -10.4rem;
+    background-color: rgba(10, 7, 7, 0.767);
+  }
+  .choice_contain .imag div h1 {
+    font-size: 23px;
+  }
+  .choice_contain .imag div .in_1, .choice_contain .imag div .in_2, .choice_contain .imag div .in_3 {
+    font-size: 18px;
+    color: #fff;
+  }
+  .choice_contain .imag div:nth-child(1) {
+    position: relative;
+    left: 64.8vw;
+    top: -0.5rem;
+  }
+  .choice_contain .imag div:nth-child(2) {
+    position: relative;
+    left: 12.9vw;
+    top: 0em;
+  }
+  .choice_contain .imag div:nth-child(3) {
+    position: relative;
+    left: 64.8vw;
+    top: -2.5rem;
+  }
+  .choice_contain .ligne {
+    width: 4px;
+    height: 75rem;
     position: absolute;
-    left: 16.5rem;
-    top: 48.9em;
-    font-size: 30px;
+    left: 50vw;
+    top: 0rem;
+    background-color: rgb(172, 136, 7);
+  }
+  .choice_contain .lign1 {
+    width: 12rem;
+    height: 3.4px;
+    position: absolute;
+    left: 50vw;
+    top: 13rem;
+    background-color: rgb(172, 136, 7);
+  }
+  .choice_contain .lign2 {
+    width: 12rem;
+    height: 3.4px;
+    position: absolute;
+    left: 35.4vw;
+    top: 37rem;
+    background-color: rgb(172, 136, 7);
+  }
+  .choice_contain .lign3 {
+    width: 12rem;
+    height: 3.4px;
+    position: absolute;
+    left: 50vw;
+    top: 58rem;
+    background-color: rgb(172, 136, 7);
+  }
+  .choice_contain #radio {
+    position: absolute;
+    top: -1.6rem;
+    left: 48.8vw;
+    width: 24px;
+    height: 24px;
+    border: 5px solid;
+    background-color: aqua;
+  }
+  .choice_contain #radio2 {
+    position: absolute;
+    top: 74.7rem;
+    left: 48.9vw;
+    width: 24px;
+    height: 24px;
+    border: 5px solid;
+    background-color: aqua;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contain {
+    width: 100%;
+    height: 30rem;
+    background-color: rgba(243, 240, 240, 0.7411764706);
+    position: absolute;
+    top: 50rem;
+    left: 0cm;
+    color: black;
+  }
+  .int {
+    position: absolute;
+    left: 24.5vw;
+    top: 0.78cm;
+    padding-top: 4cm;
+    padding-left: 1.5cm;
+    height: 80vh;
+    width: 56vw;
+  }
+  .int .title {
+    position: absolute;
+    top: 2.9rem;
+  }
+  .contenu {
+    padding-top: 70px;
+    width: 55vw;
+    height: 13cm;
+    position: absolute;
+    right: 0;
+    top: 0.14cm;
+  }
+  .contenu span {
+    position: absolute;
+    top: 5cm;
+    left: 4cm;
+    font-size: 20px;
+    width: 9cm;
+    color: rgb(22, 21, 21);
+  }
+  .contain {
+    position: absolute;
+    top: 16.7cm;
+  }
+  .contain img {
+    box-shadow: 0px 4px 8px black;
+    width: 37vw;
+    height: 9.6cm;
+    position: absolute;
+    left: 4.9vw;
+    top: 50.5px;
+    border-radius: 2px;
+  }
+  .titre-propos {
+    margin-top: -2.5rem;
+    margin-left: 8.5cm;
+    font-family: "yeseva_oneregular";
+    font-size: 40px;
+    font-weight: bold;
+    color: #29353e;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pictures_home {
+    position: absolute;
+    right: 4vw;
+    top: 10.7rem;
+    display: flex;
+  }
+  .pictures_home img {
+    width: 15.6vw;
+    height: 21.5rem;
+    border-radius: 7px;
+    margin-left: 2vw;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .pictures_home img:hover {
+    transform: translateY(-36px);
+    transition: 0.8s;
+  }
+  .pictures_home img:nth-child(2) {
+    margin-top: 2rem;
+  }
+  .pictures_home img:nth-child(3) {
+    margin-top: 4rem;
+  }
+  .c_responsive {
+    display: none;
+  }
+  .t {
+    position: relative;
+    left: -28.4vw;
+  }
+  .visit {
+    z-index: 10;
+    color: rgb(8, 8, 8);
+    width: 90vw;
+    font-family: "abril_fatfaceregular";
+    font-weight: 500;
+    position: absolute;
+    left: 4vw;
+    top: 17rem;
+    font-size: 35px;
     text-align: center;
-    width: 50rem;
   }
-  .galerie .item_3 img {
-    width: 11.86cm;
-    height: 8cm;
-    position: absolute;
-    left: 56.3rem;
-    top: 85rem;
-    border-radius: 1px;
-  }
-  .galerie2 {
-    position: absolute;
-    top: 12rem;
-  }
-  .galerie2 .item_4 {
-    position: absolute;
-    left: -11rem;
-    top: 62.9em;
-    font-size: 28px;
+  .Anakao {
     text-align: center;
-    width: 50rem;
-  }
-  .galerie2 .item_5 img {
-    width: 12.05cm;
-    height: 8cm;
+    font-family: "Memphis-Bold";
+    font-weight: 400;
+    justify-content: center;
+    color: rgb(27, 26, 26);
     position: absolute;
-    left: 27.9rem;
-    top: 103.8rem;
-    border-radius: 1px;
-  }
-  .galerie2 .item_6 {
-    position: absolute;
-    left: 55rem;
-    top: 63.9em;
-    font-size: 28px;
+    left: 29vw;
+    top: 21.5rem;
+    font-size: 20px;
     text-align: center;
-    width: 28rem;
-    z-index: 4;
   }
-  .galerie3 {
+  .explore {
+    background-color: rgb(4, 82, 137);
+    border: 0 solid;
+    color: rgb(255, 255, 255);
+    border-radius: 9px;
+    padding: 7.6px;
+    text-align: center;
     position: absolute;
-    top: 49.6rem;
+    left: 42vw;
+    top: 26rem;
+    font-size: 24px;
+    text-align: center;
+    box-shadow: 0px 4px 8px black;
+    cursor: pointer;
   }
-  .galerie3 .item_7 img {
-    width: 11.86cm;
-    height: 8cm;
-    position: absolute;
-    left: 0;
-    top: 85rem;
-    border-radius: 1px;
-  }
-  .galerie3 .item_8 img {
-    width: 11.98cm;
-    height: 8cm;
-    position: absolute;
-    left: 28rem;
-    top: 85rem;
-    border-radius: 1px;
-  }
-  .galerie3 .item_9 img {
-    width: 11.86cm;
-    height: 8cm;
-    position: absolute;
-    left: 56.3rem;
-    top: 85rem;
-    border-radius: 1px;
+  .explore:hover {
+    box-shadow: 5px 4px 8px black;
   }
 }
-.contain {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 50rem;
-  left: 0cm;
-  color: black;
-}
-
-.int {
-  position: absolute;
-  left: 13.73cm;
-  top: 0.78cm;
-  padding-top: 4cm;
-  padding-left: 1.5cm;
-  height: 80vh;
-  width: 56vw;
-}
-
-.contenu {
-  background-color: #7babcd;
-  padding-top: 70px;
-  width: 50vw;
-  height: 14cm;
-  position: absolute;
-  right: 0;
-  top: 0.14cm;
-}
-.contenu span {
-  position: absolute;
-  top: 6cm;
-  left: 4cm;
-  font-size: 20px;
-  width: 9cm;
-  color: rgb(22, 21, 21);
-}
-
-.contain {
-  position: absolute;
-  top: 16.7cm;
-}
-.contain img {
-  box-shadow: 7px 4px 8px black;
-  width: 45vw;
-  height: 11.6cm;
-  position: absolute;
-  left: 4.9vw;
-  top: 50.5px;
-  border-radius: 2px;
-}
-
-.titre-propos {
-  margin-top: -4rem;
-  margin-left: 1.7cm;
-  font-family: "yeseva_oneregular";
-  font-size: 60px;
-  font-weight: bold;
-  color: #29353e;
-}
-
-.c img {
-  width: 100.02%;
-  height: 38rem;
-  position: absolute;
-  top: 2.1cm;
-  left: 0;
-}
-
-.c_responsive {
-  display: none;
-}
-
-.visit {
-  font-size: 81px;
-  position: absolute;
-  top: 17rem;
-  z-index: 10;
-  color: white;
-  left: 4vw;
-  width: 90vw;
-  font-family: "abril_fatfaceregular";
-  font-weight: 500;
-}
-
-.Anakao {
-  text-align: center;
-  font-family: "Memphis-Bold";
-  font-weight: 400;
-  font-size: 43px;
-  position: absolute;
-  justify-content: center;
-  left: 14vw;
-  color: white;
-  top: 25rem;
-  text-align: center;
-}
-
-.explore {
-  position: absolute;
-  top: -5rem;
-  left: 27vw;
-  background-color: rgb(255, 255, 255);
-  border: 0 solid;
-  color: rgb(88, 81, 7);
-  border-radius: 9px;
-  font-size: 35px;
-  padding: 5px;
-  text-align: center;
-}
-.explore:hover {
-  background-color: rgb(244, 191, 17);
-}
-
 @media screen and (min-width: 280px) and (max-width: 763px) {
+  @font-face {
+    font-family: "yeseva_oneregular";
+    src: url("../../assets/yesevaone-regular-webfont.woff2") format("woff2"), url("../../assets/yesevaone-regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
   .header {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    width: 99.9vw;
+    left: 0;
   }
   .logo {
     font-size: 27px;
-    left: 0.3rem;
-    top: 0.6cm;
+    left: 17vw;
+    top: 0.8cm;
   }
   .logo img {
     width: 48px;
     height: 48px;
+    position: absolute;
+    top: -0.5rem;
+    margin-left: -3.5rem;
+  }
+  .header_contain {
+    width: 100vw;
+    height: 0rem;
+    position: absolute;
+    left: 0rem;
+    top: 5.2rem;
+    background-color: rgb(22, 98, 211);
+    transition: 0.3s;
+  }
+  .header_contain ul {
+    display: block;
+    position: absolute;
+    left: 35vw;
+    top: -25rem;
+    width: 65vw;
+  }
+  .header_contain ul li {
+    margin-top: 22px;
+  }
+  .header_contain ul li a {
+    color: #241b1b;
+    font-size: 19px;
+    padding: -25px;
+    width: -5rem;
+    position: relative;
+    right: 19vw;
+    width: 70vw;
+  }
+  .header_contain ul li .a1 {
+    background-color: antiquewhite;
+  }
+  .header_contain ul .contact {
+    border: 1.5px solid #113f70;
+    border-radius: 8px;
+    padding: 7px;
+    font-size: 20.4px;
+    margin-left: 0rem;
+  }
+  .header_contain ul i {
+    color: #000000;
+  }
+  .icone_menu i {
+    position: relative;
+    float: right;
+    display: flex;
+    top: 1.3rem;
+    right: 4vw;
+    z-index: 6;
+    font-size: 25px;
+    border-radius: 30%;
+  }
+  .hideshow {
+    height: 24.5rem;
+  }
+  .h2 {
+    transform: translateY(28rem);
+    position: absolute;
+    top: 2.6rem;
+    transition: 0.06s;
+  }
+  .pictures_home {
+    position: absolute;
+    right: 2vw;
+    top: 7.7rem;
+    display: block;
+  }
+  .pictures_home img {
+    width: 91vw;
+    height: 21.8rem;
+    border-radius: 7px;
+    margin-top: 16rem;
+    cursor: pointer;
+  }
+  .pictures_home img:hover {
+    transform: translateY(-36px);
+    transition: 0.8s;
+  }
+  .pictures_home img:nth-child(2) {
+    position: relative;
+    top: -13.6rem;
+  }
+  .pictures_home img:nth-child(3) {
+    margin-top: -10.8rem;
+  }
+  .c_responsive {
+    display: none;
+  }
+  .t {
+    position: relative;
+    left: -6vw;
+  }
+  .visit {
+    z-index: 10;
+    color: rgb(8, 8, 8);
+    width: 95vw;
+    font-family: "abril_fatfaceregular";
+    font-weight: 500;
+    position: absolute;
+    left: 6.6vw;
+    top: 10.3rem;
+    font-size: 22px;
+    text-align: center;
+  }
+  .Anakao {
+    text-align: center;
+    font-family: "Memphis-Bold";
+    font-weight: 400;
+    justify-content: center;
+    color: rgb(27, 26, 26);
+    position: absolute;
+    left: 19vw;
+    top: 13.5rem;
+    font-size: 18px;
+    text-align: center;
+  }
+  .explore {
+    background-color: rgb(4, 82, 137);
+    border: 0 solid;
+    color: rgb(255, 255, 255);
+    border-radius: 9px;
+    padding: 6px;
+    text-align: center;
+    position: absolute;
+    left: 40vw;
+    top: 17rem;
+    font-size: 21px;
+    text-align: center;
+    box-shadow: 0px 4px 8px black;
+    cursor: pointer;
+  }
+  .explore:hover {
+    box-shadow: 5px 4px 8px black;
+  }
+  .title {
+    position: absolute;
+    left: 35.5vw;
+    top: 8rem;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(4, 82, 137);
+    font-family: "coneria_script_demoregular";
+    font-style: italic;
+    font-weight: 800;
+  }
+  .contain {
+    width: 100%;
+    height: 30rem;
+    background-color: rgba(243, 240, 240, 0.7411764706);
+    margin-top: 64rem;
+    left: 0cm;
+    color: black;
+  }
+  .contain h1 {
+    margin-top: -3rem;
+  }
+  .int {
+    position: absolute;
+    left: 0vw;
+    top: 0.78cm;
+    padding-top: 4cm;
+    padding-left: 1.5cm;
+    height: 80vh;
+    width: 56vw;
+  }
+  .int .title {
+    position: absolute;
+    top: 2.9rem;
+  }
+  .contenu {
+    padding-top: 70px;
+    width: 25vw;
+    height: 6rem;
+    position: absolute;
+    right: 55vw;
+    top: 0.14cm;
+  }
+  .contenu span {
+    position: absolute;
+    top: 6.9rem;
+    left: -13vw;
+    font-size: 18px;
+    width: 86vw;
+    color: rgb(22, 21, 21);
+  }
+  .contain {
+    position: absolute;
+    top: 16.7cm;
+  }
+  .contain img {
+    box-shadow: 0px 4px 8px black;
+    width: 89.7vw;
+    height: 9.6cm;
+    position: absolute;
+    left: 4.9vw;
+    top: 18rem;
+    border-radius: 2px;
+  }
+  .titre-propos {
+    margin-top: -7rem;
+    margin-left: -5vw;
+    font-family: "yeseva_oneregular";
+    font-size: 22px;
+    font-weight: bold;
+    color: #29353e;
+    width: 80vw;
+  }
+  .Choiceofmada {
+    position: absolute;
+    top: 147rem;
+    left: 0vw;
+    text-align: center;
+  }
+  .Choiceofmada .title {
+    margin-top: -5rem;
+    width: 40vw;
+    margin-left: -5vw;
+  }
+  .choice_item1 {
+    position: absolute;
+    top: 5.7rem;
+    right: -92.5vw;
+    font-size: 23px;
+    width: 90vw;
+    font-weight: bold;
+    color: #29353e;
+    font-family: "yeseva_oneregular";
+  }
+  .choice_contain {
+    position: absolute;
+    top: 159rem;
+    width: 97vw;
+  }
+  .choice_contain .imag {
+    display: block;
+    overflow: hidden;
+  }
+  .choice_contain .imag div {
+    width: 81.5vw;
+    height: 19.6rem;
+    margin-top: 6rem;
+    z-index: 20;
+    overflow: hidden;
+  }
+  .choice_contain .imag div img {
+    width: 92.5vw;
+    height: 19.6rem;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .choice_contain .imag div div {
+    width: 92.5vw;
+    height: 11rem;
+    margin-top: -10.1rem;
+    margin-left: -6.4vw;
+    background-color: rgba(10, 7, 7, 0.767);
+  }
+  .choice_contain .imag div h1 {
+    font-size: 23px;
+    margin-left: -10vw;
+  }
+  .choice_contain .imag div .in_1, .choice_contain .imag div .in_2, .choice_contain .imag div .in_3 {
+    font-size: 18px;
+    color: #fff;
+  }
+  .choice_contain .imag div .in_1 p, .choice_contain .imag div .in_2 p, .choice_contain .imag div .in_3 p {
+    width: 79vw;
+    margin-left: 1vw;
+  }
+  .choice_contain .imag div:nth-child(1) {
+    position: relative;
+    left: 6.5vw;
+    top: -0.5rem;
+  }
+  .choice_contain .imag div:nth-child(2) {
+    position: relative;
+    left: 6.5vw;
+    top: 0em;
+  }
+  .choice_contain .imag div:nth-child(3) {
+    position: relative;
+    left: 6.5vw;
+    top: 0.5rem;
+  }
+  .choice_contain .ligne {
+    width: 4px;
+    height: 85rem;
+    position: absolute;
+    left: 50vw;
+    top: 0rem;
+    background-color: rgb(172, 136, 7);
+  }
+  .choice_contain .lign1 {
+    display: none;
+  }
+  .choice_contain .lign2 {
+    display: none;
+  }
+  .choice_contain .lign3 {
+    display: none;
+  }
+  .choice_contain #radio {
+    position: absolute;
+    top: -1.6rem;
+    left: 46vw;
+    width: 24px;
+    height: 24px;
+    border: 5px solid;
+    background-color: aqua;
+  }
+  .choice_contain #radio2 {
+    position: absolute;
+    top: 84.7rem;
+    left: 46vw;
+    width: 24px;
+    height: 24px;
+    border: 5px solid;
+    background-color: aqua;
+  }
+  .Popular {
+    overflow: hidden;
+    width: 100%;
+    height: 198rem;
+    position: absolute;
+    left: 0;
+    top: 250.4rem;
+    background-color: rgba(243, 240, 240, 0.7411764706);
+  }
+  .Popular h1 {
+    color: #29353e;
+    font-family: "yeseva_oneregular";
+    font-size: 23px;
+    position: absolute;
+    top: 4rem;
+    left: 11vw;
+    font-weight: 800;
+    width: 80vw;
+  }
+  .Popular h3 {
+    margin-top: -5.3rem;
+    margin-left: 7vw;
+  }
+  .Popular p {
+    width: 25vw;
+    color: rgb(22, 21, 21);
+    position: absolute;
+    left: 0;
+    top: 17rem;
+    font-size: 22px;
+    text-align: center;
+  }
+  .Popular .contain_1 {
+    display: block;
+    position: absolute;
+    top: 7rem;
+    left: 10.2vw;
+  }
+  .Popular .contain_1 div {
+    width: 75vw;
+    margin-top: 5rem;
+    border-radius: 5.5px;
+    height: 18.5rem;
+    background-color: rgb(248, 250, 249);
+    margin-left: 2vw;
+    box-shadow: 0px 2px 7px rgb(32, 30, 30);
+  }
+  .Popular .contain_1 div p {
+    font-size: 19px;
+    margin-top: -6rem;
+  }
+  .Popular .contain_1 div img {
+    width: 75.2vw;
+    border-radius: 5.5px;
+    height: 10.1rem;
+    margin-left: 0vw;
+  }
+  .Popular .contain_1 div button {
+    padding: 4px;
+    margin-top: 3.4rem;
+    font-size: 17px;
+    margin-left: 45vw;
+    background-color: rgb(199, 153, 3);
+    border-radius: 5px;
+    border: 0;
+  }
+  .Popular .contain_1 div h2 {
+    font-size: 17.7px;
+    top: 3.8rem;
+    position: relative;
+    left: 2vw;
+    width: 70vw;
+  }
+  .Popular .contain_1 div i {
+    font-size: 27px;
+    color: #be950b;
+    left: -25vw;
+    position: relative;
+    top: 0.5rem;
+  }
+  .Popular .contain_1 div h3 {
+    position: relative;
+    top: 4.5rem;
+    left: -13vw;
+    font-family: "yeseva_oneregular";
+  }
+  .Popular .contain_2 {
+    display: block;
+    position: absolute;
+    top: 102rem;
+    left: 10.2vw;
+  }
+  .Popular .contain_2 div {
+    width: 75vw;
+    margin-top: 5rem;
+    border-radius: 5.5px;
+    height: 18.5rem;
+    background-color: rgb(248, 250, 249);
+    margin-left: 2vw;
+    box-shadow: 0px 2px 7px rgb(32, 30, 30);
+  }
+  .Popular .contain_2 div p {
+    font-size: 19px;
+    margin-top: -6rem;
+  }
+  .Popular .contain_2 div img {
+    width: 75.2vw;
+    border-radius: 5.5px;
+    height: 10.1rem;
+    margin-left: 0vw;
+  }
+  .Popular .contain_2 div button {
+    padding: 4px;
+    margin-top: 3.4rem;
+    font-size: 17px;
+    margin-left: 45vw;
+    background-color: rgb(199, 153, 3);
+    border-radius: 5px;
+    border: 0;
+  }
+  .Popular .contain_2 div h2 {
+    font-size: 17.7px;
+    top: 3.8rem;
+    position: relative;
+    left: 2vw;
+    width: 70vw;
+  }
+  .Popular .contain_2 div i {
+    font-size: 27px;
+    color: #be950b;
+    left: -25vw;
+    position: relative;
+    top: 0.5rem;
+  }
+  .Popular .contain_2 div h3 {
+    position: relative;
+    top: 4.5rem;
+    left: -13vw;
+    font-family: "yeseva_oneregular";
+  }
+  .suggestion {
+    position: relative;
+    top: 455rem;
+    left: 0;
+  }
+  .suggestion h1 {
+    font-size: 23px;
+    position: absolute;
+    top: -1.35rem;
+    left: 16vw;
+    font-weight: 500;
+    width: 65vw;
+    font-family: "yeseva_oneregular";
+    font-weight: bold;
+    color: #29353e;
+  }
+  .suggestion h3 {
+    margin-top: -11rem;
+    margin-left: -6vw;
+    width: 40vw;
+  }
+  .suggestion .contain_suggestion {
+    display: flexbox;
+    flex-direction: column-reverse;
+    position: absolute;
+    left: 4.6vw;
+    top: 2rem;
+  }
+  .suggestion .contain_suggestion div {
+    width: 85vw;
+    height: 23.6rem;
+    background-color: beige;
+    margin-top: 5rem;
+    border-radius: 15px;
+  }
+  .suggestion .contain_suggestion div img {
+    width: 91px;
+    height: 98px;
+    margin-left: 0vw;
+    margin-top: 1rem;
+    border-radius: 19px;
+  }
+  .suggestion .contain_suggestion div h2 {
+    color: #181717;
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-left: 3.5vw;
+    font-family: "alegreyaregular";
+  }
+  .suggestion .contain_suggestion div h2:nth-child(3) {
+    margin-left: -15vw;
+  }
+  .suggestion .contain_suggestion div p {
+    font-size: 19px;
+    width: 70vw;
+    margin-left: 9vw;
+    margin-top: -0.5rem;
+  }
+  .suggestion .contain_suggestion div button {
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-left: 6vw;
+    background-color: rgb(226, 155, 2);
+  }
+  .circuits {
+    position: absolute;
+    top: 94rem;
+    width: 99.99vw;
+    height: 152rem;
+    left: -2.5vw;
+    background-color: rgb(233, 230, 230);
+  }
+  .circuits h1 {
+    font-size: 28px;
+    position: absolute;
+    top: 4rem;
+    left: 12vw;
+    font-weight: 500;
+    width: 75vw;
+    font-family: "yeseva_oneregular";
+    font-weight: -150;
+    color: #29353e;
+  }
+  .circuits h3 {
+    position: absolute;
+    left: 39vw;
+    top: 13.6rem;
+    text-align: center;
+    font-size: 21px;
+    color: rgb(4, 82, 137);
+    font-family: "coneria_script_demoregular";
+    font-style: italic;
+    font-weight: 800;
+  }
+  .circuits .contain-1 {
+    display: block;
+    position: absolute;
+    top: 8rem;
+    left: 11vw;
+    text-align: center;
+  }
+  .circuits .contain-1 div {
+    height: 31rem;
+    width: 78vw;
+    background-color: rgb(255, 255, 255);
+    margin-top: 4rem;
+    border-radius: 9px;
+    box-shadow: 3px 3px 15px rgba(114, 111, 111, 0.878);
+  }
+  .circuits .contain-1 img {
+    height: 15rem;
+    width: 78vw;
+    border-radius: 9px;
+  }
+  .circuits .contain-1 .contain_1 {
+    background-size: cover;
+  }
+  .circuits .contain-1 .contain_1 h1 {
+    text-align: center;
+    font-size: 24px;
+    position: absolute;
+    top: 20rem;
+    left: 8.5vw;
+    font-weight: 650;
+    width: 65vw;
+  }
+  .circuits .contain-1 .contain_1 p {
+    position: absolute;
+    left: 7vw;
+    top: 23.8rem;
+    font-size: 18px;
+    text-align: center;
+    width: 62vw;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .circuits .contain-1 .contain_1 button {
+    position: absolute;
+    left: 27.8vw;
+    top: 30.4rem;
+    padding: 4px;
+    background-color: #697278;
+    font-size: 20.5px;
+    border-radius: 6px;
+    border: 0 solid;
+  }
+  .circuits .contain-1 .contain_1:hover {
+    box-shadow: 5px 8px 35px black;
+  }
+  .circuits .contain-1 .contain_2 {
+    background-size: 100%;
+  }
+  .circuits .contain-1 .contain_2 h1 {
+    text-align: center;
+    font-size: 24px;
+    position: absolute;
+    top: 54.7rem;
+    left: 4.5vw;
+    font-weight: 600;
+    width: 70vw;
+  }
+  .circuits .contain-1 .contain_2 p {
+    position: absolute;
+    left: 8vw;
+    top: 58.6rem;
+    font-size: 18px;
+    text-align: center;
+    width: 62vw;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .circuits .contain-1 .contain_2 button {
+    position: absolute;
+    left: 28.8vw;
+    top: 66.1rem;
+    padding: 4px;
+    background-color: #697278;
+    font-size: 20.3px;
+    border-radius: 6px;
+    border: 0 solid;
+  }
+  .circuits .contain-1 .contain_2:hover {
+    box-shadow: 5px 8px 35px black;
+  }
+  .circuits .contain-1 .c3 {
+    height: 15rem;
+    width: 78vw;
+    border-radius: 9px;
+  }
+  .circuits .contain-1 .contain_3 {
+    background-size: cover;
+  }
+  .circuits .contain-1 .contain_3 h1 {
+    text-align: center;
+    font-size: 24px;
+    position: absolute;
+    top: 90rem;
+    left: 5.9vw;
+    font-weight: 600;
+    width: 65vw;
+  }
+  .circuits .contain-1 .contain_3 p {
+    position: absolute;
+    left: 7vw;
+    top: 93.8rem;
+    font-size: 18px;
+    text-align: center;
+    width: 62vw;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .circuits .contain-1 .contain_3 button {
+    position: absolute;
+    left: 27.6vw;
+    top: 101.1rem;
+    padding: 4px;
+    background-color: #697278;
+    font-size: 20px;
+    border-radius: 6px;
+    border: 0 solid;
+  }
+  .circuits .contain-1 .contain_3:hover {
+    box-shadow: 5px 8px 35px black;
+  }
+  .circuits .contain-2 {
+    display: flex;
+    position: absolute;
+    top: 117.5rem;
+    left: -13.5vw;
+  }
+  .circuits .contain-2 div {
+    height: 29rem;
+    width: 78vw;
+    background-color: rgb(255, 255, 255);
+    margin-left: 4rem;
+    border-radius: 9px;
+    box-shadow: 3px 3px 15px rgba(114, 111, 111, 0.878);
+  }
+  .circuits .contain-2 .contain_1 {
+    background-size: cover;
+    margin-left: 25.5vw;
+  }
+  .circuits .contain-2 .contain_1 img {
+    height: 15rem;
+    width: 78vw;
+    border-radius: 9px;
+  }
+  .circuits .contain-2 .contain_1 h1 {
+    text-align: center;
+    font-size: 23px;
+    position: absolute;
+    top: 15.7rem;
+    left: 31vw;
+    font-weight: 600;
+    width: 65vw;
+  }
+  .circuits .contain-2 .contain_1 p {
+    position: absolute;
+    left: 34vw;
+    top: 19.6rem;
+    font-size: 18px;
+    text-align: center;
+    width: 63vw;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .circuits .contain-2 .contain_1 button {
+    position: absolute;
+    left: 56.6vw;
+    top: 25.8rem;
+    padding: 4px;
+    background-color: #697278;
+    font-size: 19px;
+    border-radius: 6px;
+    border: 0 solid;
+  }
+  .circuits .contain-2 .contain_1:hover {
+    box-shadow: 5px 8px 35px black;
+  }
+  .avis {
+    position: absolute;
+    top: 386rem;
+    width: 100%;
+    height: 52rem;
+    overflow: hidden;
+  }
+  .avis h1 {
+    font-size: 30px;
+    position: absolute;
+    top: 8rem;
+    left: 12vw;
+    font-weight: 500;
+    width: 75vw;
+    font-family: "yeseva_oneregular";
+    font-weight: 550;
+    color: #29353e;
+  }
+  .avis .border7 {
+    border-radius: 5px;
+    width: 1.6cm;
+    height: 9px;
+    position: absolute;
+    left: 42vw;
+    top: 11.5rem;
+    background-color: rgb(4, 82, 137);
+    text-align: center;
+  }
+  .avis .button_avis {
+    position: relative;
+    top: 20rem;
+    left: -136vw;
+    z-index: 20;
+  }
+  .avis .button_avis .next1 {
+    font-size: 33px;
+    border: 0 solid;
+    border-radius: 50%;
+    width: 50px;
+    padding-top: 10px;
+    height: 50px;
+    background-color: rgba(255, 254, 253, 0.437);
+    position: relative;
+    font-family: 18px;
+    right: -207vw;
+    top: -3.7rem;
+    cursor: pointer;
+  }
+  .avis .button_avis .next1:hover {
+    background-color: rgb(13, 18, 59);
+    color: white;
+  }
+  .avis .button_avis .prev1 {
+    font-size: 33px;
+    border: 0 solid;
+    border-radius: 50%;
+    width: 50px;
+    padding-top: 10px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.439);
+    position: relative;
+    right: -137vw;
+    cursor: pointer;
+  }
+  .avis .button_avis .prev1:hover {
+    background-color: rgb(13, 18, 59);
+    color: azure;
+  }
+  .avis .slider {
+    border-radius: 7px;
+    width: 90vw;
+    height: 20rem;
+    position: absolute;
+    left: 1rem;
+    top: 8rem;
+  }
+  .avis .slider .slides {
+    width: 86vw;
+    height: 30rem;
+    display: flex;
+    border-radius: 15px;
+    background-color: rgb(202, 206, 206);
+    box-shadow: -2px 6px 25px rgba(0, 0, 0, 0.79);
+  }
+  .avis .slider .slides .quote {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 10.8rem;
+    left: 7vw;
+  }
+  .avis .slider .slides .quote_d {
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    top: 33.7rem;
+    left: 68vw;
+  }
+  .avis .slider .slides .item {
+    display: none;
+    padding: 80px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10%;
+    margin-left: 80vw;
+  }
+  .avis .slider .slides .item h1 {
+    position: absolute;
+    left: 11vw;
+    top: 12rem;
+    font-size: 26px;
+    color: #000;
+    font-family: "coneria_script_demoregular";
+    font-weight: 1000;
+  }
+  .avis .slider .slides .item p {
+    margin-left: -88vw;
+    width: 60vw;
+    margin-top: 2rem;
+  }
+  .galeriePhoto {
+    position: absolute;
+    top: 242.5rem;
+  }
+  .galeriePhoto h1 {
+    font-size: 26px;
+    position: absolute;
+    top: 8rem;
+    left: 12vw;
+    font-weight: 500;
+    width: 75vw;
+    font-family: "yeseva_oneregular";
+    font-weight: 550;
+    color: #29353e;
+  }
+  .galeriePhoto h3 {
+    width: 60vw;
+    margin-top: -2rem;
+    margin-left: -15vw;
+  }
+  .galeriePhoto .lign1 {
+    position: absolute;
+    top: 17rem;
+    left: -2.5vw;
+    display: block;
+  }
+  .galeriePhoto .lign1 img {
+    width: 100.3vw;
+    margin-top: -1rem;
+    height: 15rem;
+  }
+  .galeriePhoto .lign2 {
+    position: absolute;
+    top: 73.9rem;
+    left: -2.7vw;
+    display: block;
+  }
+  .galeriePhoto .lign2 img {
+    width: 100.3vw;
+    height: 15rem;
+    margin-top: -1rem;
+  }
+  .galeriePhoto .all {
+    border: 0 solid;
+    width: 99.9vw;
+    height: 10rem;
+    background-color: rgb(187, 187, 187);
+    font-size: 25px;
+    padding-top: 6rem;
+    padding-left: -8rem;
+    position: absolute;
+    top: 130.7rem;
+    left: -2.4vw;
+  }
+  .blog {
+    position: absolute;
+    top: 445rem;
+  }
+  .blog h3 {
+    color: rgb(4, 82, 137);
+    font-family: "coneria_script_demoregular";
+    font-style: italic;
+    font-size: 22px;
+    position: absolute;
+    top: 7rem;
+    left: 37vw;
+    font-weight: 800;
+    width: 30vw;
+  }
+  .blog h1 {
+    font-size: 28px;
+  }
+  .blog .contain {
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    top: -35rem;
+  }
+  .blog .contain .img {
+    width: 90vw;
+    height: 25rem;
+    border-radius: 12px;
+    position: relative;
+    top: -23rem;
+    left: 2.4vw;
+  }
+  .blog .contain p {
+    font-size: 28px;
+    width: 90vw;
+    position: absolute;
+    top: 2rem;
+    left: 4vw;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: bold;
+  }
+  .commentaire {
+    position: absolute;
+    top: 490rem;
+  }
+  .commentaire img {
+    position: absolute;
+    width: 100vw;
+    left: -2vw;
+    height: 30rem;
+  }
+  .commentaire .contain {
+    position: absolute;
+    top: -52rem;
+    z-index: 20;
+    background-color: rgba(240, 248, 255, 0);
+  }
+  .commentaire .contain p {
+    font-size: 27px;
+    font-weight: bolder;
+    position: absolute;
+    top: -10rem;
+    left: 8vw;
+    width: 80vw;
+    color: rgb(255, 255, 255);
+    font-family: "coneria_script_demoregular";
+  }
+  .commentaire .contain .form {
+    position: relative;
+    top: 6rem;
+  }
+  .commentaire .contain .form input[type=text] {
+    width: 91vw;
+    height: 2.6rem;
+    font-size: 19px;
+    color: #000;
+    margin-left: 1vw;
+  }
+  .commentaire .contain .form input[type=submit] {
+    padding: 8px;
+    font-size: 22.4px;
+    background-color: rgb(218, 123, 0);
+    border: 0;
+    margin-left: 35vw;
+    margin-top: 1.4rem;
+    border-radius: 5px;
+  }
+  footer {
+    width: 100vw;
+    height: 65rem;
+    position: absolute;
+    left: -2.2vw;
+    top: 525rem;
+    background-color: rgb(222, 216, 216);
+  }
+  footer .logo {
+    width: 150px;
+    height: 70px;
+    position: absolute;
+    top: 3rem;
+    left: 27vw;
+  }
+  footer .info {
+    position: absolute;
+    top: 15rem;
+    left: 54vw;
+  }
+  footer .info h1 {
+    font-size: 25px;
+    position: absolute;
+    top: -4rem;
+    left: -9rem;
+    font-weight: 500;
+    width: 70vw;
+    color: rgb(4, 82, 137);
+  }
+  footer .info .phone {
+    position: absolute;
+    top: 0rem;
+    left: 0;
+  }
+  footer .info .phone img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -44vw;
+  }
+  footer .info .phone p {
+    font-size: 18px;
+    position: relative;
+    left: -38vw;
+    top: -1rem;
+    width: 35vw;
+  }
+  footer .email {
+    position: absolute;
+    top: 3.6rem;
+    left: 0;
+  }
+  footer .email img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -45vw;
+  }
+  footer .email p {
+    font-size: 18px;
+    position: relative;
+    left: -36vw;
+    top: -1rem;
+    width: 35vw;
+  }
+  footer .circ {
+    position: absolute;
+    left: 3vw;
+    top: 27.1rem;
+    display: block;
+  }
+  footer .circ h1 {
+    font-size: 25px;
+    position: absolute;
+    top: -4rem;
+    left: -9rem;
+    font-weight: 500;
+    width: 114vw;
+    color: rgb(4, 82, 137);
+  }
+  footer .circ h3 {
+    font-size: 19px;
+    position: relative;
+    top: -1.7rem;
+    margin-top: 2rem;
+    left: 3vw;
+  }
+  footer .raccourci {
+    position: absolute;
+    left: 47vw;
+    top: 26.8rem;
+    display: block;
+  }
+  footer .raccourci h1 {
+    font-size: 28px;
+    position: absolute;
+    top: -4rem;
+    left: 4vw;
+    font-weight: 500;
+    width: 41vw;
+    color: rgb(4, 82, 137);
+  }
+  footer .raccourci h3 {
+    font-size: 19px;
+    position: relative;
+    top: -1.7rem;
+    margin-top: 2rem;
+    left: 10vw;
+  }
+  footer .reference {
+    position: absolute;
+    left: 20vw;
+    top: 44.8rem;
+  }
+  footer .reference h1 {
+    font-size: 27px;
+    position: absolute;
+    top: -4rem;
+    left: -16vw;
+    font-weight: 500;
+    width: 90vw;
+    color: rgb(4, 82, 137);
+  }
+  footer .reference p {
+    width: 69vw;
+    font-size: 18px;
+    position: absolute;
+    left: -6vw;
+  }
+  footer .border_ {
+    width: 45%;
+    height: 2px;
+    position: absolute;
+    left: 29vw;
+    top: 53rem;
+    background-color: rgb(4, 82, 137);
+  }
+  footer .icones {
+    position: absolute;
+    top: 61rem;
+    display: flex;
+    left: 7.3%;
+    text-align: center;
+  }
+  footer .icones img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin-left: 1rem;
+  }
+  footer .copright {
+    font-size: 21px;
+    position: absolute;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: 800;
+    top: 55rem;
+    left: 5%;
+    width: 90vw;
+  }
+  .hide_ {
+    transform: translateX(-8.5rem);
+  }
+  .show_ {
+    transform: translateX(0rem);
+    transition: 1.6s;
+  }
+  .hide_1 {
+    transform: translateY(8rem);
+    opacity: 0;
+  }
+  .show_1 {
+    transform: translateY(0);
+    transition: 1.6s;
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 764px) and (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    left: 0;
+  }
+  .logo {
+    font-size: 27px;
+    left: 9.6vw;
+    top: 0.8cm;
+  }
+  .logo img {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: -0.5rem;
+    margin-left: -3.5rem;
   }
   .header_contain {
     width: 100%;
@@ -448,7 +1684,7 @@ header ul li .a1 {
   .header_contain ul {
     display: block;
     position: absolute;
-    left: 42vw;
+    left: 32vw;
     top: 2.6rem;
     width: 58vw;
   }
@@ -489,769 +1725,517 @@ header ul li .a1 {
   .hideshow {
     transform: translateY(0rem);
   }
-  .zIndex {
-    z-index: 6;
+  .dire {
+    display: block;
   }
-  .c {
+  .pictures_home {
+    position: absolute;
+    right: 2vw;
+    top: 22.7rem;
+    display: block;
+  }
+  .pictures_home img {
+    width: 39vw;
+    height: 21.8rem;
+    border-radius: 7px;
+    margin-left: 6vw;
+    cursor: pointer;
+  }
+  .pictures_home img:hover {
+    transform: translateY(-36px);
+    transition: 0.8s;
+  }
+  .pictures_home img:nth-child(1) {
+    position: relative;
+    top: 3rem;
+    left: -5vw;
+  }
+  .pictures_home img:nth-child(2) {
+    position: relative;
+    top: 3rem;
+  }
+  .pictures_home img:nth-child(3) {
+    margin-top: 6.3rem;
+    margin-left: 0vw;
+  }
+  .c_responsive {
     display: none;
   }
+  .t {
+    position: relative;
+    left: -6vw;
+  }
   .visit {
-    z-index: 4;
-    width: 98vw;
+    z-index: 10;
+    color: rgb(8, 8, 8);
+    width: 95vw;
+    font-family: "abril_fatfaceregular";
+    font-weight: 500;
     position: absolute;
-    left: 1vw;
-    top: 18rem;
-    font-size: 24.2px;
+    left: 7.6vw;
+    top: 10.3rem;
+    font-size: 30px;
     text-align: center;
   }
   .Anakao {
-    width: 98vw;
-    position: absolute;
-    left: 1vw;
-    top: 22rem;
-    font-size: 19.2px;
     text-align: center;
-  }
-  .title {
-    font-size: 25px;
+    font-family: "Memphis-Bold";
+    font-weight: 400;
+    justify-content: center;
+    color: rgb(27, 26, 26);
     position: absolute;
-    top: 14rem;
-    left: 15vw;
-    font-weight: 800;
-    width: 66vw;
+    left: 23.4vw;
+    top: 14.5rem;
+    font-size: 19.6px;
+    text-align: center;
   }
   .explore {
+    background-color: rgb(4, 82, 137);
     border: 0 solid;
-    color: rgb(88, 81, 7);
+    color: rgb(255, 255, 255);
     border-radius: 9px;
+    padding: 6px;
+    text-align: center;
     position: absolute;
-    left: 39.5vw;
-    top: 27rem;
-    padding: 5px;
-    background-color: rgb(255, 255, 255);
-    font-size: 22px;
+    left: 49.4vw;
+    top: 19rem;
+    font-size: 21px;
+    text-align: center;
+    box-shadow: 0px 4px 8px black;
+    cursor: pointer;
   }
   .explore:hover {
-    background-color: rgb(244, 191, 17);
+    box-shadow: 5px 4px 8px black;
   }
-  .c_responsive {
-    display: block;
-  }
-  .c_responsive img {
-    width: 100%;
-    height: 34.6rem;
-  }
-  .contenu {
-    padding-top: 70px;
-    width: 100%;
-    height: 18cm;
+  .title {
     position: absolute;
-    left: 0;
-    top: -5.3rem;
-    background-color: #7babcd;
-  }
-  .contenu span {
-    width: 90%;
-    position: absolute;
-    left: 0.5cm;
-    top: 3.5cm;
-    font-size: 18px;
+    left: 42.7vw;
+    top: 8rem;
     text-align: center;
+    font-size: 22px;
+    color: rgb(4, 82, 137);
+    font-family: "coneria_script_demoregular";
+    font-style: italic;
+    font-weight: 800;
+  }
+  .contain {
+    width: 100%;
+    height: 45rem;
+    background-color: rgba(243, 240, 240, 0.7411764706);
+    margin-top: 40rem;
+    left: 0cm;
+    color: black;
+  }
+  .contain h1 {
+    margin-top: -3rem;
   }
   .int {
     position: absolute;
-    left: 10vw;
+    left: 0vw;
     top: 0.78cm;
     padding-top: 4cm;
+    padding-left: 1.5cm;
     height: 80vh;
-    width: 40vw;
+    width: 56vw;
   }
-  .titre-propos {
-    font-size: 28px;
-    margin-top: -13rem;
-    margin-left: 5vw;
-    width: 40vw;
-    font-family: Georgia, "Times New Roman", Times, serif;
+  .int .title {
+    position: absolute;
+    top: 2.9rem;
+    font-size: 22px;
+  }
+  .contenu {
+    padding-top: 70px;
+    width: 25vw;
+    height: 6rem;
+    position: absolute;
+    right: 55vw;
+    top: 0.14cm;
+  }
+  .contenu span {
+    position: absolute;
+    top: 6.9rem;
+    left: -13vw;
+    font-size: 18px;
+    width: 86vw;
+    color: rgb(22, 21, 21);
   }
   .contain {
     position: absolute;
-    top: 16.9cm;
+    top: 16.7cm;
   }
   .contain img {
-    box-shadow: 7px 4px 8px black;
-    width: 86vw;
-    height: 7.4cm;
+    box-shadow: 0px 4px 8px black;
+    width: 60.7vw;
+    height: 9.6cm;
     position: absolute;
-    left: vw;
-    top: 6.5cm;
-    border-radius: 4px;
+    left: 20vw;
+    top: 18rem;
+    border-radius: 2px;
+  }
+  .titre-propos {
+    margin-top: -7rem;
+    margin-left: 2.6vw;
+    font-family: "yeseva_oneregular";
+    font-size: 26px;
+    font-weight: bold;
+    color: #29353e;
+    width: 80vw;
   }
   .Choiceofmada {
     position: absolute;
-    top: 77rem;
+    top: 124rem;
     left: 0vw;
     text-align: center;
   }
-  .Choiceofmada .border2 {
-    width: 1.6cm;
-    height: 7px;
-    position: absolute;
-    left: 40vw;
-    top: 11.5rem;
-    background-color: rgb(4, 82, 137);
-    text-align: center;
+  .Choiceofmada .title {
+    margin-top: -5rem;
+    width: 40vw;
+    margin-left: -9.5vw;
+    font-size: 22px;
   }
   .choice_item1 {
     position: absolute;
-    top: 8rem;
-    right: -93vw;
-    font-size: 28px;
+    top: 5.7rem;
+    right: -97.5vw;
+    font-size: 26.6px;
     width: 90vw;
     font-weight: bold;
     color: #29353e;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "yeseva_oneregular";
   }
-  .galerie {
+  .choice_contain {
     position: absolute;
-    top: 8rem;
+    top: 137rem;
+    width: 97vw;
   }
-  .galerie .item_1 img {
-    width: 100vw;
-    height: 8.5cm;
-    position: absolute;
-    left: 0;
-    top: 85rem;
-    border-radius: 1px;
+  .choice_contain .imag {
+    display: block;
+    overflow: hidden;
   }
-  .galerie .p1 {
+  .choice_contain .imag div {
+    width: 52.5vw;
+    height: 19.6rem;
+    margin-top: 6rem;
+    margin-left: 17vw;
+    z-index: 20;
+    overflow: hidden;
+  }
+  .choice_contain .imag div img {
+    width: 92.5vw;
+    height: 19.6rem;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .choice_contain .imag div div {
+    width: 53.5vw;
+    height: 11rem;
+    margin-top: -10.1rem;
+    margin-left: -3.4rem;
+    background-color: rgba(10, 7, 7, 0.767);
+  }
+  .choice_contain .imag div h1 {
+    font-size: 23px;
+  }
+  .choice_contain .imag div .in_1, .choice_contain .imag div .in_2, .choice_contain .imag div .in_3 {
+    font-size: 18px;
+    color: #fff;
+  }
+  .choice_contain .imag div .in_1 p, .choice_contain .imag div .in_2 p, .choice_contain .imag div .in_3 p {
+    width: 52vw;
+    margin-left: 0vw;
+  }
+  .choice_contain .imag div:nth-child(1) {
+    position: relative;
+    left: 6.5vw;
+    top: -0.5rem;
+  }
+  .choice_contain .imag div:nth-child(2) {
+    position: relative;
+    left: 6.5vw;
+    top: 0em;
+  }
+  .choice_contain .imag div:nth-child(3) {
+    position: relative;
+    left: 6.5vw;
+    top: 0.5rem;
+  }
+  .choice_contain .ligne {
+    width: 4px;
+    height: 85rem;
     position: absolute;
-    left: 4.5rem;
-    top: 68.6em;
-    font-size: 25px;
-    text-align: center;
-    width: 60vw;
+    left: 50vw;
+    top: 0rem;
+    background-color: rgb(172, 136, 7);
+  }
+  .choice_contain .lign1 {
     display: none;
   }
-  .galerie .item_3 img {
-    width: 100vw;
-    height: 7cm;
-    position: absolute;
-    left: 0;
-    top: 117rem;
-    border-radius: 1px;
+  .choice_contain .lign2 {
     display: none;
   }
-  .galerie2 {
-    position: absolute;
-    top: 45rem;
+  .choice_contain .lign3 {
     display: none;
   }
-  .galerie2 .item_4 {
+  .choice_contain #radio {
     position: absolute;
-    left: 1rem;
-    top: 68em;
-    font-size: 24px;
-    text-align: center;
-    width: 90vw;
+    top: -1.6rem;
+    left: 48vw;
+    width: 24px;
+    height: 24px;
+    border: 5px solid;
+    background-color: aqua;
   }
-  .galerie2 .item_5 img {
-    width: 100vw;
-    height: 7cm;
+  .choice_contain #radio2 {
     position: absolute;
-    left: 0;
-    top: 113.8rem;
-    border-radius: 1px;
-  }
-  .galerie2 .item_6 {
-    position: absolute;
-    left: 2rem;
-    top: 84em;
-    font-size: 26px;
-    text-align: center;
-    width: 78vw;
-    z-index: 4;
-  }
-  .galerie3 {
-    position: absolute;
-    top: 107rem;
-    display: none;
-  }
-  .galerie3 .item_7 img {
-    width: 100vw;
-    height: 7cm;
-    position: absolute;
-    left: 0;
-    top: 85rem;
-    border-radius: 1px;
-  }
-  .galerie3 .item_8 img {
-    width: 100vw;
-    height: 7cm;
-    position: absolute;
-    left: 0;
-    top: 101rem;
-    border-radius: 1px;
-  }
-  .galerie3 .item_9 img {
-    width: 100vw;
-    height: 7cm;
-    position: absolute;
-    left: 0;
-    top: 115rem;
-    border-radius: 1px;
+    top: 84.7rem;
+    left: 48vw;
+    width: 24px;
+    height: 24px;
+    border: 5px solid;
+    background-color: aqua;
   }
   .Popular {
-    position: absolute;
-    top: 100rem;
     overflow: hidden;
     width: 100%;
-    height: 40rem;
+    height: 98rem;
     position: absolute;
     left: 0;
-    top: 112.4rem;
-    background-color: rgb(233, 230, 230);
+    top: 230.4rem;
+    background-color: rgba(243, 240, 240, 0.7411764706);
   }
   .Popular h1 {
     color: #29353e;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 26px;
-    position: absolute;
-    top: 3rem;
-    left: 0vw;
-    font-weight: 800;
-    width: 100vw;
-  }
-  .Popular p {
-    width: 95vw;
-    color: rgb(23, 21, 21);
-    position: absolute;
-    left: 2vw;
-    top: 6rem;
-    font-size: 20px;
-    text-align: center;
-  }
-  .Popular .contain {
-    position: absolute;
-    left: -5vw;
-    overflow: hidden;
-    display: flex;
-    top: 12rem;
-    width: 500%;
-  }
-  .Popular .contain div {
-    margin-left: 4rem;
-    margin-top: 3rem;
-    width: 15rem;
-    height: 19.4rem;
-    border-radius: 8px;
-  }
-  .Popular .contain .item_1 {
-    background-size: cover;
-    background-image: url(assets/image/COUVERTURE.jpg);
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  .Popular .contain .item_1:hover {
-    width: 31vw;
-    height: 26rem;
-    transition: 0.3s;
-    transform: translateY(-25px);
-  }
-  .Popular .contain .i1 {
-    color: white;
-    width: 30vw;
-    position: absolute;
-    left: 1rem;
-    top: 10rem;
-    font-size: 28px;
-    text-align: center;
-    display: none;
-  }
-  .Popular .contain .i2 {
-    color: rgb(81, 58, 4);
-    width: 30vw;
-    position: absolute;
-    left: 25vw;
-    top: 10rem;
-    font-size: 28px;
-    text-align: center;
-    display: none;
-  }
-  .Popular .contain .St2 {
-    border: 0 solid;
-    color: rgb(222, 215, 215);
-    border-radius: 9px;
-    text-align: center;
-    display: none;
-    position: absolute;
-    left: 36vw;
-    top: 15rem;
-    padding: 5px;
-    background-color: rgb(175, 101, 17);
-    font-size: 22px;
-  }
-  .Popular .contain .St2:hover {
-    position: absolute;
-    top: 15rem;
-    left: 36vw;
-    background-color: rgb(215, 215, 12);
-  }
-  .Popular .contain .item_2 {
-    background-size: cover;
-    background-image: url(./assets/image/c.jpg);
-    cursor: pointer;
-  }
-  .Popular .contain .item_2:hover {
-    width: 31vw;
-    height: 26rem;
-    transform: translateY(-25px);
-    transition: 0.4s;
-  }
-  .Popular .contain .item_3 {
-    background-size: cover;
-    background-image: url(assets/image//BG.jpg);
-    cursor: pointer;
-  }
-  .Popular .contain .item_3:hover {
-    width: 31vw;
-    height: 26rem;
-    transform: translateY(-25px);
-  }
-  .Popular .contain .item_4 {
-    background-size: cover;
-    background-image: url("./../../allée des baobab responsive.jpg");
-    cursor: pointer;
-  }
-  .Popular .contain .item_4:hover {
-    width: 31vw;
-    transform: translateY(-25px);
-    height: 26rem;
-  }
-  .St1 {
-    border: 0 solid;
-    color: rgb(88, 81, 7);
-    border-radius: 9px;
-    display: none;
-    text-align: center;
-    position: absolute;
-    left: 13vw;
-    top: 15rem;
-    padding: 5px;
-    background-color: rgb(255, 255, 255);
-    font-size: 22px;
-  }
-  .St1:hover {
-    background-color: rgb(244, 191, 17);
-  }
-  .button {
-    position: relative;
-    top: 23rem;
-    left: -106vw;
-  }
-  .button .next {
-    font-size: 28px;
-    border: 0 solid;
-    border-radius: 50%;
-    padding: 8px;
-    width: 50px;
-    background-color: rgb(255, 254, 253);
-    position: relative;
-    right: -184vw;
-    top: -3.6rem;
-    cursor: pointer;
-  }
-  .button .next:hover {
-    background-color: rgb(13, 18, 59);
-    color: white;
-  }
-  .button .prev {
-    font-size: 28px;
-    border: 0 solid;
-    border-radius: 50%;
-    padding: 8px;
-    width: 50px;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    left: 56vh;
-    cursor: pointer;
-  }
-  .button .prev:hover {
-    background-color: rgb(13, 18, 59);
-    color: azure;
-  }
-  .suggestion {
-    position: absolute;
-    top: 156rem;
-  }
-  .suggestion h1 {
-    font-size: 28px;
+    font-family: "yeseva_oneregular";
+    font-size: 23px;
     position: absolute;
     top: 4rem;
-    left: 13vw;
+    left: 11vw;
+    font-weight: 800;
+    width: 80vw;
+  }
+  .Popular h3 {
+    margin-top: -5.3rem;
+    margin-left: 2vw;
+  }
+  .Popular p {
+    width: 25vw;
+    color: rgb(22, 21, 21);
+    position: absolute;
+    left: 0;
+    top: 17rem;
+    font-size: 22px;
+    text-align: center;
+  }
+  .Popular .contain_1 {
+    display: flex;
+    position: absolute;
+    top: 7rem;
+    left: 0vw;
+  }
+  .Popular .contain_1 div {
+    width: 35vw;
+    margin-top: 5rem;
+    border-radius: 5.5px;
+    height: 17rem;
+    background-color: rgb(248, 250, 249);
+    margin-left: 10vw;
+    box-shadow: 0px 2px 7px rgb(32, 30, 30);
+  }
+  .Popular .contain_1 div p {
+    font-size: 19px;
+    margin-top: -6rem;
+  }
+  .Popular .contain_1 div img {
+    width: 35vw;
+    border-radius: 5.5px;
+    height: 10.1rem;
+  }
+  .Popular .contain_1 div button {
+    padding: 4px;
+    margin-top: 0.6rem;
+    font-size: 19px;
+    background-color: rgb(199, 153, 3);
+    border-radius: 5px;
+    border: 0;
+  }
+  .Popular .contain_1 div h2 {
+    font-size: 19px;
+    margin-top: 1rem;
+  }
+  .Popular .contain_1 div:nth-child(3) {
+    margin-top: 25rem;
+    margin-left: -80vw;
+  }
+  .Popular .contain_1 div:nth-child(4) {
+    margin-top: 25rem;
+    margin-left: 10.3vw;
+  }
+  .Popular .contain_2 {
+    display: flex;
+    position: absolute;
+    top: 47.6rem;
+    left: 0vw;
+  }
+  .Popular .contain_2 div {
+    width: 35vw;
+    border-radius: 5.5px;
+    height: 17rem;
+    background-color: aquamarine;
+    margin-left: 10vw;
+    margin-top: 5rem;
+  }
+  .Popular .contain_2 div:nth-child(3) {
+    margin-top: 25rem;
+    margin-left: -80vw;
+  }
+  .Popular .contain_2 div:nth-child(4) {
+    margin-top: 25rem;
+    margin-left: 10.3vw;
+  }
+  .suggestion {
+    position: relative;
+    top: 335rem;
+    left: 0;
+  }
+  .suggestion h1 {
+    font-size: 23px;
+    position: absolute;
+    top: -1.35rem;
+    left: 16vw;
     font-weight: 500;
     width: 65vw;
-    font-family: "abril_fatfaceregular";
-    font-weight: bold;
-    color: #29353e;
-  }
-  .suggestion p {
-    position: absolute;
-    left: 8vw;
-    top: 10rem;
-    font-size: 19px;
-    text-align: center;
-    text-align: center;
-    width: 80vw;
-  }
-  .suggestion .border5 {
-    border-radius: 5px;
-    width: 1.6cm;
-    height: 9px;
-    position: absolute;
-    left: 40vw;
-    top: 7.7rem;
-    background-color: rgb(4, 82, 137);
-    text-align: center;
-  }
-  .suggestion .contain1 {
-    display: block;
-    position: absolute;
-    top: -8rem;
-    left: 49.2vw;
-  }
-  .suggestion .contain1 .i1, .suggestion .contain1 .i2, .suggestion .contain1 .i3 {
-    margin-top: 32.4rem;
-    border: 0px solid black;
-    padding-top: 5px;
-    padding-bottom: 13px;
-    padding-left: 19px;
-    padding-right: 19px;
-    font-size: 28px;
-    border-radius: 80%;
-    color: white;
-    font-weight: bold;
-    background-color: rgb(172, 136, 7);
-    animation: rotate_ 5s infinite linear;
-  }
-  @keyframes rotate_ {
-    0% {
-      transform: rotate(350deg);
-    }
-    20% {
-      transform: rotate(450deg);
-    }
-    40% {
-      transform: rotate(550deg);
-    }
-    60% {
-      transform: rotate(650deg);
-    }
-    80% {
-      transform: rotate(750deg);
-    }
-    100% {
-      transform: rotate(850deg);
-    }
-  }
-  .suggestion .border_um {
-    width: 6px;
-    height: 94rem;
-    position: absolute;
-    left: 53.6vw;
-    top: 26rem;
-    background-color: rgb(172, 136, 7);
-  }
-  .suggestion .contain2 {
-    position: absolute;
-    top: 20rem;
-    left: 13vw;
-    display: block;
-  }
-  .suggestion .contain2 div {
-    height: 19rem;
-    width: 75vw;
-    margin-top: 15rem;
-    border-radius: 5px;
-    box-shadow: 0px 7px 12px black;
-  }
-  .suggestion .contain2 .item_1 {
-    background-image: url(./assets/image/airport-2373727_1280.jpg);
-    background-size: cover;
-  }
-  .suggestion .contain2 .item_1 h1 {
-    font-size: 19px;
-    position: absolute;
-    top: 36rem;
-    left: -5vw;
-    font-weight: bold;
-    width: 84vw;
-    color: rgb(148, 127, 8);
-    z-index: 30;
-    font-style: italic;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  }
-  .suggestion .contain2 .item_2 {
-    background-image: url(./assets/image/plane.jpg);
-    background-size: cover;
-  }
-  .suggestion .contain2 .item_2 h1 {
-    font-size: 19px;
-    position: absolute;
-    top: 71rem;
-    left: -5vw;
-    font-weight: bold;
-    width: 84vw;
-    color: rgb(148, 127, 8);
-    z-index: 50;
-    font-style: italic;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  }
-  .suggestion .contain2 .item_3 {
-    background-image: url(./assets/image/ivato.jpg);
-    background-size: cover;
-  }
-  .suggestion .contain2 .item_3 h1 {
-    font-size: 19px;
-    position: absolute;
-    top: 105rem;
-    left: -5vw;
-    font-weight: bold;
-    width: 84vw;
-    color: rgb(148, 127, 8);
-    font-style: italic;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  }
-  .learnAbout {
-    position: absolute;
-    top: 288rem;
-    width: 100%;
-    height: 85rem;
-    background-color: #6a98ca;
-  }
-  .learnAbout h1 {
-    font-size: 28px;
-    position: absolute;
-    top: 2rem;
-    left: -1vw;
-    font-weight: 800;
-    width: 100vw;
     font-family: "yeseva_oneregular";
+    font-weight: bold;
     color: #29353e;
   }
-  .learnAbout .borderLearn {
-    border-radius: 5px;
-    width: 1.6cm;
-    height: 9px;
+  .suggestion h3 {
+    margin-top: -11rem;
+    margin-left: -13vw;
+    width: 40vw;
+  }
+  .suggestion .contain_suggestion {
+    display: flexbox;
+    flex-direction: column-reverse;
     position: absolute;
-    left: 42vw;
-    top: 6rem;
-    background-color: rgb(220, 174, 22);
+    left: 17.1vw;
+    top: 2rem;
   }
-  .learnAbout .imgH2 img {
-    position: absolute;
-    width: 80vw;
-    height: 20rem;
-    position: absolute;
-    left: 10.3vw;
-    top: 10rem;
-    border-radius: 5px;
+  .suggestion .contain_suggestion div {
+    width: 65vw;
+    height: 19.6rem;
+    background-color: beige;
+    margin-top: 5rem;
+    margin-left: 0;
+    border-radius: 15px;
   }
-  .learnAbout .description {
-    position: absolute;
-    right: 8vw;
-    top: 32rem;
-    font-size: 21px;
-    font-weight: 600;
-    width: 75vw;
-    color: rgb(50, 50, 50);
-    font-family: "Times New Roman", Times, serif;
+  .suggestion .contain_suggestion div img {
+    width: 91px;
+    height: 98px;
+    margin-left: 0vw;
+    margin-top: 1rem;
+    border-radius: 19px;
   }
-  .learnAbout .searchButton a {
-    border-radius: 6px;
-    text-decoration: none;
-    color: black;
-    position: absolute;
-    left: 42vw;
-    top: 39.3rem;
-    padding: 6px;
-    background-color: rgb(220, 174, 22);
-    font-size: 22px;
-  }
-  .learnAbout .searchButton a:hover {
-    background-color: rgb(191, 113, 5);
-  }
-  .learnAbout .anim_2 {
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    left: 4vw;
-    top: 32.5rem;
-    background-color: rgb(220, 174, 22);
-    animation: rotate2 5s infinite linear;
-  }
-  @keyframes rotate2 {
-    0% {
-      transform: rotate(350deg);
-    }
-    20% {
-      transform: rotate(450deg);
-    }
-    40% {
-      transform: rotate(550deg);
-    }
-    60% {
-      transform: rotate(650deg);
-    }
-    80% {
-      transform: rotate(750deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
-  .learnAbout .gestionItineraire {
-    position: absolute;
-    top: 39rem;
-  }
-  .learnAbout .gestionItineraire .imageI img {
-    width: 80vw;
-    height: 20rem;
-    position: absolute;
-    left: 10.5vw;
-    top: 6rem;
-    border-radius: 5px;
-  }
-  .learnAbout .gestionItineraire .description_Itineraire {
-    position: absolute;
-    left: 16.5vw;
-    top: 28.6rem;
-    font-size: 21px;
-    text-align: center;
-    font-weight: 600;
-    width: 83vw;
-    color: rgb(50, 50, 50);
-    font-family: "Times New Roman", Times, serif;
-  }
-  .learnAbout .gestionItineraire .anim_2 {
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    left: 2.6vw;
-    top: 30.5rem;
-    background-color: rgb(220, 174, 22);
-    animation: rotate2 5s infinite linear;
-  }
-  @keyframes rotate2 {
-    0% {
-      transform: rotate(350deg);
-    }
-    20% {
-      transform: rotate(450deg);
-    }
-    40% {
-      transform: rotate(550deg);
-    }
-    60% {
-      transform: rotate(650deg);
-    }
-    80% {
-      transform: rotate(750deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
-  .learnAbout .searchButton2 a {
-    border-radius: 6px;
-    text-decoration: none;
-    color: black;
-    position: absolute;
-    left: 45vw;
-    top: 40.4rem;
-    padding: 6px;
-    background-color: rgb(220, 174, 22);
+  .suggestion .contain_suggestion div h2 {
+    color: #181717;
     font-size: 20px;
+    margin-top: 1rem;
+    margin-left: 3.5vw;
+    font-family: "alegreyaregular";
   }
-  .learnAbout .searchButton2 a:hover {
-    background-color: rgb(191, 113, 5);
+  .suggestion .contain_suggestion div h2:nth-child(3) {
+    margin-left: -15vw;
+  }
+  .suggestion .contain_suggestion div p {
+    font-size: 19px;
+    width: 60vw;
+    margin-left: 2vw;
+    margin-top: -0.5rem;
+  }
+  .suggestion .contain_suggestion div button {
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-left: -1vw;
+    background-color: rgb(226, 155, 2);
   }
   .circuits {
     position: absolute;
-    top: 372rem;
-    width: 100%;
-    height: 161rem;
+    top: 88rem;
+    width: 100vw;
+    height: 90rem;
+    left: -1vw;
     background-color: rgb(233, 230, 230);
   }
   .circuits h1 {
-    font-size: 34px;
+    font-size: 28px;
     position: absolute;
-    top: 8rem;
-    left: 8vw;
+    top: 4rem;
+    left: 14vw;
     font-weight: 500;
     width: 75vw;
-    font-family: "abril_fatfaceregular";
+    font-family: "yeseva_oneregular";
     font-weight: -150;
     color: #29353e;
   }
-  .circuits .border6 {
-    border-radius: 5px;
-    width: 1.6cm;
-    height: 9px;
+  .circuits h3 {
     position: absolute;
-    left: 42vw;
-    top: 12.5rem;
-    background-color: rgb(4, 82, 137);
+    left: 45vw;
+    top: 13.6rem;
     text-align: center;
+    font-size: 21px;
+    color: rgb(4, 82, 137);
+    font-family: "coneria_script_demoregular";
+    font-style: italic;
+    font-weight: 800;
   }
   .circuits .contain-1 {
-    display: block;
+    display: flex;
     position: absolute;
     top: 18rem;
-    left: 11vw;
+    left: -4.3vw;
     text-align: center;
   }
   .circuits .contain-1 div {
-    height: 31rem;
-    width: 78vw;
+    height: 29rem;
+    width: 42vw;
     background-color: rgb(255, 255, 255);
-    margin-top: 4rem;
+    margin-left: 8vw;
     border-radius: 9px;
     box-shadow: 3px 3px 15px rgba(114, 111, 111, 0.878);
   }
   .circuits .contain-1 img {
     height: 15rem;
-    width: 78vw;
+    width: 42vw;
     border-radius: 9px;
   }
   .circuits .contain-1 .contain_1 {
     background-size: cover;
   }
   .circuits .contain-1 .contain_1 h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    font-size: 19px;
+    font-size: 25.5px;
     position: absolute;
-    top: 20.5rem;
-    left: 4.5vw;
+    top: 15.5rem;
+    left: 14vw;
     font-weight: 600;
-    width: 65vw;
+    width: 32vw;
   }
   .circuits .contain-1 .contain_1 p {
     position: absolute;
-    left: 7vw;
-    top: 23.8rem;
+    left: 14vw;
+    top: 19.8rem;
     font-size: 18px;
     text-align: center;
-    width: 62vw;
+    width: 32vw;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
   .circuits .contain-1 .contain_1 button {
     position: absolute;
-    left: 25vw;
-    top: 29.4rem;
+    left: 24vw;
+    top: 25.6rem;
     padding: 4px;
     background-color: #697278;
-    font-size: 19px;
+    font-size: 20.5px;
     border-radius: 6px;
     border: 0 solid;
   }
@@ -1261,72 +2245,80 @@ header ul li .a1 {
   .circuits .contain-1 .contain_2 {
     background-size: 100%;
   }
+  .circuits .contain-1 .contain_2 img {
+    height: 15rem;
+    width: 42vw;
+    border-radius: 9px;
+  }
   .circuits .contain-1 .contain_2 h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    font-size: 19px;
+    font-size: 25px;
     position: absolute;
-    top: 54.5rem;
-    left: 4.5vw;
+    top: 16rem;
+    left: 56vw;
     font-weight: 600;
-    width: 65vw;
+    width: 45vw;
+    text-align: center;
   }
   .circuits .contain-1 .contain_2 p {
     position: absolute;
-    left: 7vw;
-    top: 57.8rem;
+    left: 61vw;
+    top: 18.5rem;
     font-size: 18px;
     text-align: center;
-    width: 62vw;
+    width: 36vw;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    text-align: center;
   }
   .circuits .contain-1 .contain_2 button {
     position: absolute;
-    left: 25vw;
-    top: 66.1rem;
+    left: 74.4vw;
+    top: 25.4rem;
     padding: 4px;
     background-color: #697278;
-    font-size: 19px;
+    font-size: 20.5px;
     border-radius: 6px;
     border: 0 solid;
+    text-align: center;
   }
   .circuits .contain-1 .contain_2:hover {
     box-shadow: 5px 8px 35px black;
   }
   .circuits .contain-1 .c3 {
     height: 15rem;
-    width: 78vw;
+    width: 42vw;
     border-radius: 9px;
   }
   .circuits .contain-1 .contain_3 {
     background-size: cover;
+    position: absolute;
+    top: 33rem;
   }
   .circuits .contain-1 .contain_3 h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    font-size: 19px;
+    font-size: 25px;
     position: absolute;
-    top: 90.5rem;
-    left: 4.5vw;
+    top: 15.6rem;
+    left: 4vw;
     font-weight: 600;
-    width: 65vw;
+    width: 32vw;
   }
   .circuits .contain-1 .contain_3 p {
     position: absolute;
-    left: 7vw;
-    top: 93.8rem;
+    left: 2vw;
+    top: 19.6rem;
     font-size: 18px;
     text-align: center;
-    width: 62vw;
+    width: 37vw;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
   .circuits .contain-1 .contain_3 button {
     position: absolute;
-    left: 25vw;
-    top: 101.1rem;
+    left: 16vw;
+    top: 25.5rem;
     padding: 4px;
     background-color: #697278;
-    font-size: 19px;
+    font-size: 20.5px;
     border-radius: 6px;
     border: 0 solid;
   }
@@ -1336,12 +2328,12 @@ header ul li .a1 {
   .circuits .contain-2 {
     display: flex;
     position: absolute;
-    top: 127rem;
-    left: -13.5vw;
+    top: 51rem;
+    left: 44.4vw;
   }
   .circuits .contain-2 div {
     height: 29rem;
-    width: 78vw;
+    width: 42vw;
     background-color: rgb(255, 255, 255);
     margin-left: 4rem;
     border-radius: 9px;
@@ -1349,39 +2341,38 @@ header ul li .a1 {
   }
   .circuits .contain-2 .contain_1 {
     background-size: cover;
-    margin-left: 25.5vw;
+    margin-left: 9.5vw;
   }
   .circuits .contain-2 .contain_1 img {
-    height: 15rem;
-    width: 78vw;
+    width: 42vw;
+    height: 6.4cm;
     border-radius: 9px;
   }
   .circuits .contain-2 .contain_1 h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    font-size: 19px;
+    font-size: 25px;
     position: absolute;
-    top: 16.4rem;
-    left: 31vw;
+    top: 15.5rem;
+    left: 15vw;
     font-weight: 600;
-    width: 65vw;
+    width: 31.4vw;
   }
   .circuits .contain-2 .contain_1 p {
     position: absolute;
-    left: 30vw;
-    top: 19.2rem;
+    left: 14.5vw;
+    top: 19.5rem;
     font-size: 18px;
     text-align: center;
-    width: 63vw;
+    width: 33vw;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
   .circuits .contain-2 .contain_1 button {
     position: absolute;
-    left: 53vw;
-    top: 26.1rem;
+    left: 25.5vw;
+    top: 25.4rem;
     padding: 4px;
     background-color: #697278;
-    font-size: 19px;
+    font-size: 20.5px;
     border-radius: 6px;
     border: 0 solid;
   }
@@ -1390,11 +2381,12 @@ header ul li .a1 {
   }
   .avis {
     position: absolute;
-    top: 528rem;
+    top: 503rem;
     width: 100%;
     height: 62rem;
     overflow: hidden;
     z-index: 50;
+    display: none;
   }
   .avis h1 {
     font-size: 28px;
@@ -1403,7 +2395,7 @@ header ul li .a1 {
     left: 12vw;
     font-weight: 500;
     width: 75vw;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "yeseva_oneregular";
     font-weight: 550;
     color: #29353e;
   }
@@ -1508,90 +2500,89 @@ header ul li .a1 {
   }
   .galeriePhoto {
     position: absolute;
-    top: 591.5rem;
+    top: 178rem;
   }
   .galeriePhoto h1 {
     font-size: 26px;
     position: absolute;
     top: 8rem;
-    left: 12vw;
+    left: 11vw;
     font-weight: 500;
     width: 75vw;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "yeseva_oneregular";
     font-weight: 550;
     color: #29353e;
   }
-  .galeriePhoto .border8 {
-    border-radius: 5px;
-    width: 1.6cm;
-    height: 9px;
-    position: absolute;
-    left: 42vw;
-    top: 11.4rem;
-    background-color: rgb(4, 82, 137);
-    text-align: center;
+  .galeriePhoto h3 {
+    width: 60vw;
+    margin-top: -2rem;
+    margin-left: -24vw;
   }
   .galeriePhoto .lign1 {
     position: absolute;
     top: 17rem;
-    width: 100%;
+    width: 50vw;
+    left: -2.5vw;
     height: 30rem;
-    display: block;
+    display: flex;
   }
   .galeriePhoto .lign1 img {
-    width: 99.5vw;
+    width: 25.3vw;
+    margin-top: -1rem;
     height: 15rem;
   }
   .galeriePhoto .lign2 {
     position: absolute;
-    top: 76rem;
-    width: 100%;
+    top: 31.9rem;
+    width: 100vw;
     height: 30rem;
-    left: 0;
-    display: block;
+    left: -2.7vw;
+    display: flex;
   }
   .galeriePhoto .lign2 img {
-    width: 100vw;
+    width: 25.4vw;
     height: 15rem;
+    margin-top: -1rem;
   }
   .galeriePhoto .all {
     border: 0 solid;
-    width: 99.9vw;
-    height: 15rem;
+    width: 26.41vw;
+    height: 10rem;
     background-color: rgb(187, 187, 187);
-    font-size: 35px;
+    font-size: 30px;
     padding-top: 6rem;
     padding-left: -8rem;
     position: absolute;
-    top: 136rem;
+    top: 45.9rem;
+    left: -2.4vw;
   }
   footer {
-    width: 100%;
+    width: 100.2vw;
     height: 65rem;
     position: absolute;
-    left: 0;
-    top: 747rem;
+    left: -1.2vw;
+    top: 250rem;
     background-color: rgb(222, 216, 216);
   }
   footer .logo {
-    width: 150px;
-    height: 70px;
+    width: 180px;
+    height: 85px;
     position: absolute;
     top: 3rem;
-    left: 27vw;
+    left: 35vw;
   }
   footer .info {
     position: absolute;
     top: 15rem;
-    left: 54vw;
+    left: 58vw;
   }
   footer .info h1 {
     font-size: 25px;
     position: absolute;
     top: -4rem;
-    left: -9rem;
+    left: -35vw;
     font-weight: 500;
-    width: 70vw;
+    width: 47vw;
     color: rgb(4, 82, 137);
   }
   footer .info .phone {
@@ -1603,13 +2594,13 @@ header ul li .a1 {
     width: 20px;
     height: 20px;
     position: absolute;
-    left: -44vw;
+    left: -25vw;
   }
   footer .info .phone p {
     font-size: 18px;
     position: relative;
-    left: -38vw;
-    top: 0;
+    left: -30vw;
+    top: -1rem;
     width: 35vw;
   }
   footer .email {
@@ -1621,18 +2612,18 @@ header ul li .a1 {
     width: 20px;
     height: 20px;
     position: absolute;
-    left: -45vw;
+    left: -25vw;
   }
   footer .email p {
     font-size: 18px;
     position: relative;
-    left: -36vw;
-    top: -0.2rem;
+    left: -20vw;
+    top: -1rem;
     width: 35vw;
   }
   footer .circ {
     position: absolute;
-    left: 3vw;
+    left: 17vw;
     top: 27.1rem;
     display: block;
   }
@@ -1640,16 +2631,17 @@ header ul li .a1 {
     font-size: 25px;
     position: absolute;
     top: -4rem;
-    left: -9rem;
+    left: -45vw;
     font-weight: 500;
-    width: 105vw;
+    width: 114vw;
     color: rgb(4, 82, 137);
   }
   footer .circ h3 {
     font-size: 19px;
     position: relative;
-    top: -0.4rem;
-    left: 15vw;
+    top: -1.7rem;
+    margin-top: 2rem;
+    left: 3vw;
   }
   footer .raccourci {
     position: absolute;
@@ -1661,7 +2653,7 @@ header ul li .a1 {
     font-size: 28px;
     position: absolute;
     top: -4rem;
-    left: 6vw;
+    left: -3vw;
     font-weight: 500;
     width: 41vw;
     color: rgb(4, 82, 137);
@@ -1669,8 +2661,9 @@ header ul li .a1 {
   footer .raccourci h3 {
     font-size: 19px;
     position: relative;
-    top: -0.6rem;
-    left: 2.4rem;
+    top: -1.7rem;
+    margin-top: 2rem;
+    left: 10vw;
   }
   footer .reference {
     position: absolute;
@@ -1683,7 +2676,7 @@ header ul li .a1 {
     top: -4rem;
     left: -16vw;
     font-weight: 500;
-    width: 95vw;
+    width: 90vw;
     color: rgb(4, 82, 137);
   }
   footer .reference p {
@@ -1704,1342 +2697,7 @@ header ul li .a1 {
     position: absolute;
     top: 61rem;
     display: flex;
-    left: 7.3%;
-    text-align: center;
-  }
-  footer .icones img {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    margin-left: 1rem;
-  }
-  footer .copright {
-    font-size: 21px;
-    position: absolute;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-weight: 800;
-    top: 55rem;
-    left: 5%;
-    width: 90vw;
-  }
-}
-@media screen and (min-width: 280px) and (max-width: 763px) and (min-width: 450px) and (max-width: 764px) {
-  .contain img {
-    box-shadow: 7px 4px 8px black;
-    width: 86vw;
-    height: 9.4cm;
-    position: absolute;
-    left: vw;
-    top: 4.9cm;
-    border-radius: 4px;
-  }
-  .contain .galerie {
-    position: absolute;
-    top: 8rem;
-  }
-  .contain .galerie .item_1 img {
-    width: 100vw;
-    height: 15cm;
-    position: absolute;
-    left: 0;
-    top: 85rem;
-    border-radius: 1px;
-  }
-  .Popular {
-    position: absolute;
-    top: 125rem;
-  }
-}
-@media screen and (min-width: 764px) and (max-width: 1024px) {
-  .header {
-    position: absolute;
-    background-color: #f2f2f2;
-  }
-  .logo {
-    font-size: 27px;
-    left: 0.3rem;
-    top: 0.6cm;
-  }
-  .logo img {
-    width: 48px;
-    height: 48px;
-  }
-  .header_contain {
-    width: 100%;
-    height: 24.5rem;
-    position: absolute;
-    left: 0rem;
-    top: 5.2rem;
-    background-color: rgb(22, 98, 211);
-    transform: translateY(-100rem);
-    transition: 0.3s;
-  }
-  .header_contain ul {
-    display: block;
-    position: absolute;
-    left: 32vw;
-    top: 2.6rem;
-    width: 58vw;
-  }
-  .header_contain ul li {
-    margin-top: 22px;
-  }
-  .header_contain ul li a {
-    color: #000;
-    font-size: 19px;
-    padding: -25px;
-    width: -5rem;
-    position: relative;
-    right: 5rem;
-  }
-  .header_contain ul li .a1 {
-    background-color: antiquewhite;
-  }
-  .header_contain ul .contact {
-    border: 1.5px solid #113f70;
-    border-radius: 8px;
-    padding: 7px;
-    font-size: 20.4px;
-    margin-left: 0rem;
-  }
-  .header_contain ul i {
-    color: rgb(0, 0, 0);
-  }
-  .icone_menu i {
-    position: relative;
-    float: right;
-    display: flex;
-    top: 1rem;
-    right: 4vw;
-    z-index: 6;
-    font-size: 25px;
-    border-radius: 30%;
-  }
-  .hideshow {
-    transform: translateY(0rem);
-  }
-  .zIndex {
-    z-index: 6;
-  }
-  .c {
-    display: none;
-  }
-  .visit {
-    z-index: 4;
-    width: 98vw;
-    position: absolute;
-    left: 1vw;
-    top: 18rem;
-    font-size: 36.2px;
-    text-align: center;
-  }
-  .Anakao {
-    width: 98vw;
-    position: absolute;
-    left: 1vw;
-    top: 22rem;
-    font-size: 23.2px;
-    text-align: center;
-  }
-  .title {
-    font-size: 25px;
-    position: absolute;
-    top: 14rem;
-    left: 15vw;
-    font-weight: 800;
-    width: 66vw;
-  }
-  .explore {
-    border: 0 solid;
-    color: rgb(88, 81, 7);
-    border-radius: 9px;
-    position: absolute;
-    left: 39.5vw;
-    top: 27rem;
-    padding: 5px;
-    background-color: rgb(255, 255, 255);
-    font-size: 22px;
-  }
-  .explore:hover {
-    background-color: rgb(244, 191, 17);
-  }
-  .c_responsive {
-    display: block;
-  }
-  .c_responsive img {
-    width: 100%;
-    height: 34.6rem;
-  }
-  .contenu {
-    padding-top: 70px;
-    width: 100%;
-    height: 18cm;
-    position: absolute;
-    left: 0;
-    top: -5.3rem;
-    background-color: #7babcd;
-  }
-  .contenu span {
-    width: 90%;
-    position: absolute;
-    left: 0.5cm;
-    top: 3.5cm;
-    font-size: 18px;
-    text-align: center;
-  }
-  .int {
-    position: absolute;
-    left: 10vw;
-    top: 0.78cm;
-    padding-top: 4cm;
-    height: 80vh;
-    width: 40vw;
-  }
-  .titre-propos {
-    font-size: 30px;
-    margin-top: -13rem;
-    margin-left: 12vw;
-    width: 40vw;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  }
-  .contain {
-    position: absolute;
-    top: 16.9cm;
-  }
-  .contain img {
-    box-shadow: 7px 4px 8px black;
-    width: 60vw;
-    height: 10.4cm;
-    position: absolute;
-    left: 20vw;
-    top: 4.5cm;
-    border-radius: 4px;
-  }
-  .Choiceofmada {
-    position: absolute;
-    top: 73rem;
-    left: 0vw;
-    text-align: center;
-  }
-  .Choiceofmada .border2 {
-    width: 1.6cm;
-    height: 7px;
-    position: absolute;
-    left: 45vw;
-    top: 11.5rem;
-    background-color: rgb(4, 82, 137);
-    text-align: center;
-  }
-  .choice_item1 {
-    position: absolute;
-    top: 8rem;
-    right: -96vw;
-    font-size: 30px;
-    width: 90vw;
-    font-weight: bold;
-    color: #29353e;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-  .galerie {
-    position: absolute;
-    top: 8rem;
-  }
-  .galerie .item_1 img {
-    width: 34vw;
-    height: 5.5cm;
-    position: absolute;
-    left: 0;
-    top: 85rem;
-    border-radius: 1px;
-  }
-  .galerie .p1 {
-    position: absolute;
-    left: 20.4vw;
-    top: 72.6em;
-    font-size: 20px;
-    text-align: center;
-    width: 60vw;
-  }
-  .galerie .item_3 img {
-    width: 34vw;
-    height: 5.5cm;
-    position: absolute;
-    left: 66vw;
-    top: 85rem;
-    border-radius: 1px;
-  }
-  .galerie2 {
-    position: absolute;
-    top: 25rem;
-  }
-  .galerie2 .item_4 {
-    position: absolute;
-    left: 1vw;
-    top: 71.9em;
-    font-size: 19px;
-    text-align: center;
-    width: 30vw;
-  }
-  .galerie2 .item_5 img {
-    width: 32vw;
-    height: 5.5cm;
-    position: absolute;
-    left: 34vw;
-    top: 81.05rem;
-    border-radius: 1px;
-  }
-  .galerie2 .item_6 {
-    position: absolute;
-    left: 68vw;
-    top: 72.9em;
-    font-size: 19px;
-    text-align: center;
-    width: 30vw;
-    z-index: 4;
-  }
-  .galerie3 {
-    position: absolute;
-    top: 34.05rem;
-  }
-  .galerie3 .item_7 img {
-    width: 34vw;
-    height: 5.5cm;
-    position: absolute;
-    left: 0;
-    top: 85rem;
-    border-radius: 1px;
-  }
-  .galerie3 .item_8 img {
-    width: 32.4vw;
-    height: 5.5cm;
-    position: absolute;
-    left: 33.8vw;
-    top: 85rem;
-    border-radius: 1px;
-  }
-  .galerie3 .item_9 img {
-    width: 34vw;
-    height: 5.5cm;
-    position: absolute;
-    left: 66vw;
-    top: 85rem;
-    border-radius: 1px;
-  }
-  .Popular {
-    position: absolute;
-    margin-top: 20rem;
-    overflow: hidden;
-    width: 100%;
-    height: 40rem;
-    position: absolute;
-    left: 0;
-    top: 112.4rem;
-    background-color: rgb(233, 230, 230);
-  }
-  .Popular h1 {
-    color: #29353e;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;
-    position: absolute;
-    top: 3rem;
-    left: 0vw;
-    font-weight: 800;
-    width: 100vw;
-  }
-  .Popular p {
-    width: 95vw;
-    color: rgb(23, 21, 21);
-    position: absolute;
-    left: 2vw;
-    top: 6rem;
-    font-size: 20px;
-    text-align: center;
-  }
-  .Popular .contain {
-    position: absolute;
-    left: -5vw;
-    overflow: hidden;
-    display: flex;
-    top: 12rem;
-    width: 500%;
-  }
-  .Popular .contain div {
-    margin-left: 4rem;
-    margin-top: 3rem;
-    width: 15rem;
-    height: 19.4rem;
-    border-radius: 8px;
-  }
-  .Popular .contain .item_1 {
-    background-size: cover;
-    background-image: url(assets/image/COUVERTURE.jpg);
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  .Popular .contain .item_1:hover {
-    width: 31vw;
-    height: 26rem;
-    transition: 0.3s;
-    transform: translateY(-25px);
-  }
-  .Popular .contain .i1 {
-    color: white;
-    width: 30vw;
-    position: absolute;
-    left: 1rem;
-    top: 10rem;
-    font-size: 28px;
-    text-align: center;
-    display: none;
-  }
-  .Popular .contain .i2 {
-    color: rgb(81, 58, 4);
-    width: 30vw;
-    position: absolute;
-    left: 25vw;
-    top: 10rem;
-    font-size: 28px;
-    text-align: center;
-    display: none;
-  }
-  .Popular .contain .St2 {
-    border: 0 solid;
-    display: none;
-    color: rgb(222, 215, 215);
-    border-radius: 9px;
-    text-align: center;
-    position: absolute;
-    left: 36vw;
-    top: 15rem;
-    padding: 5px;
-    background-color: rgb(175, 101, 17);
-    font-size: 22px;
-  }
-  .Popular .contain .St2:hover {
-    position: absolute;
-    top: 15rem;
-    left: 36vw;
-    background-color: rgb(215, 215, 12);
-  }
-  .Popular .contain .item_2 {
-    background-size: cover;
-    background-image: url(./assets/image/c.jpg);
-    cursor: pointer;
-  }
-  .Popular .contain .item_2:hover {
-    width: 31vw;
-    height: 26rem;
-    transform: translateY(-25px);
-    transition: 0.4s;
-  }
-  .Popular .contain .item_3 {
-    background-size: cover;
-    background-image: url(assets/image//BG.jpg);
-    cursor: pointer;
-  }
-  .Popular .contain .item_3:hover {
-    width: 31vw;
-    height: 26rem;
-    transform: translateY(-25px);
-  }
-  .Popular .contain .item_4 {
-    background-size: cover;
-    background-image: url("./../../allée des baobab responsive.jpg");
-    cursor: pointer;
-  }
-  .Popular .contain .item_4:hover {
-    width: 31vw;
-    transform: translateY(-25px);
-    height: 26rem;
-  }
-  .St1 {
-    border: 0 solid;
-    color: rgb(88, 81, 7);
-    border-radius: 9px;
-    display: none;
-    text-align: center;
-    position: absolute;
-    left: 13vw;
-    top: 15rem;
-    padding: 5px;
-    background-color: rgb(255, 255, 255);
-    font-size: 22px;
-  }
-  .St1:hover {
-    background-color: rgb(244, 191, 17);
-  }
-  .button {
-    position: relative;
-    top: 23rem;
-    left: -106vw;
-  }
-  .button .next {
-    font-size: 28px;
-    border: 0 solid;
-    border-radius: 50%;
-    padding: 8px;
-    width: 50px;
-    background-color: rgb(255, 254, 253);
-    position: relative;
-    right: -184vw;
-    top: -3.6rem;
-    cursor: pointer;
-  }
-  .button .next:hover {
-    background-color: rgb(13, 18, 59);
-    color: white;
-  }
-  .button .prev {
-    font-size: 28px;
-    border: 0 solid;
-    border-radius: 50%;
-    padding: 8px;
-    width: 50px;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    left: 56vh;
-    cursor: pointer;
-  }
-  .button .prev:hover {
-    background-color: rgb(13, 18, 59);
-    color: azure;
-  }
-  .suggestion {
-    position: absolute;
-    top: 173rem;
-  }
-  .suggestion h1 {
-    font-size: 30px;
-    position: absolute;
-    top: 4rem;
-    left: 18vw;
-    font-weight: 500;
-    width: 65vw;
-    font-family: "abril_fatfaceregular";
-    font-weight: bold;
-    color: #29353e;
-  }
-  .suggestion p {
-    position: absolute;
-    left: 8vw;
-    top: 10rem;
-    font-size: 19px;
-    text-align: center;
-    text-align: center;
-    width: 80vw;
-  }
-  .suggestion .border5 {
-    border-radius: 5px;
-    width: 1.6cm;
-    height: 9px;
-    position: absolute;
-    left: 46.2vw;
-    top: 7.7rem;
-    background-color: rgb(4, 82, 137);
-    text-align: center;
-  }
-  .suggestion .contain1 {
-    display: block;
-    position: absolute;
-    top: -8rem;
-    left: 6.2vw;
-  }
-  .suggestion .contain1 .i1, .suggestion .contain1 .i2, .suggestion .contain1 .i3 {
-    margin-top: 32.4rem;
-    border: 0px solid black;
-    padding-top: 5px;
-    padding-bottom: 13px;
-    padding-left: 19px;
-    padding-right: 19px;
-    font-size: 28px;
-    border-radius: 80%;
-    color: white;
-    font-weight: bold;
-    background-color: rgb(172, 136, 7);
-    animation: rotate_ 5s infinite linear;
-  }
-  @keyframes rotate_ {
-    0% {
-      transform: rotate(350deg);
-    }
-    20% {
-      transform: rotate(450deg);
-    }
-    40% {
-      transform: rotate(550deg);
-    }
-    60% {
-      transform: rotate(650deg);
-    }
-    80% {
-      transform: rotate(750deg);
-    }
-    100% {
-      transform: rotate(850deg);
-    }
-  }
-  .suggestion .border_um {
-    width: 6px;
-    height: 104rem;
-    position: absolute;
-    left: 9.6vw;
-    top: 26rem;
-    background-color: rgb(172, 136, 7);
-  }
-  .suggestion .contain2 {
-    position: absolute;
-    top: 20rem;
-    left: 13vw;
-    display: block;
-  }
-  .suggestion .contain2 div {
-    height: 25rem;
-    width: 75vw;
-    margin-top: 11rem;
-    border-radius: 5px;
-    box-shadow: 0px 7px 12px black;
-  }
-  .suggestion .contain2 .item_1 {
-    background-image: url(./assets/image/airport-2373727_1280.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  .suggestion .contain2 .item_1 h1 {
-    font-size: 19px;
-    position: absolute;
-    top: 38rem;
-    left: -5vw;
-    font-weight: bold;
-    width: 84vw;
-    color: rgb(148, 127, 8);
-    z-index: 30;
-    font-style: italic;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  }
-  .suggestion .contain2 .item_2 {
-    background-image: url(./assets/image/plane.jpg);
-    background-size: cover;
-  }
-  .suggestion .contain2 .item_2 h1 {
-    font-size: 19px;
-    position: absolute;
-    top: 74rem;
-    left: -5vw;
-    font-weight: bold;
-    width: 84vw;
-    color: rgb(148, 127, 8);
-    z-index: 50;
-    font-style: italic;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  }
-  .suggestion .contain2 .item_3 {
-    background-image: url(./assets/image/ivato.jpg);
-    background-size: cover;
-  }
-  .suggestion .contain2 .item_3 h1 {
-    font-size: 19px;
-    position: absolute;
-    top: 111rem;
-    left: -5vw;
-    font-weight: bold;
-    width: 84vw;
-    color: rgb(148, 127, 8);
-    font-style: italic;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  }
-  .learnAbout {
-    position: absolute;
-    top: 315rem;
-    width: 100%;
-    height: 85rem;
-    background-color: #6a98ca;
-  }
-  .learnAbout h1 {
-    font-size: 30px;
-    position: absolute;
-    top: 2rem;
-    left: -1vw;
-    font-weight: 800;
-    width: 100vw;
-    font-family: "yeseva_oneregular";
-    color: #29353e;
-  }
-  .learnAbout .borderLearn {
-    border-radius: 5px;
-    width: 1.6cm;
-    height: 9px;
-    position: absolute;
-    left: 42vw;
-    top: 6rem;
-    background-color: rgb(220, 174, 22);
-  }
-  .learnAbout .imgH2 img {
-    position: absolute;
-    width: 60vw;
-    height: 20rem;
-    position: absolute;
-    left: 19.3vw;
-    top: 10rem;
-    border-radius: 5px;
-  }
-  .learnAbout .description {
-    position: absolute;
-    right: 12vw;
-    top: 33rem;
-    font-size: 23px;
-    font-weight: 600;
-    width: 75vw;
-    color: rgb(50, 50, 50);
-    font-family: "Times New Roman", Times, serif;
-  }
-  .learnAbout .searchButton a {
-    border-radius: 6px;
-    text-decoration: none;
-    color: black;
-    position: absolute;
-    left: 42vw;
-    top: 39.3rem;
-    padding: 6px;
-    background-color: rgb(220, 174, 22);
-    font-size: 22px;
-  }
-  .learnAbout .searchButton a:hover {
-    background-color: rgb(191, 113, 5);
-  }
-  .learnAbout .anim_2 {
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    left: 4vw;
-    top: 32.5rem;
-    background-color: rgb(220, 174, 22);
-    animation: rotate2 5s infinite linear;
-  }
-  @keyframes rotate2 {
-    0% {
-      transform: rotate(350deg);
-    }
-    20% {
-      transform: rotate(450deg);
-    }
-    40% {
-      transform: rotate(550deg);
-    }
-    60% {
-      transform: rotate(650deg);
-    }
-    80% {
-      transform: rotate(750deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
-  .learnAbout .gestionItineraire {
-    position: absolute;
-    top: 39rem;
-  }
-  .learnAbout .gestionItineraire .imageI img {
-    width: 60vw;
-    height: 20rem;
-    position: absolute;
-    left: 19.5vw;
-    top: 6rem;
-    border-radius: 5px;
-  }
-  .learnAbout .gestionItineraire .description_Itineraire {
-    position: absolute;
-    left: 8.5vw;
-    top: 29.6rem;
-    font-size: 23px;
-    text-align: center;
-    font-weight: 600;
-    width: 83vw;
-    color: rgb(50, 50, 50);
-    font-family: "Times New Roman", Times, serif;
-  }
-  .learnAbout .gestionItineraire .anim_2 {
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    left: 2.6vw;
-    top: 30.5rem;
-    background-color: rgb(220, 174, 22);
-    animation: rotate2 5s infinite linear;
-  }
-  @keyframes rotate2 {
-    0% {
-      transform: rotate(350deg);
-    }
-    20% {
-      transform: rotate(450deg);
-    }
-    40% {
-      transform: rotate(550deg);
-    }
-    60% {
-      transform: rotate(650deg);
-    }
-    80% {
-      transform: rotate(750deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
-  .learnAbout .searchButton2 a {
-    border-radius: 6px;
-    text-decoration: none;
-    color: black;
-    position: absolute;
-    left: 45vw;
-    top: 37.4rem;
-    padding: 6px;
-    background-color: rgb(220, 174, 22);
-    font-size: 20px;
-  }
-  .learnAbout .searchButton2 a:hover {
-    background-color: rgb(191, 113, 5);
-  }
-  .circuits {
-    position: absolute;
-    top: 397rem;
-    width: 100%;
-    height: 85rem;
-    background-color: rgb(233, 230, 230);
-  }
-  .circuits h1 {
-    font-size: 34px;
-    position: absolute;
-    top: 8rem;
-    left: 13vw;
-    font-weight: 500;
-    width: 75vw;
-    font-family: "abril_fatfaceregular";
-    font-weight: -150;
-    color: #29353e;
-  }
-  .circuits .border6 {
-    border-radius: 5px;
-    width: 1.6cm;
-    height: 9px;
-    position: absolute;
-    left: 48vw;
-    top: 12.5rem;
-    background-color: rgb(4, 82, 137);
-    text-align: center;
-  }
-  .circuits .contain-1 {
-    display: flex;
-    position: absolute;
-    top: 18rem;
-    left: -6.3vw;
-    text-align: center;
-  }
-  .circuits .contain-1 div {
-    height: 29rem;
-    width: 42vw;
-    background-color: rgb(255, 255, 255);
-    margin-left: 5rem;
-    border-radius: 9px;
-    box-shadow: 3px 3px 15px rgba(114, 111, 111, 0.878);
-  }
-  .circuits .contain-1 img {
-    height: 15rem;
-    width: 42vw;
-    border-radius: 9px;
-  }
-  .circuits .contain-1 .contain_1 {
-    background-size: cover;
-  }
-  .circuits .contain-1 .contain_1 h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    font-size: 19px;
-    position: absolute;
-    top: 16.4rem;
-    left: 10vw;
-    font-weight: 600;
-    width: 38vw;
-  }
-  .circuits .contain-1 .contain_1 p {
-    position: absolute;
-    left: 14vw;
-    top: 19.5rem;
-    font-size: 18px;
-    text-align: center;
-    width: 32vw;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  }
-  .circuits .contain-1 .contain_1 button {
-    position: absolute;
-    left: 12rem;
-    top: 24.8rem;
-    padding: 4px;
-    background-color: #697278;
-    font-size: 19px;
-    border-radius: 6px;
-    border: 0 solid;
-  }
-  .circuits .contain-1 .contain_1:hover {
-    box-shadow: 5px 8px 35px black;
-  }
-  .circuits .contain-1 .contain_2 {
-    background-size: 100%;
-  }
-  .circuits .contain-1 .contain_2 img {
-    height: 15rem;
-    width: 42vw;
-    border-radius: 9px;
-  }
-  .circuits .contain-1 .contain_2 h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    font-size: 19px;
-    position: absolute;
-    top: 17.4rem;
-    left: 59vw;
-    font-weight: 600;
-    width: 45vw;
-    text-align: center;
-  }
-  .circuits .contain-1 .contain_2 p {
-    position: absolute;
-    left: 67vw;
-    top: 19.5rem;
-    font-size: 18px;
-    text-align: center;
-    width: 32vw;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    text-align: center;
-  }
-  .circuits .contain-1 .contain_2 button {
-    position: absolute;
-    left: 77.4vw;
-    top: 25.4rem;
-    padding: 4px;
-    background-color: #697278;
-    font-size: 19px;
-    border-radius: 6px;
-    border: 0 solid;
-    text-align: center;
-  }
-  .circuits .contain-1 .contain_2:hover {
-    box-shadow: 5px 8px 35px black;
-  }
-  .circuits .contain-1 .c3 {
-    height: 15rem;
-    width: 42vw;
-    border-radius: 9px;
-  }
-  .circuits .contain-1 .contain_3 {
-    background-size: cover;
-    position: absolute;
-    top: 33rem;
-  }
-  .circuits .contain-1 .contain_3 h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    font-size: 19px;
-    position: absolute;
-    top: 16.5rem;
-    left: 2vw;
-    font-weight: 600;
-    width: 32vw;
-  }
-  .circuits .contain-1 .contain_3 p {
-    position: absolute;
-    left: 3vw;
-    top: 19.6rem;
-    font-size: 18px;
-    text-align: center;
-    width: 32vw;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  }
-  .circuits .contain-1 .contain_3 button {
-    position: absolute;
-    left: 7.5rem;
-    top: 25.5rem;
-    padding: 4px;
-    background-color: #697278;
-    font-size: 19px;
-    border-radius: 6px;
-    border: 0 solid;
-  }
-  .circuits .contain-1 .contain_3:hover {
-    box-shadow: 5px 8px 35px black;
-  }
-  .circuits .contain-2 {
-    display: flex;
-    position: absolute;
-    top: 51rem;
-    left: 44.4vw;
-  }
-  .circuits .contain-2 div {
-    height: 29rem;
-    width: 42vw;
-    background-color: rgb(255, 255, 255);
-    margin-left: 4rem;
-    border-radius: 9px;
-    box-shadow: 3px 3px 15px rgba(114, 111, 111, 0.878);
-  }
-  .circuits .contain-2 .contain_1 {
-    background-size: cover;
-    margin-left: 5.5rem;
-  }
-  .circuits .contain-2 .contain_1 img {
-    width: 42vw;
-    height: 6.4cm;
-    border-radius: 9px;
-  }
-  .circuits .contain-2 .contain_1 h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    font-size: 19px;
-    position: absolute;
-    top: 16.5rem;
-    left: 15vw;
-    font-weight: 600;
-    width: 33.5vw;
-  }
-  .circuits .contain-2 .contain_1 p {
-    position: absolute;
-    left: 7.7rem;
-    top: 19.5rem;
-    font-size: 18px;
-    text-align: center;
-    width: 33vw;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  }
-  .circuits .contain-2 .contain_1 button {
-    position: absolute;
-    left: 13.4rem;
-    top: 25.4rem;
-    padding: 4px;
-    background-color: #697278;
-    font-size: 19px;
-    border-radius: 6px;
-    border: 0 solid;
-  }
-  .circuits .contain-2 .contain_1:hover {
-    box-shadow: 5px 8px 35px black;
-  }
-  .avis {
-    position: absolute;
-    top: 478rem;
-    width: 100%;
-    height: 62rem;
-    overflow: hidden;
-    z-index: 50;
-  }
-  .avis h1 {
-    font-size: 30px;
-    position: absolute;
-    top: 8rem;
-    left: 12vw;
-    font-weight: 500;
-    width: 75vw;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-weight: 550;
-    color: #29353e;
-  }
-  .avis .border7 {
-    border-radius: 5px;
-    width: 1.6cm;
-    height: 9px;
-    position: absolute;
-    left: 44vw;
-    top: 11.5rem;
-    background-color: rgb(4, 82, 137);
-    text-align: center;
-  }
-  .avis .button_avis {
-    position: relative;
-    top: 19rem;
-    left: -132vw;
-    z-index: 20;
-  }
-  .avis .button_avis .next1 {
-    font-size: 33px;
-    border: 0 solid;
-    border-radius: 50%;
-    padding: 8px;
-    width: 50px;
-    background-color: rgba(255, 254, 253, 0.437);
-    position: relative;
-    right: -210vw;
-    top: -4.1rem;
-    cursor: pointer;
-  }
-  .avis .button_avis .next1:hover {
-    background-color: rgb(13, 18, 59);
-    color: white;
-  }
-  .avis .button_avis .prev1 {
-    font-size: 33px;
-    border: 0 solid;
-    border-radius: 50%;
-    padding: 8px;
-    width: 50px;
-    background-color: rgba(255, 255, 255, 0.439);
-    position: relative;
-    right: -134vw;
-    cursor: pointer;
-  }
-  .avis .button_avis .prev1:hover {
-    background-color: rgb(13, 18, 59);
-    color: azure;
-  }
-  .avis .slider {
-    border-radius: 7px;
-    width: 1200vw;
-    height: 150vh;
-    position: absolute;
-    left: 2rem;
-    top: 8rem;
-  }
-  .avis .slider .slides {
-    width: 89vw;
-    height: 25rem;
-    display: flex;
-    border-radius: 15px;
-    background-color: rgb(202, 206, 206);
-    box-shadow: -2px 6px 25px rgba(0, 0, 0, 0.79);
-  }
-  .avis .slider .slides .quote {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    top: 13.8rem;
-    left: 9vw;
-  }
-  .avis .slider .slides .quote_d {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    top: 28.7rem;
-    left: 74vw;
-  }
-  .avis .slider .slides .item {
-    display: none;
-    padding: 80px;
-    text-align: center;
-    font-size: 20px;
-    margin-top: 10%;
-    margin-left: 85vw;
-  }
-  .avis .slider .slides .item h1 {
-    position: absolute;
-    left: 8vw;
-    top: 12rem;
-    font-size: 30px;
-    color: #000;
-    font-family: "coneria_script_demoregular";
-    font-weight: 1000;
-  }
-  .avis .slider .slides .item p {
-    margin-left: -85vw;
-    width: 70vw;
-    margin-top: 2rem;
-  }
-  .galeriePhoto {
-    position: absolute;
-    top: 517.5rem;
-  }
-  .galeriePhoto h1 {
-    font-size: 26px;
-    position: absolute;
-    top: 8rem;
-    left: 12vw;
-    font-weight: 500;
-    width: 75vw;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-weight: 550;
-    color: #29353e;
-  }
-  .galeriePhoto .border8 {
-    border-radius: 5px;
-    width: 1.6cm;
-    height: 9px;
-    position: absolute;
-    left: 42vw;
-    top: 11.4rem;
-    background-color: rgb(4, 82, 137);
-    text-align: center;
-  }
-  .galeriePhoto .lign1 {
-    position: absolute;
-    top: 17rem;
-    width: 100%;
-    height: 30rem;
-    display: flex;
-  }
-  .galeriePhoto .lign1 img {
-    width: 24.65vw;
-    height: 15rem;
-  }
-  .galeriePhoto .lign2 {
-    position: absolute;
-    top: 32rem;
-    width: 100%;
-    height: 30rem;
-    display: flex;
-  }
-  .galeriePhoto .lign2 img {
-    width: 24.65vw;
-    height: 15rem;
-  }
-  .galeriePhoto .all {
-    border: 0 solid;
-    width: 12rem;
-    height: 15rem;
-    background-color: rgb(187, 187, 187);
-    font-size: 35px;
-    padding-top: 6rem;
-    padding-left: -8rem;
-    position: absolute;
-    top: 47rem;
-  }
-  footer {
-    width: 100%;
-    height: 65rem;
-    position: absolute;
-    left: 0;
-    top: 590rem;
-    background-color: rgb(222, 216, 216);
-  }
-  footer .logo {
-    width: 180px;
-    height: 80px;
-    position: absolute;
-    top: 3rem;
-    left: 38vw;
-  }
-  footer .info {
-    position: absolute;
-    top: 15rem;
-    left: 54vw;
-  }
-  footer .info h1 {
-    font-size: 29px;
-    position: absolute;
-    top: -4rem;
-    left: -9rem;
-    font-weight: 500;
-    width: 28vw;
-    color: rgb(4, 82, 137);
-  }
-  footer .info .phone {
-    position: absolute;
-    top: 0rem;
-    left: 10vw;
-  }
-  footer .info .phone img {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    left: -32vw;
-  }
-  footer .info .phone p {
-    font-size: 18px;
-    position: relative;
-    left: -38vw;
-    top: 0;
-    width: 35vw;
-  }
-  footer .email {
-    position: absolute;
-    top: 3.6rem;
-    left: 23vw;
-  }
-  footer .email img {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    left: -45vw;
-  }
-  footer .email p {
-    font-size: 18px;
-    position: relative;
-    left: -41vw;
-    top: -0.2rem;
-    width: 20vw;
-  }
-  footer .circ {
-    position: absolute;
-    left: 3vw;
-    top: 27.3rem;
-    display: block;
-  }
-  footer .circ h1 {
-    font-size: 25px;
-    position: absolute;
-    top: -4rem;
-    left: -9rem;
-    font-weight: 500;
-    width: 75vw;
-    color: rgb(4, 82, 137);
-  }
-  footer .circ h3 {
-    font-size: 19px;
-    position: relative;
-    top: -0.4rem;
-    left: 15vw;
-  }
-  footer .raccourci {
-    position: absolute;
-    left: 47vw;
-    top: 26.8rem;
-    display: block;
-  }
-  footer .raccourci h1 {
-    font-size: 28px;
-    position: absolute;
-    top: -4rem;
-    left: 2vw;
-    font-weight: 500;
-    width: 34vw;
-    color: rgb(4, 82, 137);
-  }
-  footer .raccourci h3 {
-    font-size: 19px;
-    position: relative;
-    top: -0.6rem;
-    left: 5rem;
-  }
-  footer .reference {
-    position: absolute;
-    left: 18vw;
-    top: 44.8rem;
-  }
-  footer .reference h1 {
-    font-size: 28px;
-    position: absolute;
-    top: -4rem;
-    left: -16vw;
-    font-weight: 500;
-    width: 95vw;
-    color: rgb(4, 82, 137);
-  }
-  footer .reference p {
-    width: 69vw;
-    font-size: 18px;
-    position: absolute;
-    left: -4vw;
-  }
-  footer .border_ {
-    width: 45%;
-    height: 2px;
-    position: absolute;
-    left: 29vw;
-    top: 53rem;
-    background-color: rgb(4, 82, 137);
-  }
-  footer .icones {
-    position: absolute;
-    top: 58.4rem;
-    display: flex;
-    left: 27%;
+    left: 30vw;
     text-align: center;
   }
   footer .icones img {
@@ -3085,25 +2743,47 @@ header ul li .a1 {
     top: 125rem;
   }
 }
+@media screen and (min-width: 764px) and (max-width: 1024px) {
+  .hide_ {
+    transform: translateX(-10.5rem);
+  }
+  .show_ {
+    transform: translateX(0rem);
+    transition: 1.6s;
+  }
+  .hide_1 {
+    transform: translateY(8rem);
+    opacity: 0;
+  }
+  .show_1 {
+    transform: translateY(0);
+    transition: 1.6s;
+    opacity: 1;
+  }
+}
 @media screen and (min-width: 1025px) {
   .Popular {
     overflow: hidden;
     width: 100%;
-    height: 30rem;
+    height: 60rem;
     position: absolute;
     left: 0;
-    top: 153.4rem;
-    background-color: rgb(233, 230, 230);
+    top: 170.4rem;
+    background-color: rgba(243, 240, 240, 0.7411764706);
   }
   .Popular h1 {
     color: #29353e;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 38px;
+    font-family: "yeseva_oneregular";
+    font-size: 45px;
     position: absolute;
-    top: 10rem;
-    left: -1rem;
+    top: 5rem;
+    left: 11vw;
     font-weight: 800;
-    width: 25vw;
+    width: 80vw;
+  }
+  .Popular h3 {
+    margin-top: -10.6rem;
+    margin-left: 7vw;
   }
   .Popular p {
     width: 25vw;
@@ -3114,328 +2794,180 @@ header ul li .a1 {
     font-size: 22px;
     text-align: center;
   }
-  .Popular .contain {
-    position: absolute;
-    left: 20rem;
-    overflow: hidden;
+  .Popular .contain_1 {
     display: flex;
-    top: 0;
-  }
-  .Popular .contain div {
-    margin-left: 4rem;
-    margin-top: 3rem;
-    box-shadow: 2px 8px 15px black;
-    width: 24vw;
-    height: 25rem;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  .Popular .contain .item_1 {
-    background-size: cover;
-    background-image: url(assets/image/COUVERTURE.jpg);
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  .Popular .contain .item_1:hover {
-    width: 31vw;
-    height: 26rem;
-    transition: 0.3s;
-    transform: translateY(-25px);
-  }
-  .Popular .contain .i1 {
-    color: white;
-    width: 30vw;
-    position: absolute;
-    left: 1rem;
-    top: 10rem;
-    font-size: 28px;
-    text-align: center;
-    display: none;
-  }
-  .Popular .contain .i2 {
-    color: rgb(81, 58, 4);
-    width: 30vw;
-    position: absolute;
-    left: 25vw;
-    top: 10rem;
-    font-size: 28px;
-    text-align: center;
-    display: none;
-  }
-  .Popular .contain .St2 {
-    border: 0 solid;
-    color: rgb(222, 215, 215);
-    border-radius: 9px;
-    text-align: center;
-    display: none;
-    position: absolute;
-    left: 36vw;
-    top: 15rem;
-    padding: 5px;
-    background-color: rgb(175, 101, 17);
-    font-size: 22px;
-  }
-  .Popular .contain .St2:hover {
     position: absolute;
     top: 15rem;
-    left: 36vw;
-    background-color: rgb(215, 215, 12);
+    left: 5.5vw;
   }
-  .Popular .contain .item_2 {
-    background-size: cover;
-    background-image: url(./assets/image/c.jpg);
-    cursor: pointer;
+  .Popular .contain_1 div {
+    width: 20vw;
+    border-radius: 5.5px;
+    height: 18rem;
+    background-color: rgb(248, 250, 249);
+    margin-left: 2vw;
+    box-shadow: 0px 2px 7px rgb(32, 30, 30);
   }
-  .Popular .contain .item_2:hover {
-    width: 31vw;
-    height: 26rem;
-    transform: translateY(-25px);
-    transition: 0.4s;
+  .Popular .contain_1 div p {
+    font-size: 19px;
+    margin-top: -6rem;
   }
-  .Popular .contain .item_3 {
-    background-size: cover;
-    background-image: url(assets/image//BG.jpg);
-    cursor: pointer;
+  .Popular .contain_1 div img {
+    width: 20vw;
+    border-radius: 5.5px;
+    height: 10.1rem;
+    margin-left: 0vw;
   }
-  .Popular .contain .item_3:hover {
-    width: 31vw;
-    height: 26rem;
-    transform: translateY(-25px);
+  .Popular .contain_1 div button {
+    padding: 4px;
+    margin-top: 9.3rem;
+    font-size: 17px;
+    margin-left: 9vw;
+    background-color: rgb(199, 153, 3);
+    border-radius: 5px;
+    border: 0;
   }
-  .Popular .contain .item_4 {
-    background-size: cover;
-    background-image: url("./../../allée des baobab responsive.jpg");
-    cursor: pointer;
+  .Popular .contain_1 div h2 {
+    font-size: 17.7px;
+    top: 9.1rem;
+    position: relative;
+    left: 0vw;
+    width: 20vw;
   }
-  .Popular .contain .item_4:hover {
-    width: 31vw;
-    transform: translateY(-25px);
-    height: 26rem;
+  .Popular .contain_1 div i {
+    font-size: 27px;
+    color: #be950b;
+    left: -8vw;
+    position: relative;
+    top: 0.5rem;
   }
-  .St1 {
-    border: 0 solid;
-    color: rgb(88, 81, 7);
-    border-radius: 9px;
-    display: none;
-    text-align: center;
+  .Popular .contain_1 div h3 {
+    position: relative;
+    top: 9.7rem;
+    left: -8vw;
+    font-family: "yeseva_oneregular";
+  }
+  .Popular .contain_2 {
+    display: flex;
     position: absolute;
-    left: 13vw;
-    top: 15rem;
-    padding: 5px;
-    background-color: rgb(255, 255, 255);
-    font-size: 22px;
+    top: 35.5rem;
+    left: 5.5vw;
   }
-  .St1:hover {
-    background-color: rgb(244, 191, 17);
+  .Popular .contain_2 div {
+    width: 20vw;
+    border-radius: 5.5px;
+    height: 18rem;
+    background-color: rgb(248, 250, 249);
+    margin-left: 2vw;
+    box-shadow: 0px 2px 7px rgb(32, 30, 30);
   }
-  .button {
+  .Popular .contain_2 div p {
+    font-size: 19px;
+    margin-top: -6rem;
+  }
+  .Popular .contain_2 div img {
+    width: 20vw;
+    border-radius: 5.5px;
+    height: 10.1rem;
+    margin-left: 0vw;
+  }
+  .Popular .contain_2 div button {
+    padding: 4px;
+    margin-top: 9.3rem;
+    font-size: 17px;
+    margin-left: 9vw;
+    background-color: rgb(199, 153, 3);
+    border-radius: 5px;
+    border: 0;
+  }
+  .Popular .contain_2 div h2 {
+    font-size: 18.7px;
+    top: 9.1rem;
     position: relative;
-    top: 14rem;
-    left: -18rem;
+    left: 0vw;
+    width: 20vw;
   }
-  .button .next {
-    font-size: 33px;
-    border: 0 solid;
-    border-radius: 50%;
-    padding: 8px;
-    width: 50px;
-    background-color: rgb(255, 254, 253);
+  .Popular .contain_2 div i {
+    font-size: 27px;
+    color: #be950b;
+    left: -8vw;
     position: relative;
-    right: -97rem;
-    top: -4.4rem;
-    cursor: pointer;
+    top: 0.5rem;
   }
-  .button .next:hover {
-    background-color: rgb(13, 18, 59);
-    color: white;
-  }
-  .button .prev {
-    font-size: 33px;
-    border: 0 solid;
-    border-radius: 50%;
-    padding: 8px;
-    width: 50px;
-    background-color: rgb(255, 255, 255);
+  .Popular .contain_2 div h3 {
     position: relative;
-    right: -41rem;
-    cursor: pointer;
-  }
-  .button .prev:hover {
-    background-color: rgb(13, 18, 59);
-    color: azure;
+    top: 9.7rem;
+    left: -8vw;
+    font-family: "yeseva_oneregular";
   }
 }
 @media screen and (min-width: 1025px) {
-  .anim_1 {
-    width: 21px;
-    height: 21px;
-    background-color: rgb(133, 99, 6);
-    position: absolute;
-    top: 12.5rem;
-    left: 24vw;
-    animation: rotate 5s infinite linear;
-  }
-  @keyframes rotate {
-    0% {
-      transform: rotate(350deg);
-    }
-    20% {
-      transform: rotate(450deg);
-    }
-    40% {
-      transform: rotate(550deg);
-    }
-    60% {
-      transform: rotate(650deg);
-    }
-    80% {
-      transform: rotate(750deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
   .suggestion {
     position: absolute;
-    top: 190rem;
+    top: 232rem;
     left: 0;
   }
   .suggestion h1 {
-    font-size: 43px;
+    font-size: 32px;
     position: absolute;
     top: 4rem;
     left: 25vw;
     font-weight: 500;
     width: 45vw;
-    font-family: "abril_fatfaceregular";
+    font-family: "yeseva_oneregular";
     font-size: 50px;
     font-weight: bold;
     color: #29353e;
   }
-  .suggestion p {
-    position: absolute;
-    left: 5vw;
-    top: 12rem;
-    font-size: 22px;
-    text-align: center;
-    text-align: center;
-    width: 80vw;
+  .suggestion h3 {
+    margin-top: -11rem;
+    margin-left: -2vw;
+    width: 20vw;
   }
-  .suggestion .border5 {
-    border-radius: 5px;
-    width: 1.6cm;
-    height: 9px;
+  .suggestion .contain_suggestion {
+    display: flexbox;
+    flex-direction: column-reverse;
     position: absolute;
-    left: 44vw;
-    top: 9rem;
-    background-color: rgb(4, 82, 137);
-    text-align: center;
+    left: 30vw;
+    top: 10rem;
   }
-  .suggestion .contain1 {
-    display: flex;
-    position: absolute;
-    top: 20rem;
-    left: -11vw;
+  .suggestion .contain_suggestion div {
+    width: 35vw;
+    height: 15.6rem;
+    background-color: beige;
+    margin-top: 5rem;
+    border-radius: 15px;
   }
-  .suggestion .contain1 .i1, .suggestion .contain1 .i2, .suggestion .contain1 .i3 {
-    margin-left: 24.4rem;
-    border: 0px solid black;
-    padding-top: 5px;
-    padding-bottom: 13px;
-    padding-left: 19px;
-    padding-right: 19px;
+  .suggestion .contain_suggestion div img {
+    width: 95px;
+    height: 100px;
+    margin-left: -25vw;
+    margin-top: 3rem;
+    border-radius: 19px;
+  }
+  .suggestion .contain_suggestion div h2 {
+    color: #181717;
     font-size: 28px;
-    border-radius: 80%;
-    color: white;
-    font-weight: bold;
-    background-color: rgb(172, 136, 7);
-    animation: rotate_ 5s infinite linear;
+    margin-top: -8rem;
+    margin-left: 8vw;
+    font-family: "alegreyaregular";
   }
-  @keyframes rotate_ {
-    0% {
-      transform: rotate(350deg);
-    }
-    20% {
-      transform: rotate(450deg);
-    }
-    40% {
-      transform: rotate(550deg);
-    }
-    60% {
-      transform: rotate(650deg);
-    }
-    80% {
-      transform: rotate(750deg);
-    }
-    100% {
-      transform: rotate(850deg);
-    }
+  .suggestion .contain_suggestion div h2:nth-child(3) {
+    margin-left: -15vw;
   }
-  .suggestion .border_um {
-    width: 63vw;
-    height: 6px;
-    position: absolute;
-    left: 20vw;
-    top: 22rem;
-    background-color: rgb(172, 136, 7);
+  .suggestion .contain_suggestion div p {
+    font-size: 19px;
+    width: 24vw;
+    margin-left: 9.77vw;
+    margin-top: -0.5rem;
   }
-  .suggestion .contain2 {
-    display: flex;
-    position: absolute;
-    top: 27rem;
-    left: -5vw;
-  }
-  .suggestion .contain2 div {
-    height: 19rem;
-    width: 15rem;
-    margin-left: 15vw;
+  .suggestion .contain_suggestion div button {
+    padding: 5px;
+    border: 0;
     border-radius: 5px;
-    box-shadow: 0px 7px 12px black;
-  }
-  .suggestion .contain2 .item_1 {
-    background-image: url(./assets/image/airport-2373727_1280.jpg);
-    background-size: cover;
-  }
-  .suggestion .contain2 .item_1 h1 {
-    font-size: 23px;
-    position: absolute;
-    top: 21rem;
-    left: 9vw;
-    font-weight: bold;
-    width: 24vw;
-    color: rgb(148, 127, 8);
-    font-style: italic;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  }
-  .suggestion .contain2 .item_2 {
-    background-image: url(./assets/image/plane.jpg);
-    background-size: cover;
-  }
-  .suggestion .contain2 .item_2 h1 {
-    font-size: 23px;
-    position: absolute;
-    top: 21rem;
-    left: 44vw;
-    font-weight: bold;
-    width: 24vw;
-    color: rgb(148, 127, 8);
-    font-style: italic;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  }
-  .suggestion .contain2 .item_3 {
-    background-image: url(./assets/image/ivato.jpg);
-    background-size: cover;
-  }
-  .suggestion .contain2 .item_3 h1 {
-    font-size: 23px;
-    position: absolute;
-    top: 21rem;
-    left: 76vw;
-    font-weight: bold;
-    width: 24vw;
-    color: rgb(148, 127, 8);
-    font-style: italic;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 20px;
+    margin-left: 6vw;
+    background-color: rgb(226, 155, 2);
   }
 }
 @media screen and (min-width: 1025px) {
@@ -3603,31 +3135,33 @@ header ul li .a1 {
 @media screen and (min-width: 1025px) {
   .circuits {
     position: absolute;
-    top: 320rem;
+    top: 77rem;
     width: 100%;
     height: 85rem;
     background-color: rgb(233, 230, 230);
   }
   .circuits h1 {
-    font-size: 43px;
+    font-size: 25px;
     position: absolute;
-    top: 8rem;
+    top: 4rem;
     left: 25vw;
     font-weight: 500;
     width: 45vw;
-    font-family: "abril_fatfaceregular";
-    font-weight: -150;
+    font-family: "yeseva_oneregular";
+    font-size: 50px;
+    font-weight: bold;
     color: #29353e;
   }
-  .circuits .border6 {
-    border-radius: 5px;
-    width: 1.6cm;
-    height: 9px;
+  .circuits h3 {
     position: absolute;
-    left: 46vw;
-    top: 12.5rem;
-    background-color: rgb(4, 82, 137);
+    left: 39vw;
+    top: 14rem;
     text-align: center;
+    font-size: 26px;
+    color: rgb(4, 82, 137);
+    font-family: "coneria_script_demoregular";
+    font-style: italic;
+    font-weight: 800;
   }
   .circuits .contain-1 {
     display: flex;
@@ -3653,19 +3187,18 @@ header ul li .a1 {
     background-size: cover;
   }
   .circuits .contain-1 .contain_1 h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    font-size: 19px;
+    font-size: 22.4px;
     position: absolute;
-    top: 17.5rem;
-    left: -0.5vw;
+    top: 16.5rem;
+    left: 0.7vw;
     font-weight: 600;
     width: 35vw;
   }
   .circuits .contain-1 .contain_1 p {
     position: absolute;
-    left: 7vw;
-    top: 19.5rem;
+    left: 7.5vw;
+    top: 19rem;
     font-size: 18px;
     text-align: center;
     width: 22vw;
@@ -3673,11 +3206,11 @@ header ul li .a1 {
   }
   .circuits .contain-1 .contain_1 button {
     position: absolute;
-    left: 12rem;
+    left: 14.6vw;
     top: 24.5rem;
-    padding: 4px;
+    padding: 5px;
     background-color: #697278;
-    font-size: 19px;
+    font-size: 22.4px;
     border-radius: 6px;
     border: 0 solid;
   }
@@ -3688,19 +3221,18 @@ header ul li .a1 {
     background-size: 100%;
   }
   .circuits .contain-1 .contain_2 h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    font-size: 19px;
+    font-size: 22.6px;
     position: absolute;
-    top: 17.5rem;
-    left: 32vw;
+    top: 16.5rem;
+    left: 32.9vw;
     font-weight: 600;
     width: 35vw;
   }
   .circuits .contain-1 .contain_2 p {
     position: absolute;
-    left: 38vw;
-    top: 19.5rem;
+    left: 39vw;
+    top: 19.1rem;
     font-size: 18px;
     text-align: center;
     width: 22vw;
@@ -3708,11 +3240,11 @@ header ul li .a1 {
   }
   .circuits .contain-1 .contain_2 button {
     position: absolute;
-    left: 39.4rem;
+    left: 46.4vw;
     top: 25.4rem;
-    padding: 4px;
+    padding: 5px;
     background-color: #697278;
-    font-size: 19px;
+    font-size: 22px;
     border-radius: 6px;
     border: 0 solid;
   }
@@ -3728,19 +3260,18 @@ header ul li .a1 {
     background-size: cover;
   }
   .circuits .contain-1 .contain_3 h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    font-size: 19px;
+    font-size: 21.6px;
     position: absolute;
-    top: 17.5rem;
-    left: 65vw;
+    top: 16.3rem;
+    left: 66.4vw;
     font-weight: 600;
     width: 32vw;
   }
   .circuits .contain-1 .contain_3 p {
     position: absolute;
-    left: 68vw;
-    top: 19.5rem;
+    left: 69.7vw;
+    top: 18.9rem;
     font-size: 18px;
     text-align: center;
     width: 25vw;
@@ -3748,11 +3279,11 @@ header ul li .a1 {
   }
   .circuits .contain-1 .contain_3 button {
     position: absolute;
-    left: 67.4rem;
-    top: 24rem;
-    padding: 4px;
+    left: 78.4vw;
+    top: 25.4rem;
+    padding: 5px;
     background-color: #697278;
-    font-size: 19px;
+    font-size: 22px;
     border-radius: 6px;
     border: 0 solid;
   }
@@ -3779,14 +3310,14 @@ header ul li .a1 {
   }
   .circuits .contain-2 .contain_1 img {
     width: 27vw;
+    height: 15rem;
     border-radius: 9px;
   }
   .circuits .contain-2 .contain_1 h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    font-size: 19px;
+    font-size: 21.6px;
     position: absolute;
-    top: 17.5rem;
+    top: 16rem;
     left: 2rem;
     font-weight: 600;
     width: 35vw;
@@ -3794,7 +3325,7 @@ header ul li .a1 {
   .circuits .contain-2 .contain_1 p {
     position: absolute;
     left: 7rem;
-    top: 19.5rem;
+    top: 18.7rem;
     font-size: 18px;
     text-align: center;
     width: 23vw;
@@ -3803,10 +3334,10 @@ header ul li .a1 {
   .circuits .contain-2 .contain_1 button {
     position: absolute;
     left: 13.4rem;
-    top: 24.4rem;
-    padding: 4px;
+    top: 24.1rem;
+    padding: 5px;
     background-color: #697278;
-    font-size: 19px;
+    font-size: 22.5px;
     border-radius: 6px;
     border: 0 solid;
   }
@@ -3825,19 +3356,19 @@ header ul li .a1 {
 @media screen and (min-width: 1025px) {
   .avis {
     position: absolute;
-    top: 400rem;
-    width: 100%;
+    top: 220rem;
+    width: 90vw;
     height: 45rem;
     overflow: hidden;
   }
   .avis h1 {
-    font-size: 48px;
+    font-size: 50px;
     position: absolute;
     top: 8rem;
     left: 25vw;
     font-weight: 500;
     width: 45vw;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: "yeseva_oneregular";
     font-weight: 550;
     color: #29353e;
   }
@@ -3853,18 +3384,22 @@ header ul li .a1 {
   }
   .avis .button_avis {
     position: relative;
-    top: 21rem;
-    left: -35rem;
+    top: 18rem;
+    left: -34rem;
     z-index: 20;
   }
   .avis .button_avis .next1 {
     font-size: 33px;
     border: 0 solid;
     border-radius: 50%;
-    padding: 8px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
     width: 50px;
     background-color: rgba(255, 254, 253, 0.437);
     position: relative;
+    font-size: 20px;
     right: -115vw;
     top: -4.4rem;
     cursor: pointer;
@@ -3877,12 +3412,16 @@ header ul li .a1 {
     font-size: 33px;
     border: 0 solid;
     border-radius: 50%;
-    padding: 8px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
     width: 50px;
     background-color: rgba(255, 255, 255, 0.439);
     position: relative;
     right: -43vw;
     cursor: pointer;
+    font-size: 23px;
   }
   .avis .button_avis .prev1:hover {
     background-color: rgb(13, 18, 59);
@@ -3890,7 +3429,7 @@ header ul li .a1 {
   }
   .avis .slider {
     border-radius: 7px;
-    width: 1200vw;
+    width: 90vw;
     height: 150vh;
     position: absolute;
     left: 8rem;
@@ -3898,63 +3437,68 @@ header ul li .a1 {
   }
   .avis .slider .slides {
     width: 80vw;
-    height: 26rem;
+    height: 23rem;
     display: flex;
     border-radius: 15px;
     background-color: rgb(202, 206, 206);
     box-shadow: -2px 6px 25px rgba(0, 0, 0, 0.79);
   }
   .avis .slider .slides .quote {
-    width: 42px;
-    height: 42px;
+    width: 38px;
+    height: 38px;
     position: absolute;
-    top: 14.8rem;
+    top: 10.5rem;
     left: 3rem;
   }
   .avis .slider .slides .quote_d {
     width: 42px;
     height: 42px;
     position: absolute;
-    top: 29.5rem;
+    top: 27.5rem;
     left: 58rem;
   }
   .avis .slider .slides .item {
     display: none;
     padding: 80px;
     text-align: center;
-    font-size: 25px;
-    margin-top: 10%;
-    width: 90vw;
+    font-size: 19.6px;
+    margin-top: 7%;
+    width: 50vw;
     margin-left: 50%;
   }
   .avis .slider .slides .item h1 {
     position: absolute;
     left: 14vw;
-    top: 13rem;
+    top: 10rem;
     font-size: 39px;
     color: #000;
     font-family: "coneria_script_demoregular";
     font-weight: 1000;
   }
   .avis .slider .slides .item p {
-    margin-left: -35rem;
+    margin-left: -39.7vw;
+    width: 66vw;
   }
 }
 @media screen and (min-width: 1025px) {
   .galeriePhoto {
     position: absolute;
-    top: 441.5rem;
+    top: 158rem;
   }
   .galeriePhoto h1 {
-    font-size: 48px;
+    font-size: 25px;
     position: absolute;
-    top: 8rem;
+    top: 7rem;
     left: 25vw;
     font-weight: 500;
     width: 45vw;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-weight: 550;
+    font-family: "yeseva_oneregular";
+    font-size: 50px;
+    font-weight: bold;
     color: #29353e;
+  }
+  .galeriePhoto h3 {
+    margin-top: -7.8rem;
   }
   .galeriePhoto .border8 {
     border-radius: 5px;
@@ -3969,44 +3513,110 @@ header ul li .a1 {
   .galeriePhoto .lign1 {
     position: absolute;
     top: 17rem;
-    width: 100%;
-    height: 30rem;
     display: flex;
   }
   .galeriePhoto .lign1 img {
-    width: 24.65vw;
+    width: 24.67vw;
     height: 15rem;
   }
   .galeriePhoto .lign2 {
     position: absolute;
-    top: 32rem;
-    width: 100%;
-    height: 30rem;
+    top: 31.8rem;
     display: flex;
   }
   .galeriePhoto .lign2 img {
-    width: 24.65vw;
+    width: 24.71vw;
     height: 15rem;
   }
   .galeriePhoto .all {
     border: 0 solid;
-    width: 21rem;
-    height: 15rem;
+    width: 24.9vw;
+    height: 8rem;
     background-color: rgb(187, 187, 187);
-    font-size: 35px;
+    font-size: 28px;
     padding-top: 6rem;
     padding-left: -8rem;
     position: absolute;
-    top: 47rem;
+    top: 46.8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .blog {
+    position: absolute;
+    top: 265rem;
+  }
+  .blog h3 {
+    position: absolute;
+    left: 39vw;
+    top: 14rem;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(4, 82, 137);
+    font-family: "coneria_script_demoregular";
+    font-style: italic;
+    font-weight: 800;
+  }
+  .blog .contain .img {
+    width: 29vw;
+    height: 25rem;
+    border-radius: 12px;
+    position: absolute;
+    top: -25rem;
+    left: 33vw;
+  }
+  .blog .contain p {
+    font-size: 26px;
+    width: 30vw;
+    position: absolute;
+    top: 1rem;
+    left: 32vw;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .commentaire {
+    position: absolute;
+    top: 315rem;
+  }
+  .commentaire img {
+    width: 98.8vw;
+    left: 0;
+    height: 30rem;
+  }
+  .commentaire .contain {
+    position: absolute;
+    top: 2rem;
+    background-color: rgba(240, 248, 255, 0);
+  }
+  .commentaire .contain p {
+    font-size: 45px;
+    font-weight: bolder;
+    color: aliceblue;
+    font-family: "coneria_script_demoregular";
+  }
+  .commentaire .contain .form input[type=text] {
+    width: 45rem;
+    height: 2.6rem;
+    font-size: 19px;
+    color: #000;
+  }
+  .commentaire .contain .form input[type=submit] {
+    padding: 8px;
+    font-size: 22.4px;
+    background-color: rgb(218, 123, 0);
+    border: 0;
+    margin-left: 0.8vw;
+    border-radius: 5px;
   }
 }
 @media screen and (min-width: 1025px) {
   footer {
-    width: 100%;
-    height: 32rem;
+    width: 98.85vw;
+    height: 37rem;
     position: absolute;
     left: 0;
-    top: 510rem;
+    top: 348rem;
     background-color: rgb(222, 216, 216);
   }
   footer .logo {
@@ -4025,7 +3635,7 @@ header ul li .a1 {
     font-size: 28px;
     position: absolute;
     top: -4rem;
-    left: -9rem;
+    left: -6.7rem;
     font-weight: 500;
     width: 35vw;
     color: rgb(4, 82, 137);
@@ -4040,11 +3650,12 @@ header ul li .a1 {
     height: 20px;
     position: absolute;
     left: 1rem;
+    top: 1rem;
   }
   footer .info .phone p {
     font-size: 18px;
     position: relative;
-    left: -9rem;
+    left: -7rem;
     top: 0;
     width: 35vw;
   }
@@ -4058,17 +3669,18 @@ header ul li .a1 {
     height: 20px;
     position: absolute;
     left: 1rem;
+    top: 1rem;
   }
   footer .email p {
     font-size: 18px;
     position: relative;
-    left: -4rem;
+    left: -2rem;
     top: 0;
     width: 35vw;
   }
   footer .circ {
     position: absolute;
-    left: 32rem;
+    left: 30rem;
     top: 14.8rem;
     display: block;
   }
@@ -4084,12 +3696,13 @@ header ul li .a1 {
   footer .circ h3 {
     font-size: 19px;
     position: relative;
-    top: -0.4rem;
-    left: 4.4rem;
+    top: 0rem;
+    margin-top: 0;
+    left: -1.5rem;
   }
   footer .raccourci {
     position: absolute;
-    left: 50rem;
+    left: 47rem;
     top: 14.8rem;
     display: block;
   }
@@ -4105,19 +3718,20 @@ header ul li .a1 {
   footer .raccourci h3 {
     font-size: 19px;
     position: relative;
-    top: -0.6rem;
-    left: 2.4rem;
+    top: 0rem;
+    margin-top: 0;
+    left: -1.4rem;
   }
   footer .reference {
     position: absolute;
-    left: 71rem;
+    left: 70.5rem;
     top: 14.8rem;
   }
   footer .reference h1 {
     font-size: 27px;
     position: absolute;
     top: -4rem;
-    left: -9rem;
+    left: -11rem;
     font-weight: 500;
     width: 25vw;
     color: rgb(4, 82, 137);
@@ -4126,21 +3740,21 @@ header ul li .a1 {
     width: 19vw;
     font-size: 18px;
     position: absolute;
-    left: -6rem;
+    left: -8.7rem;
   }
   footer .border_ {
     width: 74%;
     height: 2px;
     position: absolute;
     left: 11rem;
-    top: 24rem;
+    top: 28.9rem;
     background-color: rgb(4, 82, 137);
   }
   footer .icones {
     position: absolute;
-    top: 28rem;
+    top: 33rem;
     display: flex;
-    left: 33%;
+    left: 33vw;
     text-align: center;
   }
   footer .icones img {
@@ -4154,8 +3768,8 @@ header ul li .a1 {
     position: absolute;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     font-weight: 800;
-    top: 25rem;
-    left: 32%;
+    top: 29rem;
+    left: 25vw;
   }
 }
 
