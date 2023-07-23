@@ -456,7 +456,7 @@ header ul li .a1 {
     box-shadow: 5px 4px 8px black;
   }
 }
-@media screen and (min-width: 280px) and (max-width: 763px) {
+@media screen and (min-width: 280px) and (max-width: 499px) {
   @font-face {
     font-family: "yeseva_oneregular";
     src: url("../../assets/yesevaone-regular-webfont.woff2") format("woff2"), url("../../assets/yesevaone-regular-webfont.woff") format("woff");
@@ -1294,7 +1294,7 @@ header ul li .a1 {
   }
   .avis .slider .slides {
     width: 86vw;
-    height: 30rem;
+    height: 25rem;
     display: flex;
     border-radius: 15px;
     background-color: rgb(202, 206, 206);
@@ -1311,7 +1311,7 @@ header ul li .a1 {
     width: 27px;
     height: 27px;
     position: absolute;
-    top: 33.7rem;
+    top: 28.7rem;
     left: 68vw;
   }
   .avis .slider .slides .item {
@@ -1652,7 +1652,7 @@ header ul li .a1 {
     opacity: 1;
   }
 }
-@media screen and (min-width: 764px) and (max-width: 1024px) {
+@media screen and (min-width: 500px) and (max-width: 1024px) {
   .header {
     position: fixed;
     top: 0;
@@ -2036,7 +2036,7 @@ header ul li .a1 {
     width: 35vw;
     margin-top: 5rem;
     border-radius: 5.5px;
-    height: 17rem;
+    height: 18rem;
     background-color: rgb(248, 250, 249);
     margin-left: 10vw;
     box-shadow: 0px 2px 7px rgb(32, 30, 30);
@@ -2052,15 +2052,33 @@ header ul li .a1 {
   }
   .Popular .contain_1 div button {
     padding: 4px;
-    margin-top: 0.6rem;
-    font-size: 19px;
+    margin-top: 3.9rem;
+    font-size: 17px;
+    z-index: 20;
+    margin-left: 20.7vw;
     background-color: rgb(199, 153, 3);
     border-radius: 5px;
     border: 0;
   }
   .Popular .contain_1 div h2 {
-    font-size: 19px;
-    margin-top: 1rem;
+    font-size: 17.7px;
+    top: 3.8rem;
+    position: relative;
+    left: -18vw;
+    width: 70vw;
+  }
+  .Popular .contain_1 div i {
+    font-size: 27px;
+    color: #be950b;
+    left: -14vw;
+    position: relative;
+    top: 0.5rem;
+  }
+  .Popular .contain_1 div h3 {
+    position: relative;
+    top: 4.5rem;
+    left: -7vw;
+    font-family: "yeseva_oneregular";
   }
   .Popular .contain_1 div:nth-child(3) {
     margin-top: 25rem;
@@ -2078,11 +2096,51 @@ header ul li .a1 {
   }
   .Popular .contain_2 div {
     width: 35vw;
-    border-radius: 5.5px;
-    height: 17rem;
-    background-color: aquamarine;
-    margin-left: 10vw;
     margin-top: 5rem;
+    border-radius: 5.5px;
+    height: 18rem;
+    background-color: rgb(248, 250, 249);
+    margin-left: 10vw;
+    box-shadow: 0px 2px 7px rgb(32, 30, 30);
+  }
+  .Popular .contain_2 div p {
+    font-size: 19px;
+    margin-top: -6rem;
+  }
+  .Popular .contain_2 div img {
+    width: 35vw;
+    border-radius: 5.5px;
+    height: 10.1rem;
+  }
+  .Popular .contain_2 div button {
+    padding: 4px;
+    margin-top: 3.9rem;
+    font-size: 17px;
+    z-index: 20;
+    margin-left: 20.7vw;
+    background-color: rgb(199, 153, 3);
+    border-radius: 5px;
+    border: 0;
+  }
+  .Popular .contain_2 div h2 {
+    font-size: 17.7px;
+    top: 3.8rem;
+    position: relative;
+    left: -18vw;
+    width: 70vw;
+  }
+  .Popular .contain_2 div i {
+    font-size: 27px;
+    color: #be950b;
+    left: -14vw;
+    position: relative;
+    top: 0.5rem;
+  }
+  .Popular .contain_2 div h3 {
+    position: relative;
+    top: 4.5rem;
+    left: -7vw;
+    font-family: "yeseva_oneregular";
   }
   .Popular .contain_2 div:nth-child(3) {
     margin-top: 25rem;
@@ -2381,12 +2439,11 @@ header ul li .a1 {
   }
   .avis {
     position: absolute;
-    top: 503rem;
+    top: 237rem;
     width: 100%;
     height: 62rem;
     overflow: hidden;
     z-index: 50;
-    display: none;
   }
   .avis h1 {
     font-size: 28px;
@@ -2411,7 +2468,7 @@ header ul li .a1 {
   }
   .avis .button_avis {
     position: relative;
-    top: 21rem;
+    top: 17rem;
     left: -136vw;
     z-index: 20;
   }
@@ -2423,8 +2480,8 @@ header ul li .a1 {
     width: 50px;
     background-color: rgba(255, 254, 253, 0.437);
     position: relative;
-    right: -209vw;
-    top: -4.1rem;
+    right: -212vw;
+    top: -3.6rem;
     cursor: pointer;
   }
   .avis .button_avis .next1:hover {
@@ -2448,54 +2505,54 @@ header ul li .a1 {
   }
   .avis .slider {
     border-radius: 7px;
-    width: 1200vw;
+    width: 300rem;
     height: 150vh;
     position: absolute;
-    left: 2rem;
+    left: 6vw;
     top: 8rem;
   }
   .avis .slider .slides {
     width: 86vw;
-    height: 35rem;
+    height: 20rem;
     display: flex;
     border-radius: 15px;
     background-color: rgb(202, 206, 206);
     box-shadow: -2px 6px 25px rgba(0, 0, 0, 0.79);
   }
   .avis .slider .slides .quote {
-    width: 25px;
-    height: 25px;
+    width: 29px;
+    height: 29px;
     position: absolute;
-    top: 13.8rem;
-    left: 9vw;
+    top: 11rem;
+    left: 7vw;
   }
   .avis .slider .slides .quote_d {
-    width: 25px;
-    height: 25px;
+    width: 29px;
+    height: 29px;
     position: absolute;
-    top: 39.7rem;
-    left: 68vw;
+    top: 23.7rem;
+    left: 73vw;
   }
   .avis .slider .slides .item {
     display: none;
     padding: 80px;
     text-align: center;
     font-size: 20px;
-    margin-top: 10%;
-    margin-left: 80vw;
+    margin-top: 2%;
+    margin-left: 2cap;
   }
   .avis .slider .slides .item h1 {
     position: absolute;
-    left: 11vw;
-    top: 12rem;
+    left: 7vw;
+    top: 10rem;
     font-size: 26px;
     color: #000;
     font-family: "coneria_script_demoregular";
     font-weight: 1000;
   }
   .avis .slider .slides .item p {
-    margin-left: -88vw;
-    width: 60vw;
+    margin-left: 0vw;
+    width: 67vw;
     margin-top: 2rem;
   }
   .galeriePhoto {
@@ -2556,12 +2613,98 @@ header ul li .a1 {
     top: 45.9rem;
     left: -2.4vw;
   }
+  .blog {
+    position: absolute;
+    top: 283rem;
+  }
+  .blog h3 {
+    color: rgb(4, 82, 137);
+    font-family: "coneria_script_demoregular";
+    font-style: italic;
+    font-size: 22px;
+    position: absolute;
+    top: 7rem;
+    left: 46vw;
+    font-weight: 800;
+    width: 30vw;
+  }
+  .blog h1 {
+    font-size: 28px;
+  }
+  .blog .contain {
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    top: -11rem;
+  }
+  .blog .contain .img {
+    width: 90vw;
+    height: 25rem;
+    border-radius: 12px;
+    position: relative;
+    top: -23rem;
+    left: 2.4vw;
+  }
+  .blog .contain p {
+    font-size: 28px;
+    width: 90vw;
+    position: absolute;
+    top: 2rem;
+    left: 4vw;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: bold;
+  }
+  .commentaire {
+    position: absolute;
+    top: 330rem;
+  }
+  .commentaire img {
+    position: absolute;
+    width: 100vw;
+    left: -2vw;
+    height: 27rem;
+  }
+  .commentaire .contain {
+    position: absolute;
+    top: -25rem;
+    z-index: 20;
+    background-color: rgba(240, 248, 255, 0);
+  }
+  .commentaire .contain p {
+    font-size: 27px;
+    font-weight: bolder;
+    position: absolute;
+    top: -10rem;
+    left: 8vw;
+    width: 80vw;
+    color: rgb(255, 255, 255);
+    font-family: "coneria_script_demoregular";
+  }
+  .commentaire .contain .form {
+    position: relative;
+    top: 0rem;
+  }
+  .commentaire .contain .form input[type=text] {
+    width: 91vw;
+    height: 2.6rem;
+    font-size: 19px;
+    color: #000;
+    margin-left: 1vw;
+  }
+  .commentaire .contain .form input[type=submit] {
+    padding: 8px;
+    font-size: 22.4px;
+    background-color: rgb(218, 123, 0);
+    border: 0;
+    margin-left: 42vw;
+    margin-top: 1.4rem;
+    border-radius: 5px;
+  }
   footer {
     width: 100.2vw;
     height: 65rem;
     position: absolute;
     left: -1.2vw;
-    top: 250rem;
+    top: 360rem;
     background-color: rgb(222, 216, 216);
   }
   footer .logo {
@@ -2716,7 +2859,7 @@ header ul li .a1 {
     width: 90vw;
   }
 }
-@media screen and (min-width: 764px) and (max-width: 1024px) and (min-width: 450px) and (max-width: 764px) {
+@media screen and (min-width: 500px) and (max-width: 1024px) and (min-width: 450px) and (max-width: 764px) {
   .contain img {
     box-shadow: 7px 4px 8px black;
     width: 86vw;
@@ -2743,7 +2886,7 @@ header ul li .a1 {
     top: 125rem;
   }
 }
-@media screen and (min-width: 764px) and (max-width: 1024px) {
+@media screen and (min-width: 500px) and (max-width: 1024px) {
   .hide_ {
     transform: translateX(-10.5rem);
   }
