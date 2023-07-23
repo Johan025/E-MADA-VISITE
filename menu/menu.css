@@ -92,8 +92,23 @@ ul {
   margin: 0;
   padding: 0;
   float: right;
-  right: 4vw;
+  right: 11.6vw;
   top: 0.5cm;
+}
+ul #user {
+  left: -30vw;
+  position: relative;
+  top: -1.4rem;
+}
+ul #user img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+ul #user h1 {
+  font-size: 18px;
+  margin-top: -3.2rem;
+  margin-left: -50.4vw;
 }
 
 .header_contain {
@@ -127,7 +142,7 @@ ul {
 }
 
 li {
-  margin: 4.5px;
+  margin: 2.7px;
 }
 
 #search {
@@ -185,7 +200,7 @@ header ul li .a1 {
   border-radius: 8px;
   padding: 6px;
   font-size: 42px;
-  margin-left: 2rem;
+  margin-left: 0.7rem;
 }
 
 .up- {
@@ -1294,7 +1309,7 @@ header ul li .a1 {
   }
   .avis .slider .slides {
     width: 86vw;
-    height: 25rem;
+    height: 29rem;
     display: flex;
     border-radius: 15px;
     background-color: rgb(202, 206, 206);
@@ -1311,20 +1326,20 @@ header ul li .a1 {
     width: 27px;
     height: 27px;
     position: absolute;
-    top: 28.7rem;
+    top: 30.7rem;
     left: 68vw;
   }
   .avis .slider .slides .item {
     display: none;
     padding: 80px;
     text-align: center;
-    font-size: 18px;
+    font-size: 17.5px;
     margin-top: 10%;
     margin-left: 80vw;
   }
   .avis .slider .slides .item h1 {
     position: absolute;
-    left: 11vw;
+    left: 6vw;
     top: 12rem;
     font-size: 26px;
     color: #000;
