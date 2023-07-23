@@ -1,4 +1,4 @@
-@media screen and (min-width: 280px) and (max-width: 763px) {
+@media screen and (min-width: 280px) and (max-width: 499px) {
   @font-face {
     font-family: 'yeseva_oneregular';
     src: url('../../assets/yesevaone-regular-webfont.woff2') format('woff2'),
@@ -918,7 +918,7 @@ font-family: 'abril_fatfaceregular';
  
            .slides{
              width: 86vw;
-             height: 30rem;
+             height: 25rem;
             display: flex;
             border-radius: 15px;
             background-color: rgb(202, 206, 206);
@@ -936,7 +936,7 @@ font-family: 'abril_fatfaceregular';
              width: 27px;
              height: 27px;
              position: absolute;
-             top:33.7rem;
+             top:28.7rem;
              left: 68vw;
             }
  
