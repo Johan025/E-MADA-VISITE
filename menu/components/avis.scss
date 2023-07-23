@@ -2,7 +2,7 @@
 .avis{
      position: absolute;
      top: 220rem;
-     width: 100vw;
+     width: 90vw;
      height: 45rem;
     overflow: hidden;
       h1{
@@ -75,11 +75,12 @@
 
      .slider{
       border-radius: 7px;
-      @include div-color(150vh, 1200vw, 8rem, 8rem);
+      @include div-color(150vh, 90vw, 8rem, 8rem);
 
           .slides{
             width: 80vw;
             height: 23rem;
+            
            display: flex;
            border-radius: 15px;
            background-color: rgb(202, 206, 206);
@@ -121,7 +122,7 @@
                   }
 
                    p{
-                     margin-left: -32.7rem;
+                     margin-left: -39.7vw;
                      width: 66vw;
                       }
 

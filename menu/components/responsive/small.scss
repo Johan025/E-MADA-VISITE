@@ -12,7 +12,7 @@
   .header{
     position:fixed;
      top: 0;
-     width: 99.82vw;
+     width: 99.9vw;
      left:0;
 
 }
@@ -411,7 +411,7 @@ font-family: 'abril_fatfaceregular';
 
     .Popular{
       overflow: hidden;
-      @include div(188rem, 100%, 0, 250.4rem,    #f3f0f0bd);
+      @include div(198rem, 100%, 0, 250.4rem,    #f3f0f0bd);
 
             h1{
               color: $color-2;
@@ -440,55 +440,120 @@ font-family: 'abril_fatfaceregular';
                          width: 75vw;
                          margin-top: 5rem;
                          border-radius: 5.5px;
-                         height: 17rem;
+                         height: 18.5rem;
                          background-color: rgb(248, 250, 249);
                          margin-left: 2vw;
                         box-shadow: 0px 2px 7px rgb(32, 30, 30);
 
                         p{
-                           font-size: 19px;
-                           margin-top: -6rem;
-                        }
+                          font-size: 19px;
+                          margin-top: -6rem;
+                       }
 
-                         img{
-                           width: 75vw;
-                           border-radius: 5.5px;
-                           height: 10.1rem;
-                        
-                        }
+                        img{
+                          width: 75.2vw;
+                          border-radius: 5.5px;
+                          height: 10.1rem;
+                          margin-left: 0vw;
+                       
+                       }
 
-                        button{
-                              padding: 4px;
-                              margin-top: 0.6rem;
-                              font-size: 19px;
-                              background-color: rgb(199, 153, 3);
-                              border-radius: 5px;
-                              border: 0;
-                        }
+                       button{
+                             padding: 4px;
+                             margin-top: 3.4rem;
+                             font-size: 17px;
+                             margin-left: 45vw;
+                             background-color: rgb(199, 153, 3);
+                             border-radius: 5px;
+                             border: 0;
+                       }
 
-                        h2{
-                           font-size: 19px;
-                           margin-top: 1rem;
-                        }
-                    }
+                       h2{
+                          font-size: 17.7px;
+                          top: 3.8rem;
+                          position: relative;
+                          left: 2vw;
+                          width: 70vw;
+                       }
+
+                       i{
+                            font-size: 27px;
+                            color: #be950b;
+                            left: -25vw;
+                            position: relative;
+                            top: 0.5rem;
+                       }
+
+                       h3{
+                            position: relative;
+                            top: 4.5rem;
+                            left: -13vw;
+                            font-family: 'yeseva_oneregular';
+                       }
+                      }
                  }
 
           .contain_2{
             display: block;
             position: absolute;
-            top: 95rem;
+            top: 102rem;
             left: 10.2vw;
 
-                  div{
-                      width: 75vw;
-                      border-radius: 5.5px;
-                      height: 17rem;
-                      background-color: aquamarine;
-                      margin-left: 2vw;
-                      margin-top: 5rem;
+            div{
+              width: 75vw;
+              margin-top: 5rem;
+              border-radius: 5.5px;
+              height: 18.5rem;
+              background-color: rgb(248, 250, 249);
+              margin-left: 2vw;
+             box-shadow: 0px 2px 7px rgb(32, 30, 30);
 
-                        
-                  }
+             p{
+               font-size: 19px;
+               margin-top: -6rem;
+            }
+
+             img{
+               width: 75.2vw;
+               border-radius: 5.5px;
+               height: 10.1rem;
+               margin-left: 0vw;
+            
+            }
+
+            button{
+                  padding: 4px;
+                  margin-top: 3.4rem;
+                  font-size: 17px;
+                  margin-left: 45vw;
+                  background-color: rgb(199, 153, 3);
+                  border-radius: 5px;
+                  border: 0;
+            }
+
+            h2{
+               font-size: 17.7px;
+               top: 3.8rem;
+               position: relative;
+               left: 2vw;
+               width: 70vw;
+            }
+
+            i{
+                 font-size: 27px;
+                 color: #be950b;
+                 left: -25vw;
+                 position: relative;
+                 top: 0.5rem;
+            }
+
+            h3{
+                 position: relative;
+                 top: 4.5rem;
+                 left: -13vw;
+                 font-family: 'yeseva_oneregular';
+            }
+           }
 
                 
     }
@@ -502,7 +567,7 @@ font-family: 'abril_fatfaceregular';
    //suggestion
 .suggestion{
   position: relative;
-  top: 445rem;
+  top: 455rem;
   left: 0;
          
        h1{
@@ -778,14 +843,14 @@ font-family: 'abril_fatfaceregular';
 
     .avis{
       position: absolute;
-      top: 503rem;
+      top: 386rem;
       width: 100%;
-      height: 62rem;
+      height: 52rem;
      overflow: hidden;
-     z-index: 50;
-     display: none;
+   
+     
        h1{
-         @include h(28px, 8rem, 12vw, 500, 75vw);
+         @include h(30px, 8rem, 12vw, 500, 75vw);
          font-family:'yeseva_oneregular';
          font-weight: 550;
          color: $color-2;
@@ -803,7 +868,7 @@ font-family: 'abril_fatfaceregular';
  
  .button_avis{
    position: relative;
-   top: 21rem;
+   top: 20rem;
    left: -136vw;
    z-index: 20;
  
@@ -812,12 +877,14 @@ font-family: 'abril_fatfaceregular';
     font-size: 33px;
     border: 0 solid;
     border-radius: 50%;
-    padding: 8px;
     width: 50px;
+    padding-top: 10px;
+    height: 50px;
     background-color: rgba(255, 254, 253, 0.437);
     position: relative;
-    right: -209vw;
-    top: -4.1rem;
+    font-family: 18px;
+    right: -207vw;
+    top: -3.7rem;
     cursor: pointer;
  
     &:hover{
@@ -830,8 +897,9 @@ font-family: 'abril_fatfaceregular';
           font-size: 33px;
           border: 0 solid;
           border-radius: 50%;
-          padding: 8px;
           width: 50px;
+          padding-top: 10px;
+          height: 50px;
           background-color: rgba(255, 255, 255, 0.439);
           position: relative;
           right: -137vw;
@@ -846,29 +914,29 @@ font-family: 'abril_fatfaceregular';
  
       .slider{
        border-radius: 7px;
-       @include div-color(150vh, 1200vw, 2rem, 8rem);
+       @include div-color(20rem, 90vw, 1rem, 8rem);
  
            .slides{
              width: 86vw;
-             height: 35rem;
+             height: 30rem;
             display: flex;
             border-radius: 15px;
             background-color: rgb(202, 206, 206);
             box-shadow: -2px 6px 25px rgba(0, 0, 0, 0.79);
  
             .quote{
-              width: 25px;
-              height: 25px;
+              width: 28px;
+              height: 28px;
               position: absolute;
-              top: 13.8rem;
-              left: 9vw;
+              top: 10.8rem;
+              left: 7vw;
             }
  
             .quote_d{
-             width: 25px;
-             height: 25px;
+             width: 27px;
+             height: 27px;
              position: absolute;
-             top:39.7rem;
+             top:33.7rem;
              left: 68vw;
             }
  
@@ -876,7 +944,7 @@ font-family: 'abril_fatfaceregular';
              display: none;
              padding: 80px;
              text-align: center;
-             font-size: 20px;
+             font-size: 18px;
              margin-top: 10%;
           
              margin-left: 80vw;
@@ -909,6 +977,8 @@ font-family: 'abril_fatfaceregular';
  
     }
 
+  
+
     .galeriePhoto{ 
       position: absolute;
       top: 242.5rem;
@@ -931,13 +1001,11 @@ font-family: 'abril_fatfaceregular';
         .lign1{
              position: absolute;
              top: 17rem;
-             width: 100vw;
              left: -2.5vw;
-             height: 30rem;
              display: block;
 
               img{
-                  width: 99.5vw;
+                  width: 100.3vw;
                   margin-top: -1rem;
                   height: 15rem;
               }
@@ -946,13 +1014,11 @@ font-family: 'abril_fatfaceregular';
         .lign2{
            position: absolute;
            top: 73.9rem;
-           width: 100vw;
-           height: 30rem;
            left: -2.7vw;
            display: block;
 
             img{
-                width: 100vw;
+                width: 100.3vw;
                 height: 15rem;
                 margin-top: -1rem;
             }
@@ -963,7 +1029,7 @@ font-family: 'abril_fatfaceregular';
             width: 99.9vw;
             height: 10rem;
             background-color: rgb(187, 187, 187);
-            font-size: 35px;
+            font-size: 25px;
             padding-top: 6rem;
             padding-left: -8rem;
             position: absolute;
@@ -972,9 +1038,104 @@ font-family: 'abril_fatfaceregular';
       }
 }
 
+.blog{
+  position: absolute;
+  top: 445rem;
+
+    h3{
+      color: $color_1;
+     font-family: 'coneria_script_demoregular';
+      font-style: italic;
+      @include h(22px, 7rem, 37vw, 800, 30vw);
+    }
+
+    h1{
+       font-size: 28px;
+    }
+
+     .contain{
+     background-color: #00000000;
+       position: relative;
+       top: -35rem;
+    .img{
+       width: 90vw;
+       height: 25rem;
+       border-radius: 12px;
+       position: relative;
+       top: -23rem;
+       left: 2.4vw;
+    }
+
+    p{
+      font-size: 28px;
+      width: 90vw;
+      position: absolute;
+      top: 2rem;
+      left: 4vw;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-weight: bold;
+    }
+  }
+}
+
+.commentaire{
+  position: absolute;
+  top: 490rem;
+
+        img{
+          position: absolute;
+        width: 100vw;
+        left: -2vw;
+        height: 30rem;
+        }
+
+        .contain{
+              position: absolute;
+              top: -52rem;
+              z-index: 20;
+              background-color: rgba(240, 248, 255, 0);
+                p{
+                     font-size: 27px;
+                     font-weight: bolder;
+                     position: absolute;
+                     top: -10rem;
+                     left: 8vw;
+                     width: 80vw;
+                     color:rgb(255, 255, 255);
+                     font-family: 'coneria_script_demoregular';
+                }
+
+                .form{
+                    position: relative;
+                    top: 6rem;
+
+                input[type=text]{
+                      width: 91vw;
+                      height: 2.6rem;
+                      font-size: 19px;
+                      color: #000;
+                      margin-left: 1vw;
+
+                }
+
+                input[type=submit]{
+                     padding: 8px;
+                     font-size: 22.4px;
+                     background-color: rgb(218, 123, 0);
+                     border: 0;
+                     margin-left: 35vw;
+                     margin-top: 1.4rem;
+                     border-radius: 5px;
+                }
+
+            }
+        }
+
+}
+
 
     footer{
-      @include div(65rem, 100vw, -2.2vw, 395rem, rgb(222, 216, 216));
+      @include div(65rem, 100vw, -2.2vw, 525rem, rgb(222, 216, 216));
 
            
       .logo{
