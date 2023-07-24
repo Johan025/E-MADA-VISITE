@@ -1,9 +1,8 @@
 @media screen and (min-width: 1025px) {
      .Foulpointe{
-
-        display: block;
+ 
         border-radius: 6.5px;
-        @include div(16.6rem, 50vw, -44vw, 25rem,rgb(233, 232, 232)) ;
+        @include div(16.6rem, 50vw, 4vw, 117rem,rgb(233, 232, 232)) ;
     
         .legende-foulpointe{
             position: relative;
@@ -24,7 +23,7 @@
          }
      
          .desc_foulpointe{
-             width: 44vw;
+             width: 48vw;
              position: absolute;
              top: 4rem;
              font-size: 18.5px;
@@ -120,8 +119,8 @@
             } 
      }
 
-     .border5{
-        @include border(20vw, 3px, $color-3, 85.6rem, 0vw);
+     .border3{
+        @include border(20vw, 3px, $color-3, 125.6rem, 48vw);
      }
     
     
