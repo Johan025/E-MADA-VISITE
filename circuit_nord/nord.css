@@ -402,8 +402,8 @@ header ul li .a1 {
     width: 50vw;
     height: 16.6rem;
     position: absolute;
-    left: -44vw;
-    top: 25rem;
+    left: 5vw;
+    top: 116rem;
     background-color: rgb(233, 232, 232);
   }
   .NosyKomba .legende-nosyKomba {
@@ -445,8 +445,8 @@ header ul li .a1 {
     width: 20vw;
     height: 3px;
     position: absolute;
-    left: 0vw;
-    top: 32.6rem;
+    left: 49vw;
+    top: 124rem;
     background-color: #697278;
   }
   .NosyIranja {
@@ -455,8 +455,8 @@ header ul li .a1 {
     width: 47vw;
     height: 20rem;
     position: absolute;
-    left: 1vw;
-    top: 49rem;
+    left: 50vw;
+    top: 141rem;
     background-color: rgb(233, 232, 232);
   }
   .NosyIranja .legende-nosyIranja {
@@ -498,8 +498,8 @@ header ul li .a1 {
     width: 20vw;
     height: 3px;
     position: absolute;
-    left: -11.6vw;
-    top: 58.9rem;
+    left: 36.6vw;
+    top: 150.9rem;
     background-color: #697278;
   }
   .NosyTanikely {
@@ -508,8 +508,8 @@ header ul li .a1 {
     width: 50vw;
     height: 17.6rem;
     position: absolute;
-    left: -44vw;
-    top: 78rem;
+    left: 4vw;
+    top: 170rem;
     background-color: rgb(233, 232, 232);
   }
   .NosyTanikely .legende-nosyTanikely {
@@ -544,25 +544,25 @@ header ul li .a1 {
     height: 18rem;
     position: relative;
     left: 48.5vw;
-    top: -6rem;
+    top: -4.3rem;
     border-radius: 5px;
   }
   .border5 {
     width: 20vw;
     height: 3px;
     position: absolute;
-    left: 0vw;
-    top: 85.6rem;
+    left: 48vw;
+    top: 178.5rem;
     background-color: #697278;
   }
 }
 @media screen and (min-width: 1025px) {
   footer {
-    width: 99.4vw;
+    width: 98.8vw;
     height: 37rem;
     position: absolute;
-    left: -40rem;
-    top: 110rem;
+    left: 0rem;
+    top: 198rem;
     background-color: rgb(222, 216, 216);
   }
   footer .logo {
@@ -716,6 +716,1073 @@ header ul li .a1 {
     font-weight: 800;
     top: 29rem;
     left: 25vw;
+  }
+}
+@media screen and (min-width: 280px) and (max-width: 763px) {
+  .header {
+    position: fixed;
+    top: 0;
+    width: 99.9vw;
+    left: 0;
+  }
+  .logo {
+    font-size: 27px;
+    left: 17vw;
+    top: 0.8cm;
+  }
+  .logo img {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: -0.5rem;
+    margin-left: -3.5rem;
+  }
+  .header_contain {
+    width: 100vw;
+    height: 0rem;
+    position: absolute;
+    left: 0rem;
+    top: 5.2rem;
+    background-color: rgb(22, 98, 211);
+    transition: 0.3s;
+  }
+  .header_contain ul {
+    display: block;
+    position: absolute;
+    left: 35vw;
+    top: -25rem;
+    width: 65vw;
+  }
+  .header_contain ul li {
+    margin-top: 22px;
+  }
+  .header_contain ul li a {
+    color: #241b1b;
+    font-size: 19px;
+    padding: -25px;
+    width: -5rem;
+    position: relative;
+    right: 19vw;
+    width: 70vw;
+  }
+  .header_contain ul li .a1 {
+    background-color: antiquewhite;
+  }
+  .header_contain ul .contact {
+    border: 1.5px solid #113f70;
+    border-radius: 8px;
+    padding: 7px;
+    font-size: 20.4px;
+    margin-left: 0rem;
+  }
+  .header_contain ul i {
+    color: #000000;
+  }
+  .icone_menu i {
+    position: relative;
+    float: right;
+    display: flex;
+    top: 1.3rem;
+    right: 4vw;
+    z-index: 6;
+    font-size: 25px;
+    border-radius: 30%;
+  }
+  .hideshow {
+    height: 24.5rem;
+  }
+  .h2 {
+    transform: translateY(28rem);
+    position: absolute;
+    top: 2.6rem;
+    transition: 0.06s;
+  }
+  .nord_couverture .couverture_nord {
+    position: relative;
+    top: 12rem;
+    left: 0.4vw;
+  }
+  .nord_couverture .couverture_nord img {
+    width: 93.5vw;
+    height: 24rem;
+    border-radius: 5px;
+  }
+  .nord_couverture .h_couverture {
+    font-size: 25.4px;
+    position: absolute;
+    top: 5rem;
+    left: 7vw;
+    font-weight: 300;
+    width: 85vw;
+    font-family: "yeseva_oneregular";
+    color: #29353e;
+    z-index: 20;
+  }
+  .nord_couverture .detail {
+    width: 83.6vw;
+    height: 7rem;
+    position: absolute;
+    left: 7.2vw;
+    top: 42rem;
+    background-color: rgba(0, 0, 0, 0.795);
+    border-radius: 3px;
+  }
+  .nord_couverture .description_nord {
+    position: absolute;
+    left: 4.4vw;
+    top: 47.5rem;
+    font-size: 19.4px;
+    text-align: center;
+    width: 90.5vw;
+  }
+  .nord_couverture .detail_date {
+    position: relative;
+    top: 9.8rem;
+    left: -39.9vw;
+    color: blue;
+  }
+  .nord_couverture .detail_date i {
+    font-size: 25px;
+  }
+  .nord_couverture .detail_date h3 {
+    font-size: 20px;
+    margin-top: -1.4rem;
+    margin-left: 43vw;
+    width: 70vw;
+  }
+  .nord_couverture .detail_trajet {
+    position: relative;
+    top: 10.64rem;
+    left: -39.5vw;
+    color: blue;
+  }
+  .nord_couverture .detail_trajet i {
+    font-size: 25px;
+  }
+  .nord_couverture .detail_trajet h3 {
+    font-size: 20px;
+    margin-top: -1.4rem;
+    margin-left: 47vw;
+    width: 70vw;
+  }
+  .Ankarafantsika {
+    position: relative;
+    top: 53rem;
+    left: 4vw;
+    width: 88vw;
+    height: 21rem;
+    border-radius: 6.5px;
+    background-color: rgb(233, 232, 232);
+    z-index: 20;
+  }
+  .Ankarafantsika .legende-ankrafantsika {
+    margin-left: 0vw;
+  }
+  .Ankarafantsika .legende-ankrafantsika h1 {
+    color: #ca0404;
+    font-family: "lumanosimoregular";
+    font-size: 20px;
+    position: absolute;
+    top: 1.3rem;
+    left: 22vw;
+    font-weight: 800;
+    width: 50vw;
+  }
+  .Ankarafantsika .legende-ankrafantsika i {
+    font-size: 36.4px;
+    color: #ca0404;
+    margin-left: -27vw;
+    margin-top: 1.6rem;
+  }
+  .Ankarafantsika .desc_Ankarafantsika {
+    width: 83.6vw;
+    position: relative;
+    top: -0.5rem;
+    font-size: 18px;
+    left: 2.2vw;
+  }
+  .Ankarafantsika img {
+    width: 75vw;
+    height: 18rem;
+    position: relative;
+    left: -1.8vw;
+    top: 8rem;
+    border-radius: 5px;
+  }
+  .Ankarana {
+    position: relative;
+    top: 88rem;
+    left: 4vw;
+    width: 88vw;
+    height: 21rem;
+    border-radius: 6.5px;
+    background-color: rgb(233, 232, 232);
+    z-index: 20;
+  }
+  .Ankarana .legende-ankarana {
+    margin-left: 0vw;
+  }
+  .Ankarana .legende-ankarana h1 {
+    color: #ca0404;
+    font-family: "lumanosimoregular";
+    font-size: 20px;
+    position: absolute;
+    top: 1.3rem;
+    left: 19vw;
+    font-weight: 800;
+    width: 50vw;
+  }
+  .Ankarana .legende-ankarana i {
+    font-size: 36.4px;
+    color: #ca0404;
+    margin-left: -22vw;
+    margin-top: 1.6rem;
+  }
+  .Ankarana .desc_Ankarana {
+    width: 83.6vw;
+    position: relative;
+    top: -0.5rem;
+    font-size: 18px;
+    left: 2.2vw;
+  }
+  .Ankarana img {
+    width: 75vw;
+    height: 18rem;
+    position: relative;
+    left: -1.8vw;
+    top: 8rem;
+    border-radius: 5px;
+  }
+  .NosyKomba {
+    position: relative;
+    top: 123.5rem;
+    left: 4vw;
+    width: 88vw;
+    height: 19.6rem;
+    border-radius: 6.5px;
+    background-color: rgb(233, 232, 232);
+    z-index: 20;
+  }
+  .NosyKomba .legende-nosyKomba {
+    margin-left: 0vw;
+  }
+  .NosyKomba .legende-nosyKomba h1 {
+    color: #ca0404;
+    font-family: "lumanosimoregular";
+    font-size: 19px;
+    position: absolute;
+    top: 1.3rem;
+    left: 19vw;
+    font-weight: 800;
+    width: 70vw;
+  }
+  .NosyKomba .legende-nosyKomba i {
+    font-size: 36.4px;
+    color: #ca0404;
+    margin-left: -27vw;
+    margin-top: 1.6rem;
+  }
+  .NosyKomba .desc_NosyKomba {
+    width: 83.6vw;
+    position: relative;
+    top: -0.5rem;
+    font-size: 18px;
+    left: 2.2vw;
+  }
+  .NosyKomba img {
+    width: 75vw;
+    height: 18rem;
+    position: relative;
+    left: -1.8vw;
+    top: 8rem;
+    border-radius: 5px;
+  }
+  .NosyIranja {
+    position: relative;
+    top: 159rem;
+    left: 4vw;
+    width: 88vw;
+    height: 21.6rem;
+    border-radius: 6.5px;
+    background-color: rgb(233, 232, 232);
+    z-index: 20;
+  }
+  .NosyIranja .legende-nosyIranja {
+    margin-left: 0vw;
+  }
+  .NosyIranja .legende-nosyIranja h1 {
+    color: #ca0404;
+    font-family: "lumanosimoregular";
+    font-size: 19px;
+    position: absolute;
+    top: 1.3rem;
+    left: 19vw;
+    font-weight: 800;
+    width: 70vw;
+  }
+  .NosyIranja .legende-nosyIranja i {
+    font-size: 36.4px;
+    color: #ca0404;
+    margin-left: -27vw;
+    margin-top: 1.6rem;
+  }
+  .NosyIranja .desc_NosyIranja {
+    width: 83.6vw;
+    position: relative;
+    top: -0.5rem;
+    font-size: 18px;
+    left: 2.2vw;
+  }
+  .NosyIranja img {
+    width: 75vw;
+    height: 18rem;
+    position: relative;
+    left: -1.8vw;
+    top: 8rem;
+    border-radius: 5px;
+  }
+  .NosyTanikely {
+    position: relative;
+    top: 195rem;
+    left: 4vw;
+    width: 88vw;
+    height: 21.6rem;
+    border-radius: 6.5px;
+    background-color: rgb(233, 232, 232);
+    z-index: 20;
+  }
+  .NosyTanikely .legende-nosyTanikely {
+    margin-left: 0vw;
+  }
+  .NosyTanikely .legende-nosyTanikely h1 {
+    color: #ca0404;
+    font-family: "lumanosimoregular";
+    font-size: 19px;
+    position: absolute;
+    top: 1.3rem;
+    left: 16vw;
+    font-weight: 800;
+    width: 70vw;
+  }
+  .NosyTanikely .legende-nosyTanikely i {
+    font-size: 36.4px;
+    color: #ca0404;
+    margin-left: -34vw;
+    margin-top: 1.6rem;
+  }
+  .NosyTanikely .desc_NosyTanikely {
+    width: 83.6vw;
+    position: relative;
+    top: -0.5rem;
+    font-size: 18px;
+    left: 2.2vw;
+  }
+  .NosyTanikely img {
+    width: 75vw;
+    height: 18rem;
+    position: relative;
+    left: -1.8vw;
+    top: 8rem;
+    border-radius: 5px;
+  }
+  footer {
+    width: 99.5vw;
+    height: 65rem;
+    position: absolute;
+    left: 0vw;
+    top: 365rem;
+    background-color: rgb(222, 216, 216);
+  }
+  footer .logo {
+    width: 150px;
+    height: 70px;
+    position: absolute;
+    top: 3rem;
+    left: 27vw;
+  }
+  footer .info {
+    position: absolute;
+    top: 15rem;
+    left: 54vw;
+  }
+  footer .info h1 {
+    font-size: 25px;
+    position: absolute;
+    top: -4rem;
+    left: -9rem;
+    font-weight: 500;
+    width: 70vw;
+    color: rgb(4, 82, 137);
+  }
+  footer .info .phone {
+    position: absolute;
+    top: 0rem;
+    left: 0;
+  }
+  footer .info .phone img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -44vw;
+  }
+  footer .info .phone p {
+    font-size: 18px;
+    position: relative;
+    left: -38vw;
+    top: -1rem;
+    width: 35vw;
+  }
+  footer .email {
+    position: absolute;
+    top: 3.6rem;
+    left: 0;
+  }
+  footer .email img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -45vw;
+  }
+  footer .email p {
+    font-size: 18px;
+    position: relative;
+    left: -36vw;
+    top: -1rem;
+    width: 35vw;
+  }
+  footer .circ {
+    position: absolute;
+    left: 3vw;
+    top: 27.1rem;
+    display: block;
+  }
+  footer .circ h1 {
+    font-size: 25px;
+    position: absolute;
+    top: -4rem;
+    left: -9rem;
+    font-weight: 500;
+    width: 114vw;
+    color: rgb(4, 82, 137);
+  }
+  footer .circ h3 {
+    font-size: 19px;
+    position: relative;
+    top: -1.7rem;
+    margin-top: 2rem;
+    left: 9vw;
+  }
+  footer .raccourci {
+    position: absolute;
+    left: 47vw;
+    top: 26.8rem;
+    display: block;
+  }
+  footer .raccourci h1 {
+    font-size: 28px;
+    position: absolute;
+    top: -4rem;
+    left: 4vw;
+    font-weight: 500;
+    width: 41vw;
+    color: rgb(4, 82, 137);
+  }
+  footer .raccourci h3 {
+    font-size: 19px;
+    position: relative;
+    top: -1.7rem;
+    margin-top: 2rem;
+    left: 6vw;
+  }
+  footer .reference {
+    position: absolute;
+    left: 20vw;
+    top: 44.8rem;
+  }
+  footer .reference h1 {
+    font-size: 27px;
+    position: absolute;
+    top: -4rem;
+    left: -16vw;
+    font-weight: 500;
+    width: 90vw;
+    color: rgb(4, 82, 137);
+  }
+  footer .reference p {
+    width: 69vw;
+    font-size: 18px;
+    position: absolute;
+    left: -6vw;
+  }
+  footer .border_ {
+    width: 45%;
+    height: 2px;
+    position: absolute;
+    left: 29vw;
+    top: 53rem;
+    background-color: rgb(4, 82, 137);
+  }
+  footer .icones {
+    position: absolute;
+    top: 61rem;
+    display: flex;
+    left: 7.3%;
+    text-align: center;
+  }
+  footer .icones img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin-left: 1rem;
+  }
+  footer .copright {
+    font-size: 21px;
+    position: absolute;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: 800;
+    top: 55rem;
+    left: 5%;
+    width: 90vw;
+  }
+  .border_princ {
+    width: 3px;
+    height: 250rem;
+    position: absolute;
+    left: 48vw;
+    top: 92rem;
+    background-color: #697278;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    left: 0;
+  }
+  .logo {
+    font-size: 27px;
+    left: 9.6vw;
+    top: 0.8cm;
+  }
+  .logo img {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: -0.5rem;
+    margin-left: -3.5rem;
+  }
+  .header_contain {
+    width: 100%;
+    height: 24.5rem;
+    position: absolute;
+    left: 0rem;
+    top: 5.2rem;
+    background-color: rgb(22, 98, 211);
+    transform: translateY(-100rem);
+    transition: 0.3s;
+  }
+  .header_contain ul {
+    display: block;
+    position: absolute;
+    left: 32vw;
+    top: 2.6rem;
+    width: 58vw;
+  }
+  .header_contain ul li {
+    margin-top: 22px;
+  }
+  .header_contain ul li a {
+    color: #000;
+    font-size: 19px;
+    padding: -25px;
+    width: -5rem;
+    position: relative;
+    right: 5rem;
+  }
+  .header_contain ul li .a1 {
+    background-color: antiquewhite;
+  }
+  .header_contain ul .contact {
+    border: 1.5px solid #113f70;
+    border-radius: 8px;
+    padding: 7px;
+    font-size: 20.4px;
+    margin-left: 0rem;
+  }
+  .header_contain ul i {
+    color: rgb(0, 0, 0);
+  }
+  .icone_menu i {
+    position: relative;
+    float: right;
+    display: flex;
+    top: 1rem;
+    right: 4vw;
+    z-index: 6;
+    font-size: 25px;
+    border-radius: 30%;
+  }
+  .hideshow {
+    transform: translateY(0rem);
+  }
+  .dire {
+    display: block;
+  }
+  .nord_couverture .couverture_nord {
+    position: relative;
+    top: 12rem;
+    left: 0vw;
+  }
+  .nord_couverture .couverture_nord img {
+    width: 93.1vw;
+    height: 29rem;
+    border-radius: 5px;
+  }
+  .nord_couverture .h_couverture {
+    font-size: 32.4px;
+    position: absolute;
+    top: 5rem;
+    left: 12.5vw;
+    font-weight: 300;
+    width: 75vw;
+    font-family: "yeseva_oneregular";
+    color: #29353e;
+    z-index: 20;
+  }
+  .nord_couverture .detail {
+    width: 83.6vw;
+    height: 7rem;
+    position: absolute;
+    left: 7.2vw;
+    top: 42rem;
+    background-color: rgba(0, 0, 0, 0.795);
+    border-radius: 3px;
+  }
+  .nord_couverture .description_nord {
+    position: absolute;
+    left: 6vw;
+    top: 53.5rem;
+    font-size: 19.4px;
+    text-align: center;
+    width: 88vw;
+  }
+  .nord_couverture .detail_date {
+    position: relative;
+    top: 9.8rem;
+    left: -18.9vw;
+    color: blue;
+  }
+  .nord_couverture .detail_date i {
+    font-size: 25px;
+  }
+  .nord_couverture .detail_date h3 {
+    font-size: 23px;
+    margin-top: -1.4rem;
+    margin-left: 30.5vw;
+    width: 70vw;
+  }
+  .nord_couverture .detail_trajet {
+    position: relative;
+    top: 10.64rem;
+    left: -18.8vw;
+    color: blue;
+  }
+  .nord_couverture .detail_trajet i {
+    font-size: 25px;
+  }
+  .nord_couverture .detail_trajet h3 {
+    font-size: 22px;
+    margin-top: -1.4rem;
+    margin-left: 32vw;
+    width: 70vw;
+  }
+  .Ankarafantsika {
+    position: relative;
+    top: 38rem;
+    left: 16vw;
+    width: 68vw;
+    height: 14.6rem;
+    border-radius: 6.5px;
+    background-color: rgb(233, 232, 232);
+    z-index: 20;
+  }
+  .Ankarafantsika .legende-ankrafantsika {
+    margin-left: 0vw;
+  }
+  .Ankarafantsika .legende-ankrafantsika h1 {
+    color: #ca0404;
+    font-family: "lumanosimoregular";
+    font-size: 21.5px;
+    position: absolute;
+    top: 1rem;
+    left: 22vw;
+    font-weight: 800;
+    width: 30vw;
+  }
+  .Ankarafantsika .legende-ankrafantsika i {
+    font-size: 32.4px;
+    color: #ca0404;
+    margin-left: -12vw;
+    margin-top: 1.6rem;
+  }
+  .Ankarafantsika .desc_Ankarafantsika {
+    width: 63.6vw;
+    position: relative;
+    top: -0.5rem;
+    font-size: 18px;
+    left: 2.2vw;
+  }
+  .Ankarafantsika img {
+    width: 50vw;
+    height: 17rem;
+    position: relative;
+    left: -1.8vw;
+    top: 8rem;
+    border-radius: 5px;
+  }
+  .Ankarana {
+    position: relative;
+    top: 75rem;
+    left: 16vw;
+    width: 68vw;
+    height: 14.6rem;
+    border-radius: 6.5px;
+    background-color: rgb(233, 232, 232);
+    z-index: 20;
+  }
+  .Ankarana .legende-ankarana {
+    margin-left: 0vw;
+  }
+  .Ankarana .legende-ankarana h1 {
+    color: #ca0404;
+    font-family: "lumanosimoregular";
+    font-size: 21.5px;
+    position: absolute;
+    top: 1rem;
+    left: 22vw;
+    font-weight: 800;
+    width: 30vw;
+  }
+  .Ankarana .legende-ankarana i {
+    font-size: 32.4px;
+    color: #ca0404;
+    margin-left: -12vw;
+    margin-top: 1.6rem;
+  }
+  .Ankarana .desc_Ankarana {
+    width: 63.6vw;
+    position: relative;
+    top: -0.5rem;
+    font-size: 18px;
+    left: 2.2vw;
+  }
+  .Ankarana img {
+    width: 50vw;
+    height: 17rem;
+    position: relative;
+    left: -1.8vw;
+    top: 8rem;
+    border-radius: 5px;
+  }
+  .NosyTanikely {
+    position: relative;
+    top: 184.5rem;
+    left: 16vw;
+    width: 68vw;
+    height: 14.6rem;
+    border-radius: 6.5px;
+    background-color: rgb(233, 232, 232);
+    z-index: 20;
+  }
+  .NosyTanikely .legende-nosyTanikely {
+    margin-left: 0vw;
+  }
+  .NosyTanikely .legende-nosyTanikely h1 {
+    color: #ca0404;
+    font-family: "lumanosimoregular";
+    font-size: 20.5px;
+    position: absolute;
+    top: 1rem;
+    left: 12vw;
+    font-weight: 800;
+    width: 54vw;
+  }
+  .NosyTanikely .legende-nosyTanikely i {
+    font-size: 32.4px;
+    color: #ca0404;
+    margin-left: -14vw;
+    margin-top: 1.6rem;
+  }
+  .NosyTanikely .desc_NosyTanikely {
+    width: 63.6vw;
+    position: relative;
+    top: -0.5rem;
+    font-size: 18px;
+    left: 2.2vw;
+  }
+  .NosyTanikely img {
+    width: 50vw;
+    height: 17rem;
+    position: relative;
+    left: -1.8vw;
+    top: 8rem;
+    border-radius: 5px;
+  }
+  .NosyIranja {
+    position: relative;
+    top: 147rem;
+    left: 16vw;
+    width: 68vw;
+    height: 14.6rem;
+    border-radius: 6.5px;
+    background-color: rgb(233, 232, 232);
+    z-index: 20;
+  }
+  .NosyIranja .legende-nosyIranja {
+    margin-left: 0vw;
+  }
+  .NosyIranja .legende-nosyIranja h1 {
+    color: #ca0404;
+    font-family: "lumanosimoregular";
+    font-size: 20.5px;
+    position: absolute;
+    top: 1rem;
+    left: 12vw;
+    font-weight: 800;
+    width: 54vw;
+  }
+  .NosyIranja .legende-nosyIranja i {
+    font-size: 32.4px;
+    color: #ca0404;
+    margin-left: -14vw;
+    margin-top: 1.6rem;
+  }
+  .NosyIranja .desc_NosyIranja {
+    width: 63.6vw;
+    position: relative;
+    top: -0.5rem;
+    font-size: 18px;
+    left: 2.2vw;
+  }
+  .NosyIranja img {
+    width: 50vw;
+    height: 17rem;
+    position: relative;
+    left: -1.8vw;
+    top: 8rem;
+    border-radius: 5px;
+  }
+  .NosyKomba {
+    position: relative;
+    top: 112rem;
+    left: 16vw;
+    width: 68vw;
+    height: 14.6rem;
+    border-radius: 6.5px;
+    background-color: rgb(233, 232, 232);
+    z-index: 20;
+  }
+  .NosyKomba .legende-nosyKomba {
+    margin-left: 0vw;
+  }
+  .NosyKomba .legende-nosyKomba h1 {
+    color: #ca0404;
+    font-family: "lumanosimoregular";
+    font-size: 20.5px;
+    position: absolute;
+    top: 1rem;
+    left: 12vw;
+    font-weight: 800;
+    width: 54vw;
+  }
+  .NosyKomba .legende-nosyKomba i {
+    font-size: 32.4px;
+    color: #ca0404;
+    margin-left: -14vw;
+    margin-top: 1.6rem;
+  }
+  .NosyKomba .desc_NosyKomba {
+    width: 63.6vw;
+    position: relative;
+    top: -0.5rem;
+    font-size: 18px;
+    left: 2.2vw;
+  }
+  .NosyKomba img {
+    width: 50vw;
+    height: 17rem;
+    position: relative;
+    left: -1.8vw;
+    top: 8rem;
+    border-radius: 5px;
+  }
+  footer {
+    width: 100vw;
+    height: 65rem;
+    position: absolute;
+    left: 0vw;
+    top: 327rem;
+    background-color: rgb(222, 216, 216);
+  }
+  footer .logo {
+    width: 180px;
+    height: 85px;
+    position: absolute;
+    top: 3rem;
+    left: 35vw;
+  }
+  footer .info {
+    position: absolute;
+    top: 15rem;
+    left: 58vw;
+  }
+  footer .info h1 {
+    font-size: 25px;
+    position: absolute;
+    top: -4rem;
+    left: -35vw;
+    font-weight: 500;
+    width: 47vw;
+    color: rgb(4, 82, 137);
+  }
+  footer .info .phone {
+    position: absolute;
+    top: 0rem;
+    left: 0;
+  }
+  footer .info .phone img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -25vw;
+  }
+  footer .info .phone p {
+    font-size: 18px;
+    position: relative;
+    left: -30vw;
+    top: -1rem;
+    width: 35vw;
+  }
+  footer .email {
+    position: absolute;
+    top: 3.6rem;
+    left: 0;
+  }
+  footer .email img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -25vw;
+  }
+  footer .email p {
+    font-size: 18px;
+    position: relative;
+    left: -20vw;
+    top: -1rem;
+    width: 35vw;
+  }
+  footer .circ {
+    position: absolute;
+    left: 17vw;
+    top: 27.1rem;
+    display: block;
+  }
+  footer .circ h1 {
+    font-size: 25px;
+    position: absolute;
+    top: -4rem;
+    left: -45vw;
+    font-weight: 500;
+    width: 114vw;
+    color: rgb(4, 82, 137);
+  }
+  footer .circ h3 {
+    font-size: 19px;
+    position: relative;
+    top: -1.7rem;
+    margin-top: 2rem;
+    left: 3vw;
+  }
+  footer .raccourci {
+    position: absolute;
+    left: 47vw;
+    top: 26.8rem;
+    display: block;
+  }
+  footer .raccourci h1 {
+    font-size: 28px;
+    position: absolute;
+    top: -4rem;
+    left: -3vw;
+    font-weight: 500;
+    width: 41vw;
+    color: rgb(4, 82, 137);
+  }
+  footer .raccourci h3 {
+    font-size: 19px;
+    position: relative;
+    top: -1.7rem;
+    margin-top: 2rem;
+    left: 10vw;
+  }
+  footer .reference {
+    position: absolute;
+    left: 20vw;
+    top: 44.8rem;
+  }
+  footer .reference h1 {
+    font-size: 27px;
+    position: absolute;
+    top: -4rem;
+    left: -16vw;
+    font-weight: 500;
+    width: 90vw;
+    color: rgb(4, 82, 137);
+  }
+  footer .reference p {
+    width: 69vw;
+    font-size: 18px;
+    position: absolute;
+    left: -6vw;
+  }
+  footer .border_ {
+    width: 45%;
+    height: 2px;
+    position: absolute;
+    left: 29vw;
+    top: 53rem;
+    background-color: rgb(4, 82, 137);
+  }
+  footer .icones {
+    position: absolute;
+    top: 61rem;
+    display: flex;
+    left: 30vw;
+    text-align: center;
+  }
+  footer .icones img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin-left: 1rem;
+  }
+  footer .copright {
+    font-size: 21px;
+    position: absolute;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: 800;
+    top: 55rem;
+    left: 5%;
+    width: 90vw;
+  }
+  .border_princ {
+    width: 3px;
+    height: 225rem;
+    position: absolute;
+    left: 48vw;
+    top: 82rem;
+    background-color: #697278;
   }
 }
 @font-face {
